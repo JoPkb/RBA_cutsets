@@ -72,7 +72,8 @@ def copy_genes(origin_model, target_model) :
     
     for target_reaction in target_model.reactions :
         try :
-            target_reaction.genes = origin_model.reactions.get_by_id(target_reaction.id).genes
+            target_reaction.gene_reaction_rule = origin_model.reactions.get_by_id(target_reaction.id).gene_reaction_rule
+            print(f"\nDEBUG -- Added gene_reaction_rule to reaction {target_reaction.id}")
         except KeyError :
-            print(f"ERROR -- KeyError, The reaction form target model {target_reaction.id} might not have a counterpart in origin_model.")
+            print(f"\nERROR -- KeyError, The reaction from target model {target_reaction.id} might not have a counterpart in origin_model.")
     return target_model
