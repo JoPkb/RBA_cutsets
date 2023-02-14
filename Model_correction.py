@@ -2,6 +2,7 @@ import cobra
 import cbmpy
 import requests
 
+
 ### Gene id conversion :
 def convert_ids(model) :
     url="http://rest.ensembl.org/xrefs/id/"
@@ -30,6 +31,18 @@ def convert_ids(model) :
         else :
             
             print(f"\nGene already has uniprot id : {gene_id}")
+
+    for reaction in converted.reactions :
+        print(f"\nChanging gene_reaction_rule for reaction {reaction.id}")
+        reaction_genes = list(reaction.genes)
+        string = ""
+        for gene_name in reaction_genes :
+            if reaction_genes.index(gene_name) != len(reaction_genes)-1 :
+                string += f"{gene_name} or "
+            else :
+                string += f"{gene_name}"
+        reaction.gene_reaction_rule = string
+        reaction.gene_name_reaction_rule = string
 
     return converted
 
@@ -77,3 +90,11 @@ def copy_genes(origin_model, target_model) :
         except KeyError :
             print(f"\nERROR -- KeyError, The reaction from target model {target_reaction.id} might not have a counterpart in origin_model.")
     return target_model
+
+def fix_formulas(model) :
+
+    for m in model.metabolites :
+       
+        m.formula = ""
+    
+    return model
