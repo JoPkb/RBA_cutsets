@@ -1,0 +1,1399 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Article rdf:about="#item_1">
+        <z:itemType>newspaperArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Newspaper></bib:Newspaper>
+        </dcterms:isPartOf>
+    </bib:Article>
+    <bib:Document rdf:about="https://pubmed.ncbi.nlm.nih.gov/30816152/">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Metabolic therapies inhibit tumor growth in vivo and in silico - PubMed</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://pubmed.ncbi.nlm.nih.gov/30816152/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:08:06</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Document rdf:about="https://www.nature.com/articles/s42255-019-0108-x">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_4"/>
+        <dc:title>Cellular redox state constrains serine synthesis and nucleotide production to impact cell proliferation | Nature Metabolism</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s42255-019-0108-x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:08:34</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_4">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Cellular redox state constrains serine synthesis and nucleotide production to impact cell proliferation | Nature Metabolism</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s42255-019-0108-x</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:08:49</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_5">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1742-464X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moreno-Sánchez</foaf:surname>
+                        <foaf:givenName>Rafael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rodríguez-Enríquez</foaf:surname>
+                        <foaf:givenName>Sara</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Marín-Hernández</foaf:surname>
+                        <foaf:givenName>Alvaro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Saavedra</foaf:surname>
+                        <foaf:givenName>Emma</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_6"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Energy Metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Glycolysis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mitochondria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Oxidative Phosphorylation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Protein Isoforms</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Energy metabolism in tumor cells</dc:title>
+        <dcterms:abstract>In early studies on energy metabolism of tumor cells, it was proposed that the enhanced glycolysis was induced by a decreased oxidative phosphorylation. Since then it has been indiscriminately applied to all types of tumor cells that the ATP supply is mainly or only provided by glycolysis, without an appropriate experimental evaluation. In this review, the different genetic and biochemical mechanisms by which tumor cells achieve an enhanced glycolytic flux are analyzed. Furthermore, the proposed mechanisms that arguably lead to a decreased oxidative phosphorylation in tumor cells are discussed. As the O(2) concentration in hypoxic regions of tumors seems not to be limiting for the functioning of oxidative phosphorylation, this pathway is re-evaluated regarding oxidizable substrate utilization and its contribution to ATP supply versus glycolysis. In the tumor cell lines where the oxidative metabolism prevails over the glycolytic metabolism for ATP supply, the flux control distribution of both pathways is described. The effect of glycolytic and mitochondrial drugs on tumor energy metabolism and cellular proliferation is described and discussed. Similarly, the energy metabolic changes associated with inherent and acquired resistance to radiotherapy and chemotherapy of tumor cells, and those determined by positron emission tomography, are revised. It is proposed that energy metabolism may be an alternative therapeutic target for both hypoxic (glycolytic) and oxidative tumors.</dcterms:abstract>
+        <dc:date>2007-03</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 17302740</dc:description>
+        <bib:pages>1393-1418</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1742-464X">
+        <prism:volume>274</prism:volume>
+        <dc:title>The FEBS journal</dc:title>
+        <dc:identifier>DOI 10.1111/j.1742-4658.2007.05686.x</dc:identifier>
+        <prism:number>6</prism:number>
+        <dcterms:alternative>FEBS J</dcterms:alternative>
+        <dc:identifier>ISSN 1742-464X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/17302740</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:09:08</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/srep08183">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2045-2322"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ghaffari</foaf:surname>
+                        <foaf:givenName>Pouyan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mardinoglu</foaf:surname>
+                        <foaf:givenName>Adil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Asplund</foaf:surname>
+                        <foaf:givenName>Anna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shoaie</foaf:surname>
+                        <foaf:givenName>Saeed</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kampf</foaf:surname>
+                        <foaf:givenName>Caroline</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Uhlen</foaf:surname>
+                        <foaf:givenName>Mathias</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_8"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Biochemical networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Biochemical reaction networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Identifying anti-growth factors for human cancer cell lines through genome-scale metabolic modeling</dc:title>
+        <dcterms:abstract>Human cancer cell lines are used as important model systems to study molecular mechanisms associated with tumor growth, hereunder how genomic and biological heterogeneity found in primary tumors affect cellular phenotypes. We reconstructed Genome scale metabolic models (GEMs) for eleven cell lines based on RNA-Seq data and validated the functionality of these models with data from metabolite profiling. We used cell line-specific GEMs to analyze the differences in the metabolism of cancer cell lines and to explore the heterogeneous expression of the metabolic subsystems. Furthermore, we predicted 85 antimetabolites that can inhibit growth of, or even kill, any of the cell lines, while at the same time not being toxic for 83 different healthy human cell types. 60 of these antimetabolites were found to inhibit growth in all cell lines. Finally, we experimentally validated one of the predicted antimetabolites using two cell lines with different phenotypic origins and found that it is effective in inhibiting the growth of these cell lines. Using immunohistochemistry, we also showed high or moderate expression levels of proteins targeted by the validated antimetabolite. Identified anti-growth factors for inhibition of cell growth may provide leads for the development of efficient cancer treatment strategies.</dcterms:abstract>
+        <dc:date>2015-02-02</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.nature.com/articles/srep08183</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:09:40</dcterms:dateSubmitted>
+        <dc:rights>2015 The Author(s)</dc:rights>
+        <dc:description>Number: 1
+Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>8183</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2045-2322">
+        <prism:volume>5</prism:volume>
+        <dc:title>Scientific Reports</dc:title>
+        <dc:identifier>DOI 10.1038/srep08183</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Sci Rep</dcterms:alternative>
+        <dc:identifier>ISSN 2045-2322</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/srep08183.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:09:41</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/ncomms4083">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2041-1723"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mardinoglu</foaf:surname>
+                        <foaf:givenName>Adil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Agren</foaf:surname>
+                        <foaf:givenName>Rasmus</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kampf</foaf:surname>
+                        <foaf:givenName>Caroline</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Asplund</foaf:surname>
+                        <foaf:givenName>Anna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Uhlen</foaf:surname>
+                        <foaf:givenName>Mathias</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_10"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer modelling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Medical research</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Metabolism</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Non-alcoholic fatty liver disease</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Genome-scale metabolic modelling of hepatocytes reveals serine deficiency in patients with non-alcoholic fatty liver disease</dc:title>
+        <dcterms:abstract>Several liver disorders result from perturbations in the metabolism of hepatocytes, and their underlying mechanisms can be outlined through the use of genome-scale metabolic models (GEMs). Here we reconstruct a consensus GEM for hepatocytes, which we call iHepatocytes2322, that extends previous models by including an extensive description of lipid metabolism. We build iHepatocytes2322 using Human Metabolic Reaction 2.0 database and proteomics data in Human Protein Atlas, which experimentally validates the incorporated reactions. The reconstruction process enables improved annotation of the proteomics data using the network centric view of iHepatocytes2322. We then use iHepatocytes2322 to analyse transcriptomics data obtained from patients with non-alcoholic fatty liver disease. We show that blood concentrations of chondroitin and heparan sulphates are suitable for diagnosing non-alcoholic steatohepatitis and for the staging of non-alcoholic fatty liver disease. Furthermore, we observe serine deficiency in patients with NASH and identify PSPH, SHMT1 and BCAT1 as potential therapeutic targets for the treatment of non-alcoholic steatohepatitis.</dcterms:abstract>
+        <dc:date>2014-01-14</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.nature.com/articles/ncomms4083</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:10:02</dcterms:dateSubmitted>
+        <dc:rights>2014 Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.</dc:rights>
+        <dc:description>Number: 1
+Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>3083</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2041-1723">
+        <prism:volume>5</prism:volume>
+        <dc:title>Nature Communications</dc:title>
+        <dc:identifier>DOI 10.1038/ncomms4083</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Nat Commun</dcterms:alternative>
+        <dc:identifier>ISSN 2041-1723</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_10">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/ncomms4083.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:10:03</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_11">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0006-3002"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pizzuto</foaf:surname>
+                        <foaf:givenName>Roberto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Paventi</foaf:surname>
+                        <foaf:givenName>Gianluca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Porcile</foaf:surname>
+                        <foaf:givenName>Carola</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sarnataro</foaf:surname>
+                        <foaf:givenName>Daniela</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Daniele</foaf:surname>
+                        <foaf:givenName>Aurora</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Passarella</foaf:surname>
+                        <foaf:givenName>Salvatore</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <link:link rdf:resource="#item_13"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Citric Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Hep G2 Cells</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>L-Lactate Dehydrogenase</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lactic Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Malates</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mitochondria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Oxaloacetic Acid</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Pyruvic Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>l-Lactate metabolism in HEP G2 cell mitochondria due to the l-lactate dehydrogenase determines the occurrence of the lactate/pyruvate shuttle and the appearance of oxaloacetate, malate and citrate outside mitochondria</dc:title>
+        <dcterms:abstract>As part of an ongoing study of l-lactate metabolism both in normal and in cancer cells, we investigated whether and how l-lactate metabolism occurs in mitochondria of human hepatocellular carcinoma (Hep G2) cells. We found that Hep G2 cell mitochondria (Hep G2-M) possess an l-lactate dehydrogenase (ml-LDH) restricted to the inner mitochondrial compartments as shown by immunological analysis, confocal microscopy and by assaying ml-LDH activity in solubilized mitochondria. Cytosolic and mitochondrial l-LDHs were found to differ from one another in their saturation kinetics. Having shown that l-lactate itself can enter Hep G2 cells, we found that Hep G2-M swell in ammonium l-lactate, but not in ammonium pyruvate solutions, in a manner inhibited by mersalyl, this showing the occurrence of a carrier-mediated l-lactate transport in these mitochondria. Occurrence of the l-lactate/pyruvate shuttle and the appearance outside mitochondria of oxaloacetate, malate and citrate arising from l-lactate uptake and metabolism together with the low oxygen consumption and membrane potential generation are in favor of an anaplerotic role for l-LAC in Hep G2-M.</dcterms:abstract>
+        <dc:date>2012-09</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 22659615</dc:description>
+        <bib:pages>1679-1690</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0006-3002">
+        <prism:volume>1817</prism:volume>
+        <dc:title>Biochimica Et Biophysica Acta</dc:title>
+        <dc:identifier>DOI 10.1016/j.bbabio.2012.05.010</dc:identifier>
+        <prism:number>9</prism:number>
+        <dcterms:alternative>Biochim Biophys Acta</dcterms:alternative>
+        <dc:identifier>ISSN 0006-3002</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/22659615</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:11:22</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_13">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0005272812001673/pdfft?md5=aebf7db942e1c54e4c7915d22c77a4d7&amp;pid=1-s2.0-S0005272812001673-main.pdf&amp;isDTMRedir=Y</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:11:26</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_14">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1532-8708"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wilde</foaf:surname>
+                        <foaf:givenName>Lindsay</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roche</foaf:surname>
+                        <foaf:givenName>Megan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Domingo-Vidal</foaf:surname>
+                        <foaf:givenName>Marina</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tanson</foaf:surname>
+                        <foaf:givenName>Katherina</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Philp</foaf:surname>
+                        <foaf:givenName>Nancy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Curry</foaf:surname>
+                        <foaf:givenName>Joseph</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Martinez-Outschoorn</foaf:surname>
+                        <foaf:givenName>Ubaldo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_15"/>
+        <link:link rdf:resource="#item_16"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Adenosine Triphosphate</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Antineoplastic Agents</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Apoptosis Regulatory Proteins</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>caveolin 1</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cell Proliferation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Drug Discovery</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Fibroblasts</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Glucose</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>glycolysis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Glycolysis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>hypoxia inducible factor</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Hypoxia-Inducible Factor 1, alpha Subunit</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Intracellular Signaling Peptides and Proteins</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ketone Bodies</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>lactate</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lactic Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Monocarboxylic Acid Transporters</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Muscle Proteins</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>NF-kappa B</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>oxidative phosphorylation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Phosphoric Monoester Hydrolases</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Proto-Oncogene Proteins c-myc</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Pyruvic Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Stromal Cells</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Symporters</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>TIGAR</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Metabolic coupling and the Reverse Warburg Effect in cancer: Implications for novel biomarker and anticancer agent development</dc:title>
+        <dcterms:abstract>Glucose is a key metabolite used by cancer cells to generate ATP, maintain redox state and create biomass. Glucose can be catabolized to lactate in the cytoplasm, which is termed glycolysis, or alternatively can be catabolized to carbon dioxide and water in the mitochondria via oxidative phosphorylation. Metabolic heterogeneity exists in a subset of human tumors, with some cells maintaining a glycolytic phenotype while others predominantly utilize oxidative phosphorylation. Cells within tumors interact metabolically with transfer of catabolites from supporting stromal cells to adjacent cancer cells. The Reverse Warburg Effect describes when glycolysis in the cancer-associated stroma metabolically supports adjacent cancer cells. This catabolite transfer, which induces stromal-cancer metabolic coupling, allows cancer cells to generate ATP, increase proliferation, and reduce cell death. Catabolites implicated in metabolic coupling include the monocarboxylates lactate, pyruvate, and ketone bodies. Monocarboxylate transporters (MCT) are critically necessary for release and uptake of these catabolites. MCT4 is involved in the release of monocarboxylates from cells, is regulated by catabolic transcription factors such as hypoxia inducible factor 1 alpha (HIF1A) and nuclear factor kappa-light-chain-enhancer of activated B cells (NF-κB), and is highly expressed in cancer-associated fibroblasts. Conversely, MCT1 is predominantly involved in the uptake of these catabolites and is highly expressed in a subgroup of cancer cells. MYC and TIGAR, which are genes involved in cellular proliferation and anabolism, are inducers of MCT1. Profiling human tumors on the basis of an altered redox balance and intra-tumoral metabolic interactions may have important biomarker and therapeutic implications. Alterations in the redox state and mitochondrial function of cells can induce metabolic coupling. Hence, there is interest in redox and metabolic modulators as anticancer agents. Also, markers of metabolic coupling have been associated with poor outcomes in numerous human malignancies and may be useful prognostic and predictive biomarkers.</dcterms:abstract>
+        <dc:date>2017-06</dc:date>
+        <z:language>eng</z:language>
+        <z:shortTitle>Metabolic coupling and the Reverse Warburg Effect in cancer</z:shortTitle>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 29248131
+PMCID: PMC5737780</dc:description>
+        <bib:pages>198-203</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1532-8708">
+        <prism:volume>44</prism:volume>
+        <dc:title>Seminars in Oncology</dc:title>
+        <dc:identifier>DOI 10.1053/j.seminoncol.2017.10.004</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Semin Oncol</dcterms:alternative>
+        <dc:identifier>ISSN 1532-8708</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_15">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/29248131</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:11:44</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_16">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Version acceptée</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://europepmc.org/articles/pmc5737780?pdf=render</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:11:48</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_17">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1878-5875"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Obre</foaf:surname>
+                        <foaf:givenName>Emilie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rossignol</foaf:surname>
+                        <foaf:givenName>Rodrigue</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_18"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Animals</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Biomedical Research</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Cancer</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Energy Metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic flexibility</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mitochondria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Oncobioenergetics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Oxidation-Reduction</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Oxidative phosphorylation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Signal Transduction</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Symbiosis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Emerging concepts in bioenergetics and cancer research: metabolic flexibility, coupling, symbiosis, switch, oxidative tumors, metabolic remodeling, signaling and bioenergetic therapy</dc:title>
+        <dcterms:abstract>The field of energy metabolism dramatically progressed in the last decade, owing to a large number of cancer studies, as well as fundamental investigations on related transcriptional networks and cellular interactions with the microenvironment. The concept of metabolic flexibility was clarified in studies showing the ability of cancer cells to remodel the biochemical pathways of energy transduction and linked anabolism in response to glucose, glutamine or oxygen deprivation. A clearer understanding of the large-scale bioenergetic impact of C-MYC, MYCN, KRAS and P53 was obtained, along with its modification during the course of tumor development. The metabolic dialog between different types of cancer cells, but also with the stroma, also complexified the understanding of bioenergetics and raised the concepts of metabolic symbiosis and reverse Warburg effect. Signaling studies revealed the role of respiratory chain-derived reactive oxygen species for metabolic remodeling and metastasis development. The discovery of oxidative tumors in human and mice models related to chemoresistance also changed the prevalent view of dysfunctional mitochondria in cancer cells. Likewise, the influence of energy metabolism-derived oncometabolites emerged as a new means of tumor genetic regulation. The knowledge obtained on the multi-site regulation of energy metabolism in tumors was translated to cancer preclinical studies, supported by genetic proof of concept studies targeting LDHA, HK2, PGAM1, or ACLY. Here, we review those different facets of metabolic remodeling in cancer, from its diversity in physiology and pathology, to the search of the genetic determinants, the microenvironmental regulators and pharmacological modulators.</dcterms:abstract>
+        <dc:date>2015-02</dc:date>
+        <z:language>eng</z:language>
+        <z:shortTitle>Emerging concepts in bioenergetics and cancer research</z:shortTitle>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 25542180</dc:description>
+        <bib:pages>167-181</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1878-5875">
+        <prism:volume>59</prism:volume>
+        <dc:title>The International Journal of Biochemistry &amp; Cell Biology</dc:title>
+        <dc:identifier>DOI 10.1016/j.biocel.2014.12.008</dc:identifier>
+        <dcterms:alternative>Int J Biochem Cell Biol</dcterms:alternative>
+        <dc:identifier>ISSN 1878-5875</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_18">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/25542180</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:12:15</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S1096717619300710">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1096-7176"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bulović</foaf:surname>
+                        <foaf:givenName>Ana</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fischer</foaf:surname>
+                        <foaf:givenName>Stephan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dinh</foaf:surname>
+                        <foaf:givenName>Marc</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Golib</foaf:surname>
+                        <foaf:givenName>Felipe</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liebermeister</foaf:surname>
+                        <foaf:givenName>Wolfram</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Poirier</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tournier</foaf:surname>
+                        <foaf:givenName>Laurent</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Klipp</foaf:surname>
+                        <foaf:givenName>Edda</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fromion</foaf:surname>
+                        <foaf:givenName>Vincent</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goelzer</foaf:surname>
+                        <foaf:givenName>Anne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_20"/>
+        <link:link rdf:resource="#item_21"/>
+        <dc:title>Automated generation of bacterial resource allocation models</dc:title>
+        <dcterms:abstract>Resource Balance Analysis (RBA) is a computational method based on resource allocation, which performs accurate quantitative predictions of whole-cell states (i.e. growth rate, metabolic fluxes, abundances of molecular machines including enzymes) across growth conditions. We present an integrated workflow of RBA together with the Python package RBApy. RBApy builds bacterial RBA models from annotated genome-scale metabolic models by adding descriptions of cellular processes relevant for growth and maintenance. The package includes functions for model simulation and calibration and for interfacing to Escher maps and Proteomaps for visualization. We demonstrate that RBApy faithfully reproduces results obtained by a hand-curated and experimentally validated RBA model for Bacillus subtilis. We also present a calibrated RBA model of Escherichia coli generated from scratch, which obtained excellent fits to measured flux values and enzyme abundances. RBApy makes whole-cell modelling accessible for a wide range of bacterial wild-type and engineered strains, as illustrated with a CO2-fixing Escherichia coli strain.
+Availability
+RBApy is available at /https://github.com/SysBioInra/RBApy, under the licence GNU GPL version 3, and runs on Linux, Mac and Windows distributions.</dcterms:abstract>
+        <dc:date>2019-09-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S1096717619300710</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:12:40</dcterms:dateSubmitted>
+        <bib:pages>12-22</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1096-7176">
+        <prism:volume>55</prism:volume>
+        <dc:title>Metabolic Engineering</dc:title>
+        <dc:identifier>DOI 10.1016/j.ymben.2019.06.001</dc:identifier>
+        <dcterms:alternative>Metabolic Engineering</dcterms:alternative>
+        <dc:identifier>ISSN 1096-7176</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_20">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/abs/pii/S1096717619300710?via%3Dihub</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:12:47</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_21">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Version soumise</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1906.04525</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:12:48</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_22">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1744-4292"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Agren</foaf:surname>
+                        <foaf:givenName>Rasmus</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mardinoglu</foaf:surname>
+                        <foaf:givenName>Adil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Asplund</foaf:surname>
+                        <foaf:givenName>Anna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kampf</foaf:surname>
+                        <foaf:givenName>Caroline</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Uhlen</foaf:surname>
+                        <foaf:givenName>Mathias</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_23"/>
+        <link:link rdf:resource="#item_24"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Antineoplastic Agents</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Carcinoma, Hepatocellular</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Simulation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Drug Discovery</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Liver Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Precision Medicine</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Proteomics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Identification of anticancer drugs for hepatocellular carcinoma through personalized genome-scale metabolic modeling</dc:title>
+        <dcterms:abstract>Genome-scale metabolic models (GEMs) have proven useful as scaffolds for the integration of omics data for understanding the genotype-phenotype relationship in a mechanistic manner. Here, we evaluated the presence/absence of proteins encoded by 15,841 genes in 27 hepatocellular carcinoma (HCC) patients using immunohistochemistry. We used this information to reconstruct personalized GEMs for six HCC patients based on the proteomics data, HMR 2.0, and a task-driven model reconstruction algorithm (tINIT). The personalized GEMs were employed to identify anticancer drugs using the concept of antimetabolites; i.e., drugs that are structural analogs to metabolites. The toxicity of each antimetabolite was predicted by assessing the in silico functionality of 83 healthy cell type-specific GEMs, which were also reconstructed with the tINIT algorithm. We predicted 101 antimetabolites that could be effective in preventing tumor growth in all HCC patients, and 46 antimetabolites which were specific to individual patients. Twenty-two of the 101 predicted antimetabolites have already been used in different cancer treatment strategies, while the remaining antimetabolites represent new potential drugs. Finally, one of the identified targets was validated experimentally, and it was confirmed to attenuate growth of the HepG2 cell line.</dcterms:abstract>
+        <dc:date>2014-03-19</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 24646661
+PMCID: PMC4017677</dc:description>
+        <bib:pages>721</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1744-4292">
+        <prism:volume>10</prism:volume>
+        <dc:title>Molecular Systems Biology</dc:title>
+        <dc:identifier>DOI 10.1002/msb.145122</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Mol Syst Biol</dcterms:alternative>
+        <dc:identifier>ISSN 1744-4292</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_23">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/24646661</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:13:17</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_24">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://europepmc.org/articles/pmc4017677?pdf=render</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:13:22</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1158/jcr.1925.148">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0099-7013"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Warburg</foaf:surname>
+                        <foaf:givenName>Otto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_26"/>
+        <dc:title>The Metabolism of Carcinoma Cells1</dc:title>
+        <dcterms:abstract>When the problem of carcinoma is approached from the metabolic aspect, the first question which arises is: how does the metabolism of growing tissue differ from that of resting? The prospects of finding an answer to this question are good. Whether the mass of a given tissue is to remain constant, or, within a short period to increase many-fold, must be determined by the velocity of those processes which supply the driving forces for growth. Our task is to search for such processes and to compare their velocities in resting tissues and growing tissues.If this question is solved, then the further inquiry must be made as to whether the manner of arrangement of growing cells is manifested in their metabolism. Does the metabolism of tumors, growing in a disorganized manner, differ from the metabolism of orderly cells growing at the same rate. The hope of solving this question must be considered slight in general, and rightly so, if it is only the form-building forces which tumors lack. For of all problems of physiology, that of form is the least approachable.Yet it seems doubtful that only minute and unimportant differences should exist between the growth of young cells and those of tumors, instead of considerable physico-chemical differences. Progress in the carcinoma problem implies the adoption of the point of view involved by the latter alternative. This has been done and I shall try to show that it is the correct point of view.</dcterms:abstract>
+        <dc:date>1925-03-01</dc:date>
+        <z:libraryCatalog>Silverchair</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1158/jcr.1925.148</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:13:52</dcterms:dateSubmitted>
+        <bib:pages>148-163</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0099-7013">
+        <prism:volume>9</prism:volume>
+        <dc:title>The Journal of Cancer Research</dc:title>
+        <dc:identifier>DOI 10.1158/jcr.1925.148</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>The Journal of Cancer Research</dcterms:alternative>
+        <dc:identifier>ISSN 0099-7013</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_26">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://aacrjournals.org/jcancerres/article-pdf/9/1/148/2171202/148.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:13:55</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.science.org/doi/10.1126/science.123.3191.309">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>123</prism:volume>
+                <dc:title>Science</dc:title>
+                <dc:identifier>DOI 10.1126/science.123.3191.309</dc:identifier>
+                <prism:number>3191</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Warburg</foaf:surname>
+                        <foaf:givenName>Otto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>On the Origin of Cancer Cells</dc:title>
+        <dc:date>1956-02-24</dc:date>
+        <z:libraryCatalog>science.org (Atypon)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.science.org/doi/10.1126/science.123.3191.309</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:14:36</dcterms:dateSubmitted>
+        <dc:description>Publisher: American Association for the Advancement of Science</dc:description>
+        <bib:pages>309-314</bib:pages>
+    </bib:Article>
+    <bib:Document rdf:about="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002518">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Reconstruction of Genome-Scale Active Metabolic Networks for 69 Human Cell Types and 16 Cancer Types Using INIT | PLOS Computational Biology</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002518</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:15:01</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Article rdf:about="#item_29">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>10</prism:volume>
+                <dc:title>Molecular Systems Biology</dc:title>
+                <dc:identifier>DOI 10.1002/msb.145122</dc:identifier>
+                <prism:number>3</prism:number>
+                <dcterms:alternative>Mol Syst Biol</dcterms:alternative>
+                <dc:identifier>ISSN 1744-4292</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Agren</foaf:surname>
+                        <foaf:givenName>Rasmus</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mardinoglu</foaf:surname>
+                        <foaf:givenName>Adil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Asplund</foaf:surname>
+                        <foaf:givenName>Anna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kampf</foaf:surname>
+                        <foaf:givenName>Caroline</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Uhlen</foaf:surname>
+                        <foaf:givenName>Mathias</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_30"/>
+        <link:link rdf:resource="#item_31"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Antineoplastic Agents</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Carcinoma, Hepatocellular</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Simulation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Drug Discovery</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Liver Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Precision Medicine</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Proteomics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Identification of anticancer drugs for hepatocellular carcinoma through personalized genome-scale metabolic modeling</dc:title>
+        <dcterms:abstract>Genome-scale metabolic models (GEMs) have proven useful as scaffolds for the integration of omics data for understanding the genotype-phenotype relationship in a mechanistic manner. Here, we evaluated the presence/absence of proteins encoded by 15,841 genes in 27 hepatocellular carcinoma (HCC) patients using immunohistochemistry. We used this information to reconstruct personalized GEMs for six HCC patients based on the proteomics data, HMR 2.0, and a task-driven model reconstruction algorithm (tINIT). The personalized GEMs were employed to identify anticancer drugs using the concept of antimetabolites; i.e., drugs that are structural analogs to metabolites. The toxicity of each antimetabolite was predicted by assessing the in silico functionality of 83 healthy cell type-specific GEMs, which were also reconstructed with the tINIT algorithm. We predicted 101 antimetabolites that could be effective in preventing tumor growth in all HCC patients, and 46 antimetabolites which were specific to individual patients. Twenty-two of the 101 predicted antimetabolites have already been used in different cancer treatment strategies, while the remaining antimetabolites represent new potential drugs. Finally, one of the identified targets was validated experimentally, and it was confirmed to attenuate growth of the HepG2 cell line.</dcterms:abstract>
+        <dc:date>2014-03-19</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 24646661
+PMCID: PMC4017677</dc:description>
+        <bib:pages>721</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_30">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/24646661</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:15:31</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_31">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://europepmc.org/articles/pmc4017677?pdf=render</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:15:34</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_32">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1096-7184"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nilsson</foaf:surname>
+                        <foaf:givenName>Avlant</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_33"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Animals</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>ATP synthesis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Biomass</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Energy Metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Flux</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Gene Expression Profiling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Gene Expression Regulation, Neoplastic</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Proteomics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Genome scale metabolic modeling of cancer</dc:title>
+        <dcterms:abstract>Cancer cells reprogram metabolism to support rapid proliferation and survival. Energy metabolism is particularly important for growth and genes encoding enzymes involved in energy metabolism are frequently altered in cancer cells. A genome scale metabolic model (GEM) is a mathematical formalization of metabolism which allows simulation and hypotheses testing of metabolic strategies. It has successfully been applied to many microorganisms and is now used to study cancer metabolism. Generic models of human metabolism have been reconstructed based on the existence of metabolic genes in the human genome. Cancer specific models of metabolism have also been generated by reducing the number of reactions in the generic model based on high throughput expression data, e.g. transcriptomics and proteomics. Targets for drugs and bio markers for diagnostics have been identified using these models. They have also been used as scaffolds for analysis of high throughput data to allow mechanistic interpretation of changes in expression. Finally, GEMs allow quantitative flux predictions using flux balance analysis (FBA). Here we critically review the requirements for successful FBA simulations of cancer cells and discuss the symmetry between the methods used for modeling of microbial and cancer metabolism. GEMs have great potential for translational research on cancer and will therefore become of increasing importance in the future.</dcterms:abstract>
+        <dc:date>2017-09</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 27825806</dc:description>
+        <bib:pages>103-112</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1096-7184">
+        <prism:volume>43</prism:volume>
+        <dc:title>Metabolic Engineering</dc:title>
+        <dc:identifier>DOI 10.1016/j.ymben.2016.10.022</dc:identifier>
+        <prism:number>Pt B</prism:number>
+        <dcterms:alternative>Metab Eng</dcterms:alternative>
+        <dc:identifier>ISSN 1096-7184</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_33">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/27825806</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:15:50</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S2452310017300380">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2452-3100"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Robinson</foaf:surname>
+                        <foaf:givenName>Jonathan L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Antimetabolites</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cancer metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Flux balance analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Genome-scale metabolic model</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Integrative omics analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Personalized medicine</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Anticancer drug discovery through genome-scale metabolic modeling</dc:title>
+        <dcterms:abstract>Altered metabolism has long been recognized as a defining property of cancer physiology, but is experiencing renewed interest as the importance of such alterations are becoming fully realized. Once regarded merely as a side effect of a damaging mutation or a general increase in proliferation rate, metabolic network rewiring is now viewed as an intentional process to optimize tumor growth and maintenance, and can even drive cancer transformation. This has motivated the search for anticancer targets among enzymes in the metabolic network of cancer cells. Genome-scale metabolic models (GEMs) provide the necessary framework to systematically interrogate this network, and many recent studies have successfully employed GEMs to predict anticancer drug targets in the metabolic networks of various cancer types.</dcterms:abstract>
+        <dc:date>2017-08-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S2452310017300380</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-14 15:17:16</dcterms:dateSubmitted>
+        <bib:pages>1-8</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2452-3100">
+        <dcterms:isPartOf>
+            <bib:Series>
+                <dc:title>Big data acquisition and analysis • Pharmacology and drug discovery</dc:title>
+            </bib:Series>
+        </dcterms:isPartOf>
+        <prism:volume>4</prism:volume>
+        <dc:title>Current Opinion in Systems Biology</dc:title>
+        <dc:identifier>DOI 10.1016/j.coisb.2017.05.007</dc:identifier>
+        <dcterms:alternative>Current Opinion in Systems Biology</dcterms:alternative>
+        <dc:identifier>ISSN 2452-3100</dc:identifier>
+    </bib:Journal>
+    <z:Collection rdf:about="#collection_1">
+        <dc:title>Stage_metabo</dc:title>
+        <dcterms:hasPart rdf:resource="#item_1"/>
+        <dcterms:hasPart rdf:resource="https://pubmed.ncbi.nlm.nih.gov/30816152/"/>
+        <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s42255-019-0108-x"/>
+        <dcterms:hasPart rdf:resource="#item_5"/>
+        <dcterms:hasPart rdf:resource="https://www.nature.com/articles/srep08183"/>
+        <dcterms:hasPart rdf:resource="https://www.nature.com/articles/ncomms4083"/>
+        <dcterms:hasPart rdf:resource="#item_11"/>
+        <dcterms:hasPart rdf:resource="#item_14"/>
+        <dcterms:hasPart rdf:resource="#item_17"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S1096717619300710"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1158/jcr.1925.148"/>
+        <dcterms:hasPart rdf:resource="https://www.science.org/doi/10.1126/science.123.3191.309"/>
+        <dcterms:hasPart rdf:resource="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002518"/>
+        <dcterms:hasPart rdf:resource="#item_29"/>
+        <dcterms:hasPart rdf:resource="#item_32"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S2452310017300380"/>
+    </z:Collection>
+</rdf:RDF>
