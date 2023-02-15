@@ -1,12 +1,14 @@
 import cobra
 import cbmpy
 import requests
-
+import json
 
 ### Gene id conversion :
 def convert_ids(model) :
     url="http://rest.ensembl.org/xrefs/id/"
+    print("\nCreating working copy of the model...")
     converted = model.copy()
+    print("\nModel copied.")
 
     for gene in converted.genes :
         gene_id = gene.id
@@ -42,14 +44,14 @@ def convert_ids(model) :
             else :
                 string += f"{gene_name}"
         reaction.gene_reaction_rule = string
-        reaction.gene_name_reaction_rule = string
+        #reaction.gene_name_reaction_rule = string
 
     return converted
 
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :
 
-    biomass_metabolites = './Hep-G2/Hep-G2.xml-5a91f1955e8a9c8a5c5d2ff4a1737c21/utils_biomass_metabolites.txt'
+    #biomass_metabolites = './Hep-G2/Hep-G2.xml-5a91f1955e8a9c8a5c5d2ff4a1737c21/utils_biomass_metabolites.txt'
     biomass_components_manual = []
     with open(biomass_metabolites, 'r') as input_metabolites :
         metabolites_list = input_metabolites.readlines()
@@ -98,3 +100,20 @@ def fix_formulas(model) :
         m.formula = ""
     
     return model
+
+
+def remove_gene_dupes(json_in, json_out) :
+    with open(json_in) as input_file :
+        data = json.load(input_file)
+
+    unique_ids = []
+    for g in data["genes"] :
+        id = g["id"]
+        if id not in unique_ids :
+            unique_ids.append(id)
+        else : 
+            print(f"{id} already found somewhere else.")
+    data["genes"] = [{"id" : id, "name" : ""} for id in unique_ids]
+
+    with open(json_out, "w") as output_file :
+        json.dump(data, output_file, indent="")
