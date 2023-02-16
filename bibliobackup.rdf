@@ -379,13 +379,16 @@ Publisher: Nature Publishing Group</dc:description>
         <link:link rdf:resource="#item_12"/>
         <link:link rdf:resource="#item_13"/>
         <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mitochondria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
            <z:AutomaticTag><rdf:value>Citric Acid</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>Hep G2 Cells</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -397,9 +400,6 @@ Publisher: Nature Publishing Group</dc:description>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>Malates</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Mitochondria</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -501,6 +501,21 @@ Publisher: Nature Publishing Group</dc:description>
         <link:link rdf:resource="#item_15"/>
         <link:link rdf:resource="#item_16"/>
         <dc:subject>
+           <z:AutomaticTag><rdf:value>Glycolysis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lactic Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Pyruvic Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
             <z:AutomaticTag>
                <rdf:value>Adenosine Triphosphate</rdf:value>
             </z:AutomaticTag>
@@ -536,12 +551,6 @@ Publisher: Nature Publishing Group</dc:description>
            <z:AutomaticTag><rdf:value>glycolysis</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
-           <z:AutomaticTag><rdf:value>Glycolysis</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
             <z:AutomaticTag>
                <rdf:value>hypoxia inducible factor</rdf:value>
             </z:AutomaticTag>
@@ -563,18 +572,12 @@ Publisher: Nature Publishing Group</dc:description>
            <z:AutomaticTag><rdf:value>lactate</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
-           <z:AutomaticTag><rdf:value>Lactic Acid</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
             <z:AutomaticTag>
                <rdf:value>Monocarboxylic Acid Transporters</rdf:value>
             </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>Muscle Proteins</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>NF-kappa B</rdf:value></z:AutomaticTag>
@@ -593,9 +596,6 @@ Publisher: Nature Publishing Group</dc:description>
             <z:AutomaticTag>
                <rdf:value>Proto-Oncogene Proteins c-myc</rdf:value>
             </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Pyruvic Acid</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>Stromal Cells</rdf:value></z:AutomaticTag>
@@ -669,6 +669,20 @@ PMCID: PMC5737780</dc:description>
         </bib:authors>
         <link:link rdf:resource="#item_18"/>
         <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Energy Metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mitochondria</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
            <z:AutomaticTag><rdf:value>Animals</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
@@ -681,27 +695,13 @@ PMCID: PMC5737780</dc:description>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
-               <rdf:value>Energy Metabolism</rdf:value>
-            </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-            <z:AutomaticTag>
                <rdf:value>Metabolic flexibility</rdf:value>
             </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Mitochondria</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
                <rdf:value>Models, Biological</rdf:value>
             </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -915,8 +915,19 @@ RBApy is available at /https://github.com/SysBioInra/RBApy, under the licence GN
         <link:link rdf:resource="#item_23"/>
         <link:link rdf:resource="#item_24"/>
         <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
             <z:AutomaticTag>
                <rdf:value>Antineoplastic Agents</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Drug Discovery</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
             </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
@@ -930,21 +941,10 @@ RBApy is available at /https://github.com/SysBioInra/RBApy, under the licence GN
             </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
-           <z:AutomaticTag><rdf:value>Drug Discovery</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
            <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
-           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
            <z:AutomaticTag><rdf:value>Liver Neoplasms</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-            <z:AutomaticTag>
-               <rdf:value>Models, Biological</rdf:value>
-            </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -1141,8 +1141,19 @@ PMCID: PMC4017677</dc:description>
         <link:link rdf:resource="#item_30"/>
         <link:link rdf:resource="#item_31"/>
         <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
             <z:AutomaticTag>
                <rdf:value>Antineoplastic Agents</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Drug Discovery</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
             </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
@@ -1156,21 +1167,10 @@ PMCID: PMC4017677</dc:description>
             </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
-           <z:AutomaticTag><rdf:value>Drug Discovery</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
            <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
-           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
            <z:AutomaticTag><rdf:value>Liver Neoplasms</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-            <z:AutomaticTag>
-               <rdf:value>Models, Biological</rdf:value>
-            </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -1234,18 +1234,35 @@ PMCID: PMC4017677</dc:description>
         </bib:authors>
         <link:link rdf:resource="#item_33"/>
         <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Energy Metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
            <z:AutomaticTag><rdf:value>Animals</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Proteomics</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>ATP synthesis</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>Biomass</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-            <z:AutomaticTag>
-               <rdf:value>Energy Metabolism</rdf:value>
-            </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>Flux</rdf:value></z:AutomaticTag>
@@ -1259,23 +1276,6 @@ PMCID: PMC4017677</dc:description>
             <z:AutomaticTag>
                <rdf:value>Gene Expression Regulation, Neoplastic</rdf:value>
             </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-            <z:AutomaticTag>
-               <rdf:value>Models, Biological</rdf:value>
-            </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Proteomics</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:title>Genome scale metabolic modeling of cancer</dc:title>
         <dcterms:abstract>Cancer cells reprogram metabolism to support rapid proliferation and survival. Energy metabolism is particularly important for growth and genes encoding enzymes involved in energy metabolism are frequently altered in cancer cells. A genome scale metabolic model (GEM) is a mathematical formalization of metabolism which allows simulation and hypotheses testing of metabolic strategies. It has successfully been applied to many microorganisms and is now used to study cancer metabolism. Generic models of human metabolism have been reconstructed based on the existence of metabolic genes in the human genome. Cancer specific models of metabolism have also been generated by reducing the number of reactions in the generic model based on high throughput expression data, e.g. transcriptomics and proteomics. Targets for drugs and bio markers for diagnostics have been identified using these models. They have also been used as scaffolds for analysis of high throughput data to allow mechanistic interpretation of changes in expression. Finally, GEMs allow quantitative flux predictions using flux balance analysis (FBA). Here we critically review the requirements for successful FBA simulations of cancer cells and discuss the symmetry between the methods used for modeling of microbial and cancer metabolism. GEMs have great potential for translational research on cancer and will therefore become of increasing importance in the future.</dcterms:abstract>
@@ -1377,6 +1377,914 @@ PMCID: PMC4017677</dc:description>
         <dcterms:alternative>Current Opinion in Systems Biology</dcterms:alternative>
         <dc:identifier>ISSN 2452-3100</dc:identifier>
     </bib:Journal>
+    <bib:Article rdf:about="#item_35">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1476-4687"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lawrence</foaf:surname>
+                        <foaf:givenName>Michael S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stojanov</foaf:surname>
+                        <foaf:givenName>Petar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Polak</foaf:surname>
+                        <foaf:givenName>Paz</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kryukov</foaf:surname>
+                        <foaf:givenName>Gregory V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cibulskis</foaf:surname>
+                        <foaf:givenName>Kristian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sivachenko</foaf:surname>
+                        <foaf:givenName>Andrey</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Carter</foaf:surname>
+                        <foaf:givenName>Scott L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stewart</foaf:surname>
+                        <foaf:givenName>Chip</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mermel</foaf:surname>
+                        <foaf:givenName>Craig H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roberts</foaf:surname>
+                        <foaf:givenName>Steven A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kiezun</foaf:surname>
+                        <foaf:givenName>Adam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hammerman</foaf:surname>
+                        <foaf:givenName>Peter S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McKenna</foaf:surname>
+                        <foaf:givenName>Aaron</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Drier</foaf:surname>
+                        <foaf:givenName>Yotam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zou</foaf:surname>
+                        <foaf:givenName>Lihua</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ramos</foaf:surname>
+                        <foaf:givenName>Alex H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pugh</foaf:surname>
+                        <foaf:givenName>Trevor J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stransky</foaf:surname>
+                        <foaf:givenName>Nicolas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Helman</foaf:surname>
+                        <foaf:givenName>Elena</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kim</foaf:surname>
+                        <foaf:givenName>Jaegil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sougnez</foaf:surname>
+                        <foaf:givenName>Carrie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ambrogio</foaf:surname>
+                        <foaf:givenName>Lauren</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nickerson</foaf:surname>
+                        <foaf:givenName>Elizabeth</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shefler</foaf:surname>
+                        <foaf:givenName>Erica</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cortés</foaf:surname>
+                        <foaf:givenName>Maria L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Auclair</foaf:surname>
+                        <foaf:givenName>Daniel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Saksena</foaf:surname>
+                        <foaf:givenName>Gordon</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Voet</foaf:surname>
+                        <foaf:givenName>Douglas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Noble</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>DiCara</foaf:surname>
+                        <foaf:givenName>Daniel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lin</foaf:surname>
+                        <foaf:givenName>Pei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lichtenstein</foaf:surname>
+                        <foaf:givenName>Lee</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heiman</foaf:surname>
+                        <foaf:givenName>David I.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fennell</foaf:surname>
+                        <foaf:givenName>Timothy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Imielinski</foaf:surname>
+                        <foaf:givenName>Marcin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hernandez</foaf:surname>
+                        <foaf:givenName>Bryan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hodis</foaf:surname>
+                        <foaf:givenName>Eran</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baca</foaf:surname>
+                        <foaf:givenName>Sylvan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dulak</foaf:surname>
+                        <foaf:givenName>Austin M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lohr</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Landau</foaf:surname>
+                        <foaf:givenName>Dan-Avi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wu</foaf:surname>
+                        <foaf:givenName>Catherine J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Melendez-Zajgla</foaf:surname>
+                        <foaf:givenName>Jorge</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hidalgo-Miranda</foaf:surname>
+                        <foaf:givenName>Alfredo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Koren</foaf:surname>
+                        <foaf:givenName>Amnon</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>McCarroll</foaf:surname>
+                        <foaf:givenName>Steven A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mora</foaf:surname>
+                        <foaf:givenName>Jaume</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Crompton</foaf:surname>
+                        <foaf:givenName>Brian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Onofrio</foaf:surname>
+                        <foaf:givenName>Robert</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Parkin</foaf:surname>
+                        <foaf:givenName>Melissa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Winckler</foaf:surname>
+                        <foaf:givenName>Wendy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ardlie</foaf:surname>
+                        <foaf:givenName>Kristin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gabriel</foaf:surname>
+                        <foaf:givenName>Stacey B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roberts</foaf:surname>
+                        <foaf:givenName>Charles W. M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Biegel</foaf:surname>
+                        <foaf:givenName>Jaclyn A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stegmaier</foaf:surname>
+                        <foaf:givenName>Kimberly</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bass</foaf:surname>
+                        <foaf:givenName>Adam J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Garraway</foaf:surname>
+                        <foaf:givenName>Levi A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Meyerson</foaf:surname>
+                        <foaf:givenName>Matthew</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Golub</foaf:surname>
+                        <foaf:givenName>Todd R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gordenin</foaf:surname>
+                        <foaf:givenName>Dmitry A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sunyaev</foaf:surname>
+                        <foaf:givenName>Shamil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lander</foaf:surname>
+                        <foaf:givenName>Eric S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Getz</foaf:surname>
+                        <foaf:givenName>Gad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_36"/>
+        <link:link rdf:resource="#item_37"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Artifacts</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>DNA Replication Timing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Exome</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>False Positive Reactions</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Gene Expression</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Genetic Heterogeneity</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lung Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mutation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mutation Rate</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Neoplasms, Squamous Cell</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Oncogenes</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Reproducibility of Results</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Sample Size</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Mutational heterogeneity in cancer and the search for new cancer-associated genes</dc:title>
+        <dcterms:abstract>Major international projects are underway that are aimed at creating a comprehensive catalogue of all the genes responsible for the initiation and progression of cancer. These studies involve the sequencing of matched tumour-normal samples followed by mathematical analysis to identify those genes in which mutations occur more frequently than expected by random chance. Here we describe a fundamental problem with cancer genome studies: as the sample size increases, the list of putatively significant genes produced by current analytical methods burgeons into the hundreds. The list includes many implausible genes (such as those encoding olfactory receptors and the muscle protein titin), suggesting extensive false-positive findings that overshadow true driver events. We show that this problem stems largely from mutational heterogeneity and provide a novel analytical methodology, MutSigCV, for resolving the problem. We apply MutSigCV to exome sequences from 3,083 tumour-normal pairs and discover extraordinary variation in mutation frequency and spectrum within cancer types, which sheds light on mutational processes and disease aetiology, and in mutation frequency across the genome, which is strongly correlated with DNA replication timing and also with transcriptional activity. By incorporating mutational heterogeneity into the analyses, MutSigCV is able to eliminate most of the apparent artefactual findings and enable the identification of genes truly associated with cancer.</dcterms:abstract>
+        <dc:date>2013-07-11</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 23770567
+PMCID: PMC3919509</dc:description>
+        <bib:pages>214-218</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1476-4687">
+        <prism:volume>499</prism:volume>
+        <dc:title>Nature</dc:title>
+        <dc:identifier>DOI 10.1038/nature12213</dc:identifier>
+        <prism:number>7457</prism:number>
+        <dcterms:alternative>Nature</dcterms:alternative>
+        <dc:identifier>ISSN 1476-4687</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_36">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/23770567</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-15 12:54:03</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_37">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Version acceptée</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://europepmc.org/articles/pmc3919509?pdf=render</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-15 12:54:05</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_38">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>11</prism:volume>
+                <dc:title>Molecular Systems Biology</dc:title>
+                <dc:identifier>DOI 10.15252/msb.20145307</dc:identifier>
+                <prism:number>6</prism:number>
+                <dcterms:alternative>Mol Syst Biol</dcterms:alternative>
+                <dc:identifier>ISSN 1744-4292</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yizhak</foaf:surname>
+                        <foaf:givenName>Keren</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chaneton</foaf:surname>
+                        <foaf:givenName>Barbara</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gottlieb</foaf:surname>
+                        <foaf:givenName>Eyal</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ruppin</foaf:surname>
+                        <foaf:givenName>Eytan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_39"/>
+        <link:link rdf:resource="#item_40"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cancer metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Genome‐scale simulations</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic Networks and Pathways</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Systems Biology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Modeling cancer metabolism on a genome scale</dc:title>
+        <dcterms:abstract>Cancer cells have fundamentally altered cellular metabolism that is associated with their tumorigenicity and malignancy. In addition to the widely studied Warburg effect, several new key metabolic alterations in cancer have been established over the last decade, leading to the recognition that altered tumor metabolism is one of the hallmarks of cancer. Deciphering the full scope and functional implications of the dysregulated metabolism in cancer requires both the advancement of a variety of omics measurements and the advancement of computational approaches for the analysis and contextualization of the accumulated data. Encouragingly, while the metabolic network is highly interconnected and complex, it is at the same time probably the best characterized cellular network. Following, this review discusses the challenges that genome-scale modeling of cancer metabolism has been facing. We survey several recent studies demonstrating the first strides that have been done, testifying to the value of this approach in portraying a network-level view of the cancer metabolism and in identifying novel drug targets and biomarkers. Finally, we outline a few new steps that may further advance this field.</dcterms:abstract>
+        <dc:date>2015-06-30</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 26130389
+PMCID: PMC4501850</dc:description>
+        <bib:pages>817</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_39">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/26130389</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-16 09:03:07</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_40">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://europepmc.org/articles/pmc4501850?pdf=render</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-16 09:03:11</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_41">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>43</prism:volume>
+                <dc:title>Metabolic Engineering</dc:title>
+                <dc:identifier>DOI 10.1016/j.ymben.2016.10.022</dc:identifier>
+                <prism:number>Pt B</prism:number>
+                <dcterms:alternative>Metab Eng</dcterms:alternative>
+                <dc:identifier>ISSN 1096-7184</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nilsson</foaf:surname>
+                        <foaf:givenName>Avlant</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_42"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Animals</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>ATP synthesis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Biomass</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Energy Metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Flux</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Gene Expression Profiling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Gene Expression Regulation, Neoplastic</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Genome, Human</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Proteomics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Genome scale metabolic modeling of cancer</dc:title>
+        <dcterms:abstract>Cancer cells reprogram metabolism to support rapid proliferation and survival. Energy metabolism is particularly important for growth and genes encoding enzymes involved in energy metabolism are frequently altered in cancer cells. A genome scale metabolic model (GEM) is a mathematical formalization of metabolism which allows simulation and hypotheses testing of metabolic strategies. It has successfully been applied to many microorganisms and is now used to study cancer metabolism. Generic models of human metabolism have been reconstructed based on the existence of metabolic genes in the human genome. Cancer specific models of metabolism have also been generated by reducing the number of reactions in the generic model based on high throughput expression data, e.g. transcriptomics and proteomics. Targets for drugs and bio markers for diagnostics have been identified using these models. They have also been used as scaffolds for analysis of high throughput data to allow mechanistic interpretation of changes in expression. Finally, GEMs allow quantitative flux predictions using flux balance analysis (FBA). Here we critically review the requirements for successful FBA simulations of cancer cells and discuss the symmetry between the methods used for modeling of microbial and cancer metabolism. GEMs have great potential for translational research on cancer and will therefore become of increasing importance in the future.</dcterms:abstract>
+        <dc:date>2017-09</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 27825806</dc:description>
+        <bib:pages>103-112</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_42">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/27825806</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-16 09:03:15</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S1096717615001317">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>32</prism:volume>
+                <dc:title>Metabolic Engineering</dc:title>
+                <dc:identifier>DOI 10.1016/j.ymben.2015.10.003</dc:identifier>
+                <dcterms:alternative>Metabolic Engineering</dcterms:alternative>
+                <dc:identifier>ISSN 1096-7176</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goelzer</foaf:surname>
+                        <foaf:givenName>Anne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Muntel</foaf:surname>
+                        <foaf:givenName>Jan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chubukov</foaf:surname>
+                        <foaf:givenName>Victor</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jules</foaf:surname>
+                        <foaf:givenName>Matthieu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Prestel</foaf:surname>
+                        <foaf:givenName>Eric</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nölker</foaf:surname>
+                        <foaf:givenName>Rolf</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mariadassou</foaf:surname>
+                        <foaf:givenName>Mahendra</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aymerich</foaf:surname>
+                        <foaf:givenName>Stéphane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hecker</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Noirot</foaf:surname>
+                        <foaf:givenName>Philippe</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Becher</foaf:surname>
+                        <foaf:givenName>Dörte</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fromion</foaf:surname>
+                        <foaf:givenName>Vincent</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_44"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Constraint-based modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Resource allocation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Strain design</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Systems biology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Quantitative prediction of genome-wide resource allocation in bacteria</dc:title>
+        <dcterms:abstract>Predicting resource allocation between cell processes is the primary step towards decoding the evolutionary constraints governing bacterial growth under various conditions. Quantitative prediction at genome-scale remains a computational challenge as current methods are limited by the tractability of the problem or by simplifying hypotheses. Here, we show that the constraint-based modeling method Resource Balance Analysis (RBA), calibrated using genome-wide absolute protein quantification data, accurately predicts resource allocation in the model bacterium Bacillus subtilis for a wide range of growth conditions. The regulation of most cellular processes is consistent with the objective of growth rate maximization except for a few suboptimal processes which likely integrate more complex objectives such as coping with stressful conditions and survival. As a proof of principle by using simulations, we illustrated how calibrated RBA could aid rational design of strains for maximizing protein production, offering new opportunities to investigate design principles in prokaryotes and to exploit them for biotechnological applications.</dcterms:abstract>
+        <dc:date>2015-11-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S1096717615001317</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-16 09:04:16</dcterms:dateSubmitted>
+        <bib:pages>232-243</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_44">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Version soumise</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://hal.archives-ouvertes.fr/hal-01603637/file/Abstract_FOSBE_IFAC_final_1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-16 09:04:23</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1186/s12859-019-3329-9">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1471-2105"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bekiaris</foaf:surname>
+                        <foaf:givenName>Pavlos Stephanos</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Klamt</foaf:surname>
+                        <foaf:givenName>Steffen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_46"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Enzyme constraints</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Escherichia coli</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Flux balance analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Minimal cut sets</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Protein allocation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Proteomics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Automatic construction of metabolic models with enzyme constraints</dc:title>
+        <dcterms:abstract>In order to improve the accuracy of constraint-based metabolic models, several approaches have been developed which intend to integrate additional biological information. Two of these methods, MOMENT and GECKO, incorporate enzymatic (kcat) parameters and enzyme mass constraints to further constrain the space of feasible metabolic flux distributions. While both methods have been proven to deliver useful extensions of metabolic models, they may considerably increase size and complexity of the models and there is currently no tool available to fully automate generation and calibration of such enzyme-constrained models from given stoichiometric models.</dcterms:abstract>
+        <dc:date>2020-01-14</dc:date>
+        <z:libraryCatalog>BioMed Central</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1186/s12859-019-3329-9</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-16 09:05:38</dcterms:dateSubmitted>
+        <bib:pages>19</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1471-2105">
+        <prism:volume>21</prism:volume>
+        <dc:title>BMC Bioinformatics</dc:title>
+        <dc:identifier>DOI 10.1186/s12859-019-3329-9</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>BMC Bioinformatics</dcterms:alternative>
+        <dc:identifier>ISSN 1471-2105</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_46">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-019-3329-9</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-16 09:05:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
     <z:Collection rdf:about="#collection_1">
         <dc:title>Stage_metabo</dc:title>
         <dcterms:hasPart rdf:resource="#item_1"/>
@@ -1395,5 +2303,10 @@ PMCID: PMC4017677</dc:description>
         <dcterms:hasPart rdf:resource="#item_29"/>
         <dcterms:hasPart rdf:resource="#item_32"/>
         <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S2452310017300380"/>
+        <dcterms:hasPart rdf:resource="#item_35"/>
+        <dcterms:hasPart rdf:resource="#item_38"/>
+        <dcterms:hasPart rdf:resource="#item_41"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S1096717615001317"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1186/s12859-019-3329-9"/>
     </z:Collection>
 </rdf:RDF>
