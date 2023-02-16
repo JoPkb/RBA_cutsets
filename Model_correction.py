@@ -3,6 +3,28 @@ import cbmpy
 import requests
 import json
 
+
+### Function to copy-paste genes from one model to another :
+
+def copy_genes(origin_model, target_model) :
+    
+    for target_reaction in target_model.reactions :
+        try :
+            target_reaction.gene_reaction_rule = origin_model.reactions.get_by_id(target_reaction.id).gene_reaction_rule
+            print(f"\nDEBUG -- Added gene_reaction_rule to reaction {target_reaction.id}")
+        except KeyError :
+            print(f"\nERROR -- KeyError, The reaction from target model {target_reaction.id} might not have a counterpart in origin_model.")
+    return target_model
+
+def fix_formulas(model) :
+
+    for m in model.metabolites :
+       
+        m.formula = ""
+    
+    return model
+
+"""
 ### Gene id conversion :
 def convert_ids(model) :
     url="http://rest.ensembl.org/xrefs/id/"
@@ -70,7 +92,7 @@ def add_biomass_reaction(model, biomass_metabolites) :
     #Ajout de la sortie de la biomasse
     output_biom = cobra.Reaction('EX_temp001x')
     output_biom.lower_bound = 0.0
-    output_biom.upper_bound = 1000.0
+    output_biom.upper_bound = float("inf")
 
     output_biom.add_metabolites({temp001x :-1.0})
     model.add_reactions([output_biom])
@@ -81,25 +103,7 @@ def add_biomass_reaction(model, biomass_metabolites) :
         model.reactions.artificial_biomass.add_metabolites({model.metabolites.get_by_id(str(metabolite)) : -1.0})
     return model
 
-### Function to copy-paste genes from one model to another :
 
-def copy_genes(origin_model, target_model) :
-    
-    for target_reaction in target_model.reactions :
-        try :
-            target_reaction.gene_reaction_rule = origin_model.reactions.get_by_id(target_reaction.id).gene_reaction_rule
-            print(f"\nDEBUG -- Added gene_reaction_rule to reaction {target_reaction.id}")
-        except KeyError :
-            print(f"\nERROR -- KeyError, The reaction from target model {target_reaction.id} might not have a counterpart in origin_model.")
-    return target_model
-
-def fix_formulas(model) :
-
-    for m in model.metabolites :
-       
-        m.formula = ""
-    
-    return model
 
 
 def remove_gene_dupes(json_in, json_out) :
@@ -117,3 +121,4 @@ def remove_gene_dupes(json_in, json_out) :
 
     with open(json_out, "w") as output_file :
         json.dump(data, output_file, indent="")
+"""
