@@ -1,4 +1,4 @@
-name: rba3.8
+name: rba
 channels:
   - bioconda
   - conda-forge
@@ -125,8 +125,6 @@ dependencies:
   - zipp=3.13.0=pyhd8ed1ab_0
   - zstd=1.5.2=h6239696_4
   - pip:
-      - cplex==22.1.1.0
-      - docplex==2.25.236
       - lxml==4.9.2
       - numpy==1.23.5
       - pandas==1.5.2
