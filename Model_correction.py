@@ -26,7 +26,7 @@ def fix_formulas(model) :
 
 
 ### Gene id conversion :
-def get_ids(model) :
+def get_ids(model, external_db, annotation_key) :
     url="http://rest.ensembl.org/xrefs/id/"
     #print("\nCreating working copy of the model...")
     #converted = model.copy()
@@ -39,13 +39,13 @@ def get_ids(model) :
         if len(gene_id) == 15 :
 
             #print(f"\nDEBUG : getting ncbi gene id for {gene_id}")
-            response = requests.get(url+gene_id+"?external_db=EntrezGene")
+            response = requests.get(url+gene_id+"?external_db="+external_db)
 
             try :
 
                 # Parsing of the ncbi gene ID from the text response
                 new_id = response.text.split("primary_id: ")[1].split("\n")[0]
-                gene.annotation["ncbigene"] = new_id
+                gene.annotation[annotation_key] = new_id
                 #print(f"\nAdded ncbi gene id {new_id} to annotations of gene {gene_id}")
 
             except IndexError :
