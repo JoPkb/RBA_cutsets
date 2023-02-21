@@ -1,8 +1,8 @@
 import cobra
-
+from datetime import datetime
 import requests
 import json
-
+from tqdm import tqdm
 
 ### Function to copy-paste genes from one model to another :
 
@@ -24,38 +24,42 @@ def fix_formulas(model) :
     
     return model
 
-"""
+
 ### Gene id conversion :
-def convert_ids(model) :
+def get_ids(model) :
     url="http://rest.ensembl.org/xrefs/id/"
-    print("\nCreating working copy of the model...")
-    converted = model.copy()
-    print("\nModel copied.")
-
-    for gene in converted.genes :
+    #print("\nCreating working copy of the model...")
+    #converted = model.copy()
+    #print("\nModel copied.")
+    error_messages = []
+    for gene in tqdm(model.genes) :
         gene_id = gene.id
-
+    
         # Checking if the gene id is an ENSEMBL id :
         if len(gene_id) == 15 :
 
-            print(f"\nDEBUG : getting uniprot gene id for {gene_id}")
-            response = requests.get(url+gene_id+"?external_db=Uniprot_gn")
+            #print(f"\nDEBUG : getting ncbi gene id for {gene_id}")
+            response = requests.get(url+gene_id+"?external_db=EntrezGene")
 
             try :
 
-                # Parsing of the uniprot ID from the text response
-                uniprot_id = response.text.split("primary_id: ")[1].split("\n")[0]
-                gene.id = uniprot_id
-                print(f"\nGene ensembl id {gene_id} changed to uniprot id : {uniprot_id}.")
+                # Parsing of the ncbi gene ID from the text response
+                new_id = response.text.split("primary_id: ")[1].split("\n")[0]
+                gene.annotation["ncbigene"] = new_id
+                #print(f"\nAdded ncbi gene id {new_id} to annotations of gene {gene_id}")
 
             except IndexError :
+                    current_time = datetime.now().strftime("%H:%M:%S")
+                    error_messages.append(f"\n[{current_time}] ERROR - No ncbi gene id found for gene {gene_id}.")
                     
-                    print(f"\nNo uniprot id found for gene {gene_id}.")
                     pass
         else :
+            current_time = datetime.now().strftime("%H:%M:%S")
+            error_messages.append(f"\n[{current_time}]ERROR - Gene id {gene_id} is not an ENSEMBL id.")
             
-            print(f"\nGene already has uniprot id : {gene_id}")
-
+    for message in error_messages :
+        print(message)
+    """
     for reaction in converted.reactions :
         print(f"\nChanging gene_reaction_rule for reaction {reaction.id}")
         reaction_genes = list(reaction.genes)
@@ -66,10 +70,10 @@ def convert_ids(model) :
             else :
                 string += f"{gene_name}"
         reaction.gene_reaction_rule = string
-        #reaction.gene_name_reaction_rule = string
+        #reaction.gene_name_reaction_rule = string"""
 
-    return converted
-
+    #return converted
+"""
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :
 
