@@ -1,8 +1,8 @@
 import cobra
-from datetime import datetime
+
 import requests
 import json
-from tqdm import tqdm
+
 
 ### Function to copy-paste genes from one model to another :
 
@@ -28,13 +28,13 @@ def fix_formulas(model) :
 ### Gene id conversion :
 def get_ids(model, external_db, annotation_key) :
     url="http://rest.ensembl.org/xrefs/id/"
-    #print("\nCreating working copy of the model...")
-    #converted = model.copy()
-    #print("\nModel copied.")
-    error_messages = []
-    for gene in tqdm(model.genes) :
+    print("\nCreating working copy of the model...")
+    converted = model.copy()
+    print("\nModel copied.")
+
+    for gene in converted.genes :
         gene_id = gene.id
-    
+
         # Checking if the gene id is an ENSEMBL id :
         if len(gene_id) == 15 :
 
@@ -49,17 +49,13 @@ def get_ids(model, external_db, annotation_key) :
                 #print(f"\nAdded ncbi gene id {new_id} to annotations of gene {gene_id}")
 
             except IndexError :
-                    current_time = datetime.now().strftime("%H:%M:%S")
-                    error_messages.append(f"\n[{current_time}] ERROR - No ncbi gene id found for gene {gene_id}.")
                     
+                    print(f"\nNo uniprot id found for gene {gene_id}.")
                     pass
         else :
-            current_time = datetime.now().strftime("%H:%M:%S")
-            error_messages.append(f"\n[{current_time}]ERROR - Gene id {gene_id} is not an ENSEMBL id.")
             
-    for message in error_messages :
-        print(message)
-    """
+            print(f"\nGene already has uniprot id : {gene_id}")
+"""
     for reaction in converted.reactions :
         print(f"\nChanging gene_reaction_rule for reaction {reaction.id}")
         reaction_genes = list(reaction.genes)
@@ -70,10 +66,10 @@ def get_ids(model, external_db, annotation_key) :
             else :
                 string += f"{gene_name}"
         reaction.gene_reaction_rule = string
-        #reaction.gene_name_reaction_rule = string"""
+        #reaction.gene_name_reaction_rule = string
 
-    #return converted
-"""
+    return converted
+
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :
 
