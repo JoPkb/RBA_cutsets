@@ -9,6 +9,7 @@ def maj(source_model, target_model, dir) :
     print("\nLoading model to update :\n")
     target_model_file_name = target_model.split(".xml")[0]
 
+    # TEST # if bounds are all the same : (else load with cobra) 
     target_model_temp = cbmpy.CBRead.readSBML2FBA(dir + target_model)
     cbmpy.CBWrite.writeSBML3FBCV2(target_model_temp, dir+target_model_file_name+"_cbmpy.xml")
     del(target_model_temp)
@@ -19,13 +20,17 @@ def maj(source_model, target_model, dir) :
 
     print("\nLoading model model : \n")
     source_model_cobra, errors_source = validate_sbml_model(dir+source_model)
+    # TEST # if errors_source is empty, else not do it
 
+    # TEST # if no genes in model.genes : (else, dont do it)
     print("\nCopying genes from model model to target model : \n")
     target_model_cbmpy = mc.copy_genes(source_model_cobra, target_model_cbmpy)
 
-
+    # TEST # if metabolite m01602c is in biomass_components reaction : (else dont)
     target_model_cbmpy.reactions.biomass_components.add_metabolites({"m01602c" : 0.0}, combine=False)
 
+    # TEST # if gene.annotation exists : (else : dont)
+    # THEN TEST # if gene.annotation["ensembl"] and/or gene.annotation["ncbigene"] are present
     print("\nGetting ENSEMBL and ncbi genes IDs to the annotations of the target model : \n")
     for gene in target_model_cbmpy.genes :
         if len(gene.id) == 15 :
@@ -33,6 +38,7 @@ def maj(source_model, target_model, dir) :
     
     mc.get_ids(target_model_cbmpy, "EntrezGene", "ncbigene")
 
+    # TEST # if the 
     print("\nCleaning up the metabolites list in the target model : \n")
     to_remove = []
     for metabolite in target_model_cbmpy.metabolites :
