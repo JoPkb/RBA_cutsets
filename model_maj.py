@@ -4,58 +4,95 @@ import Model_correction as mc
 import cbmpy
 import sys
 
-def maj(source_model, target_model, dir) :
+def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True) :
 
-    print("\nLoading model to update :\n")
+    print("\nLoading model to update...\n")
     target_model_file_name = target_model.split(".xml")[0]
-
-    # TEST # if bounds are all the same : (else load with cobra) 
-    target_model_temp = cbmpy.CBRead.readSBML2FBA(dir + target_model)
-    cbmpy.CBWrite.writeSBML3FBCV2(target_model_temp, dir+target_model_file_name+"_cbmpy.xml")
-    del(target_model_temp)
     
-    target_model_cbmpy, errors = validate_sbml_model(dir+target_model_file_name+"_cbmpy.xml")
-    print(errors["COBRA_ERROR"])
+
+    # If all bounds are the same, load the model with 
+    if bounds_check :
+        print("\nLoading with cbmpy")
+        target_model_temp = cbmpy.CBRead.readSBML2FBA(dir + target_model)
+        cbmpy.CBWrite.writeSBML3FBCV2(target_model_temp, dir+target_model_file_name+"_cbmpy.xml")
+        del(target_model_temp)
+
+        working_target_model, errors = validate_sbml_model(dir+target_model_file_name+"_cbmpy.xml")
+        print("Cobra model loading errors :\n")
+        print(errors["COBRA_ERROR"])
     # ^ Maybe not needed : can just use target_model_temp ? 
+    else :
 
-    print("\nLoading model model : \n")
-    source_model_cobra, errors_source = validate_sbml_model(dir+source_model)
-    # TEST # if errors_source is empty, else not do it
+        working_target_model, errors = validate_sbml_model(dir+target_model)
+        print("Cobra model loading errors :\n")
+        print(errors["COBRA_ERROR"])
+    
+    if genes_id_copy :
+        print("\nLoading source model for genes copy : \n")
+        source_model_cobra, errors_source = validate_sbml_model(dir+source_model)
 
-    # TEST # if no genes in model.genes : (else, dont do it)
-    print("\nCopying genes from model model to target model : \n")
-    target_model_cbmpy = mc.copy_genes(source_model_cobra, target_model_cbmpy)
 
-    # TEST # if metabolite m01602c is in biomass_components reaction : (else dont)
-    target_model_cbmpy.reactions.biomass_components.add_metabolites({"m01602c" : 0.0}, combine=False)
 
+    
+
+        # TEST # if no genes in model.genes : (else, dont do it)
+        print("\nCopying genes from model model to target model : \n")
+        working_target_model = mc.copy_genes(source_model_cobra, working_target_model)
+    else :
+        pass
+    
+    if "m01602c" in [m.id for m in working_target_model.reactions.biomass_components.metabolites] :
+        working_target_model.reactions.biomass_components.add_metabolites({"m01602c" : 0.0}, combine=False)
+    
+    else :
+        pass
+    
     # TEST # if gene.annotation exists : (else : dont)
     # THEN TEST # if gene.annotation["ensembl"] and/or gene.annotation["ncbigene"] are present
     print("\nGetting ENSEMBL and ncbi genes IDs to the annotations of the target model : \n")
-    for gene in target_model_cbmpy.genes :
-        if len(gene.id) == 15 :
+    for gene in working_target_model.genes :
+        if len(gene.id) == 15 and "ENSG" in gene.id[:4] :
             gene.annotation["ensembl"] = str(gene.id)
     
-    mc.get_ids(target_model_cbmpy, "EntrezGene", "ncbigene")
+    mc.get_ids(working_target_model, "EntrezGene", "ncbigene")
 
-    # TEST # if the 
+  
     print("\nCleaning up the metabolites list in the target model : \n")
     to_remove = []
-    for metabolite in target_model_cbmpy.metabolites :
+    for metabolite in working_target_model.metabolites :
         if "m" not in metabolite.id :
             to_remove.append(metabolite)
-    target_model_cbmpy.remove_metabolites(to_remove)
+    working_target_model.remove_metabolites(to_remove)
     
-    print(f"\nNumber of metabolites in target model : {len(target_model_cbmpy.metabolites)}")
+    print(f"\nNumber of metabolites in target model : {len(working_target_model.metabolites)}")
     print("\nSetting the reactions to finite bounds in the target model : \n")
-    for reaction in target_model_cbmpy.reactions :
+    for reaction in working_target_model.reactions :
         ub = 1000.0 if reaction.upper_bound == float("inf") or reaction.upper_bound == 1000.0 else 0.0
         lb = -1000.0 if reaction.lower_bound == float("-inf") or reaction.lower_bound == -1000.0 else 0.0
         #print(f"DEBUG --- reaction {reaction.id}\noriginal bounds : ({reaction.lower_bound},{reaction.upper_bound})\nnew bounds : ({lb},{ub})\n\t########\n")
         reaction.bounds = (lb,ub)
     print("\n\nDONE\n\n")
-    return target_model_cbmpy
+    return working_target_model
+
 if __name__ == "__main__" :
     converted_target_model = maj(sys.argv[1], sys.argv[2], sys.argv[3])
 
     cobra.io.write_sbml_model(converted_target_model, sys.argv[3].split(".xml")[0] + "_updated.xml")
+
+
+
+
+"""
+MISC
+
+    # TEST # if all bounds are te same : same_bounds = True, else False
+    same_bounds = True
+    for i in range(len(target_model.reactions)) :
+        if i == 0 :
+            bound_to_compare = target_model.reactions[i].bounds
+        else :
+            if bound_to_compare != target_model.reactions[i].bounds :
+                same_bounds = False
+
+
+"""
