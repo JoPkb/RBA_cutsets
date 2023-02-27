@@ -42,3 +42,84 @@ def print_exchanges(optimized_model, filter) :
     print("\n##########\nNEUTRALS : \n")
     for n in neutrals :
         print(n)
+
+
+def print_reactions(reaction, flux = 0.0, v=True):
+    '''
+    Affiche les reactions d'un modele de façon plus lisible
+    '''
+    liste_reactif = [i for i in reaction.reactants]
+    liste_produit = [i for i in reaction.products]
+    string = ""
+    string2 = ""
+    if not "EX_" in reaction.id :
+        if flux >= float('0'):
+                fleche = "-->"
+        elif flux <= float('0') :
+                fleche = "<--"
+        else:
+                fleche = "<=>"
+    else :
+        if flux >= float('0') :
+            fleche = "<--"
+        elif flux <= float('0') :
+             fleche = "-->"
+        else :
+             fleche = "<=>"
+    
+    for i in liste_reactif:
+        if i != liste_reactif[-1]:
+            string += str(float(abs(reaction.metabolites[i])))
+            string += " "
+            string += str(i.name)
+            string += " + "
+            
+            string2 += str(float(abs(reaction.metabolites[i])))
+            string2 += " "
+            string2 += str(i.id)
+            string2 += " + "
+            
+        else:
+            string += str(float(abs(reaction.metabolites[i])))
+            string += " "
+            string += str(i.name)
+            string += " "
+            
+            string2 += str(float(abs(reaction.metabolites[i])))
+            string2 += " "
+            string2 += str(i.id)
+            string2 += " "
+            
+    string += fleche
+    string += " "
+    
+    string2 += fleche
+    string2 += " "
+    
+    
+    for i in liste_produit:
+        if i != liste_produit[-1]:
+            string += str(float(abs(reaction.metabolites[i])))
+            string += " "
+            string += str(i.name)
+            string += " + "
+            
+            string2 += str(float(abs(reaction.metabolites[i])))
+            string2 += " "
+            string2 += str(i.id)
+            string2 += " + "
+            
+        else:
+            string += str(float(abs(reaction.metabolites[i])))
+            string += " "
+            string += str(i.name)
+            
+            string2 += str(float(abs(reaction.metabolites[i])))
+            string2 += " "
+            string2 += str(i.id)
+    if v :    
+        print(string)
+        print("")
+        print(string2)
+    else :
+        return(string, string2)
