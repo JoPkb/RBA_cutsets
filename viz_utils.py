@@ -1,4 +1,8 @@
 
+
+from contextlib import redirect_stdout
+import sys
+
 def print_exchanges(optimized_model, filter) : 
     intakes = []
     secretions = []
@@ -175,10 +179,16 @@ def parcours_test(reaction, flux_dict, v = False) :
 
 
 
+
+       
 def parcours(reaction, flux_dict, v = False) :
     #Metabolites list, used to determine which metabolites have already been visited.
     m_l = []
-    
+    if not v :
+        orig_stdout = sys.stdout
+        f = open('out.txt', 'w')
+        sys.stdout = f
+
     for m in reaction.metabolites :
         print(f"\nChecking out metabolite {m.id}") 
         
@@ -209,7 +219,10 @@ def parcours(reaction, flux_dict, v = False) :
         else :
             print(f"\nERROR -- metabolite {m.id} already visited")
             break
-        
+    
+    if not v :
+        f.close()
+        sys.stdout = orig_stdout
             
     return flux_dict
 
