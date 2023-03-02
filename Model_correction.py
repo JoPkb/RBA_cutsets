@@ -32,9 +32,12 @@ def get_ids(model, external_db, annotation_key) :
     #converted = model.copy()
     #print("\nModel copied.")
     error_messages = []
+    if len(model.genes) == 0 :
+        print(f"\nERROR -- No genes in model {model.name}")
+        return 0
     for gene in tqdm(model.genes) :
         gene_id = gene.id
-    
+        print(f"Checking out gene {gene_id}")
         # Checking if the gene id is an ENSEMBL id :
         if len(gene_id) == 15 :
 
@@ -73,6 +76,18 @@ def get_ids(model, external_db, annotation_key) :
         #reaction.gene_name_reaction_rule = string"""
 
     #return converted
+
+
+def get_subsystem(source_model, target_model) :
+    for source_reaction in source_model.reactions :
+        source_reaction_id = source_reaction.id
+
+        if len(source_reaction.annotation) != 0 :
+            print(f"\nGetting subsystem information from source model for reaction {source_reaction_id}")
+            target_model.reactions.get_by_id(source_reaction_id).subsystem = source_reaction.subsystem
+            
+        else :
+            print(f"\nNo subsystem found for reactions {source_reaction_id}")
 """
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :

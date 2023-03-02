@@ -3,8 +3,10 @@ from cobra.io import validate_sbml_model
 import Model_correction as mc
 import cbmpy
 import sys
+import importlib
 
-def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True) :
+importlib.reload(mc)
+def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True) :
 
     print("\nLoading model to update...\n")
     target_model_file_name = target_model.split(".xml")[0]
@@ -27,14 +29,13 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
         print("Cobra model loading errors :\n")
         print(errors["COBRA_ERROR"])
     
-    if genes_id_copy :
+    if genes_id_copy or subsystem_copy:
         print("\nLoading source model for genes copy : \n")
         source_model_cobra, errors_source = validate_sbml_model(dir+source_model)
+    else :
+        pass
 
-
-
-    
-
+    if genes_id_copy :
         # TEST # if no genes in model.genes : (else, dont do it)
         print("\nCopying genes from model model to target model : \n")
         working_target_model = mc.copy_genes(source_model_cobra, working_target_model)
@@ -47,30 +48,46 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
     else :
         pass
     
-    # TEST # if gene.annotation exists : (else : dont)
-    # THEN TEST # if gene.annotation["ensembl"] and/or gene.annotation["ncbigene"] are present
-    print("\nGetting ENSEMBL and ncbi genes IDs to the annotations of the target model : \n")
-    for gene in working_target_model.genes :
-        if len(gene.id) == 15 and "ENSG" in gene.id[:4] :
-            gene.annotation["ensembl"] = str(gene.id)
-    
-    mc.get_ids(working_target_model, "EntrezGene", "ncbigene")
+    if alt_gene_ids :
+        # TEST # if gene.annotation exists : (else : dont)
+        # THEN TEST # if gene.annotation["ensembl"] and/or gene.annotation["ncbigene"] are present
+        print("\nGetting ENSEMBL and ncbi genes IDs to the annotations of the target model : \n")
+        for gene in working_target_model.genes :
+            if len(gene.id) == 15 and "ENSG" in gene.id[:4] :
+                gene.annotation["ensembl"] = str(gene.id)
+        
+        mc.get_ids(working_target_model, "EntrezGene", "ncbigene")
+    else :
+        pass
 
-  
-    print("\nCleaning up the metabolites list in the target model : \n")
-    to_remove = []
-    for metabolite in working_target_model.metabolites :
-        if "m" not in metabolite.id :
-            to_remove.append(metabolite)
-    working_target_model.remove_metabolites(to_remove)
+    if metab_id_check :
+        print("\nCleaning up the metabolites list in the target model : \n")
+        to_remove = []
+        for metabolite in working_target_model.metabolites :
+            if "m" not in metabolite.id :
+                to_remove.append(metabolite)
+        working_target_model.remove_metabolites(to_remove)
+    else :
+        pass
     
-    print(f"\nNumber of metabolites in target model : {len(working_target_model.metabolites)}")
-    print("\nSetting the reactions to finite bounds in the target model : \n")
-    for reaction in working_target_model.reactions :
-        ub = 1000.0 if reaction.upper_bound == float("inf") or reaction.upper_bound == 1000.0 else 0.0
-        lb = -1000.0 if reaction.lower_bound == float("-inf") or reaction.lower_bound == -1000.0 else 0.0
-        #print(f"DEBUG --- reaction {reaction.id}\noriginal bounds : ({reaction.lower_bound},{reaction.upper_bound})\nnew bounds : ({lb},{ub})\n\t########\n")
-        reaction.bounds = (lb,ub)
+    if bounds_value_check :
+        print(f"\nNumber of metabolites in target model : {len(working_target_model.metabolites)}")
+        print("\nSetting the reactions to finite bounds in the target model : \n")
+
+        for reaction in working_target_model.reactions :
+            ub = 1000.0 if reaction.upper_bound == float("inf") or reaction.upper_bound == 1000.0 else 0.0
+            lb = -1000.0 if reaction.lower_bound == float("-inf") or reaction.lower_bound == -1000.0 else 0.0
+            #print(f"DEBUG --- reaction {reaction.id}\noriginal bounds : ({reaction.lower_bound},{reaction.upper_bound})\nnew bounds : ({lb},{ub})\n\t########\n")
+            reaction.bounds = (lb,ub)
+    else :
+        pass
+
+    if subsystem_copy :
+        print(f"\nGetting subsystem information from target model.")
+        mc.get_subsystem(source_model_cobra, working_target_model)
+    else :
+        pass
+
     print("\n\nDONE\n\n")
     return working_target_model
 
