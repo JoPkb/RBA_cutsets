@@ -191,14 +191,14 @@ def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
         f = open('out.txt', 'w')
         sys.stdout = f"""
     for m in reaction.metabolites :
-        print(f"\nChecking out metabolite {m.id}", flush=True) 
+        print(f"\nChecking out metabolite {m.id}") 
         
         if not m in m_l and not i >= max_iterations:
-            print(f"\nNew metabolite, adding {m.id} to list of visited metabolites.", flush=True)
+            print(f"\nNew metabolite, adding {m.id} to list of visited metabolites.")
             m_l.append(m)
 
             for r in m.reactions :
-                print(f"\nChecking out reaction {r.id}", flush=True)
+                print(f"\nChecking out reaction {r.id}")
 
                 if r.id not in flux_dict.keys() :
 
@@ -207,19 +207,19 @@ def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
                     # If there is a flux and it is an exchange reaction, it is only added to the flux dict and the recursion starts back at the next reaction.
                     # If it was an exchange reaction involving C_x or C_s, it behaves normally.
                     if r.flux != 0.0 :
-                        print(f"\nNew reaction, adding {r.id} to flux dict.", flush=True)
+                        print(f"\nNew reaction, adding {r.id} to flux dict.")
                         flux_dict[r.id] = r.flux
                         flux_dict = parcours(r, flux_dict, max_iterations, i=i)
                         i +=1
                     else :
-                        print(f"\nERROR -- flux == 0 for {r.id}", flush=True)
+                        print(f"\nERROR -- flux == 0 for {r.id}")
                         
                 else :
-                    print(f"\nERROR -- id in dict for {r.id}", flush=True)
+                    print(f"\nERROR -- id in dict for {r.id}")
                     continue
         else :
-            print(f"\nERROR -- metabolite {m.id} already visited", flush=True)
-            break
+            print(f"\nERROR -- metabolite {m.id} already visited")
+            continue
     
     """if not v :
         f.close()
