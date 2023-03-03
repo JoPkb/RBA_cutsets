@@ -37,7 +37,7 @@ def get_ids(model, external_db, annotation_key) :
         return 0
     for gene in tqdm(model.genes) :
         gene_id = gene.id
-        print(f"Checking out gene {gene_id}")
+        #print(f"Checking out gene {gene_id}")
         # Checking if the gene id is an ENSEMBL id :
         if len(gene_id) == 15 :
 

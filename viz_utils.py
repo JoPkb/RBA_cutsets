@@ -3,7 +3,7 @@
 from contextlib import redirect_stdout
 import sys
 
-def print_exchanges(optimized_model, filter) : 
+def print_exchanges(optimized_model, filter, ) : 
     intakes = []
     secretions = []
     neutrals = []
@@ -11,29 +11,29 @@ def print_exchanges(optimized_model, filter) :
         flux_comparison = 0.0
     elif filter == "all" :
         flux_comparison = 200000.0
-    for reaction in optimized_model.reactions :
+    for reaction in optimized_model.boundary :
         if reaction.flux != flux_comparison :
-            if "EX_" in reaction.id :
+            
 
-                # Jolification 
-                spaces = 12
-                spaces_str = ""
-                for i in str(round(reaction.flux)) :
-                    spaces -= 1
-                if "EX_t" in reaction.id :
-                    spaces -= 1
-                for j in range(spaces) :
-                    spaces_str += " "
-                # Fin de la jolification
+            # Jolification 
+            spaces = 12
+            spaces_str = ""
+            for i in str(round(reaction.flux)) :
+                spaces -= 1
+            if "EX_t" in reaction.id :
+                spaces -= 1
+            for j in range(spaces) :
+                spaces_str += " "
+            # Fin de la jolification
 
-                ml = [metab for metab in reaction.metabolites]
-                m = [metab for metab in reaction.metabolites][0]    
-                if reaction.flux > 0.0 :
-                    secretions.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
-                elif reaction.flux < 0.0 :
-                    intakes.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
-                else :
-                    neutrals.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
+            ml = [metab for metab in reaction.metabolites]
+            m = [metab for metab in reaction.metabolites][0]    
+            if reaction.flux > 0.0 :
+                secretions.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
+            elif reaction.flux < 0.0 :
+                intakes.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
+            else :
+                neutrals.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
                 
     intakes.sort(key=lambda f : float(f.split(": ")[1].split("ub")[0]))
     secretions.sort(key=lambda f : float(f.split(": ")[1].split("ub")[0]), reverse=True)
@@ -181,23 +181,24 @@ def parcours_test(reaction, flux_dict, v = False) :
 
 
        
-def parcours(reaction, flux_dict, v = False) :
+def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
     #Metabolites list, used to determine which metabolites have already been visited.
     m_l = []
+    
+    """
     if not v :
         orig_stdout = sys.stdout
         f = open('out.txt', 'w')
-        sys.stdout = f
-
+        sys.stdout = f"""
     for m in reaction.metabolites :
-        print(f"\nChecking out metabolite {m.id}") 
+        print(f"\nChecking out metabolite {m.id}", flush=True) 
         
-        if not m in m_l :
-            print(f"\nNew metabolite, adding {m.id} to list of visited metabolites.")
+        if not m in m_l and not i >= max_iterations:
+            print(f"\nNew metabolite, adding {m.id} to list of visited metabolites.", flush=True)
             m_l.append(m)
 
             for r in m.reactions :
-                print(f"\nChecking out reaction {r.id}")
+                print(f"\nChecking out reaction {r.id}", flush=True)
 
                 if r.id not in flux_dict.keys() :
 
@@ -206,27 +207,27 @@ def parcours(reaction, flux_dict, v = False) :
                     # If there is a flux and it is an exchange reaction, it is only added to the flux dict and the recursion starts back at the next reaction.
                     # If it was an exchange reaction involving C_x or C_s, it behaves normally.
                     if r.flux != 0.0 :
-                        print(f"\nNew reaction, adding {r.id} to flux dict.")
+                        print(f"\nNew reaction, adding {r.id} to flux dict.", flush=True)
                         flux_dict[r.id] = r.flux
-                        flux_dict = parcours(r, flux_dict)
-
+                        flux_dict = parcours(r, flux_dict, max_iterations, i=i)
+                        i +=1
                     else :
-                        print(f"\nERROR -- flux == 0 for {r.id}")
+                        print(f"\nERROR -- flux == 0 for {r.id}", flush=True)
                         
                 else :
-                    print(f"\nERROR -- id in dict for {r.id}")
+                    print(f"\nERROR -- id in dict for {r.id}", flush=True)
                     continue
         else :
-            print(f"\nERROR -- metabolite {m.id} already visited")
+            print(f"\nERROR -- metabolite {m.id} already visited", flush=True)
             break
     
-    if not v :
+    """if not v :
         f.close()
-        sys.stdout = orig_stdout
+        sys.stdout = orig_stdout"""
             
     return flux_dict
 
-def run_parcours(reaction) :
+def run_parcours(reaction, max_iterations=10000) :
     flux_dict = {}
 
-    return parcours(reaction, flux_dict)
+    return parcours(reaction, flux_dict, max_iterations)

@@ -4,9 +4,10 @@ import Model_correction as mc
 import cbmpy
 import sys
 import importlib
+import os
 
 importlib.reload(mc)
-def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True) :
+def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True, exchanges_copy = True) :
 
     print("\nLoading model to update...\n")
     target_model_file_name = target_model.split(".xml")[0]
@@ -15,11 +16,14 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
     # If all bounds are the same, load the model with 
     if bounds_check :
         print("\nLoading with cbmpy")
-        target_model_temp = cbmpy.CBRead.readSBML2FBA(dir + target_model)
-        cbmpy.CBWrite.writeSBML3FBCV2(target_model_temp, dir+target_model_file_name+"_cbmpy.xml")
-        del(target_model_temp)
+        if not os.path.exists(dir+target_model_file_name+"_cbmpy.xml") :
+            target_model_temp = cbmpy.CBRead.readSBML2FBA(dir + target_model)
+            cbmpy.CBWrite.writeSBML3FBCV2(target_model_temp, dir+target_model_file_name+"_cbmpy.xml")
+            del(target_model_temp)
+            working_target_model, errors = validate_sbml_model(dir+target_model_file_name+"_cbmpy.xml")
+        else :
+            working_target_model, errors = validate_sbml_model(dir+target_model_file_name+"_cbmpy.xml")
 
-        working_target_model, errors = validate_sbml_model(dir+target_model_file_name+"_cbmpy.xml")
         print("Cobra model loading errors :\n")
         print(errors["COBRA_ERROR"])
     # ^ Maybe not needed : can just use target_model_temp ? 
@@ -83,12 +87,18 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
         pass
 
     if subsystem_copy :
-        print(f"\nGetting subsystem information from target model.")
+        print(f"\nGetting subsystem information from source model.")
         mc.get_subsystem(source_model_cobra, working_target_model)
     else :
         pass
 
     print("\n\nDONE\n\n")
+
+
+    if exchanges_copy :
+        print(f"\nCopying exchange reactions from source model.")
+        
+
     return working_target_model
 
 if __name__ == "__main__" :
