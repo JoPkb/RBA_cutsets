@@ -7,7 +7,7 @@ import importlib
 import os
 
 importlib.reload(mc)
-def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True, exchanges_copy = True) :
+def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True, exchanges_copy = True, get_names = True) :
 
     print("\nLoading model to update...\n")
     target_model_file_name = target_model.split(".xml")[0]
@@ -97,9 +97,17 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
 
     if exchanges_copy :
         print(f"\nCopying exchange reactions from source model.")
-        
-
+    else :
+        pass
+    if get_names :
+        print(f"\nGetting reactions names from genes ID.")
+        mc.get_names_from_genes(working_target_model)
+    else :
+        pass
     return working_target_model
+
+
+    
 
 if __name__ == "__main__" :
     converted_target_model = maj(sys.argv[1], sys.argv[2], sys.argv[3])

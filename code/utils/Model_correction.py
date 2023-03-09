@@ -91,6 +91,45 @@ def get_subsystem(source_model, target_model) :
                 pass
         else :
             print(f"\nNo subsystem found for reactions {source_reaction_id}")
+
+
+
+def get_names_from_genes(target_model) :
+    url = "http://rest.ensembl.org/lookup/id/"
+    archive_url = "http://rest.ensembl.org/archive/id/"
+    for reaction in tqdm(target_model.reactions) :
+        if len(reaction.name) == 0 :
+            try :
+                gene_id = list(reaction.genes)[0].id
+            except IndexError :
+                reaction_name = "Null"
+                reaction.name = reaction_name
+                continue
+            
+            response = requests.get(url+gene_id)
+            try :
+                reaction_name = response.text.split("display_name")[1].split("\n")[0]
+
+            except IndexError :
+                
+                archive_response = requests.get(archive_url+gene_id)
+                try :
+                    new_gene_id = archive_response.text.split("stable_id: ")[1].split("\n")[0]
+                    print(f"\nGot an error with gene id {gene_id}. retrying with updated gene_id : {new_gene_id}", flush=True)
+                
+                    
+                    new_response = requests.get(url+new_gene_id)
+                
+                    reaction_name = new_response.text.split("display_name")[1].split("\n")[0]
+                except IndexError :
+                    reaction_name = "Null"
+            if len(reaction_name) != 0 :
+                #print(f"\nFound Enzyme name {reaction_name} for reaction {reaction.id}")
+                reaction.name = reaction_name
+            else :
+                print("\nNo name")
+
+
 """
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :

@@ -226,11 +226,13 @@ def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
             
     return flux_dict
 
-def run_parcours(reaction, max_iterations=10000) :
+def run_parcours(reaction, model, max_iterations=10000) :
     flux_dict = {}
 
-    return parcours(reaction, flux_dict, max_iterations)
-
+    f = parcours(reaction, flux_dict, max_iterations)
+    for reaction, flux in f.items() :
+        print_reactions(model.reactions.get_by_id(reaction), flux)
+        print(f"FLUX : {flux} --- ID : {model.reactions.get_by_id(reaction).id} --- compartment : {model.reactions.get_by_id(reaction).compartments} \n\n---\n\n")
 
 def build_reaction_df(optimized_model) :
 
@@ -244,8 +246,9 @@ def build_reaction_df(optimized_model) :
         compartments_reactions_dict[str(compartment)] = {
             "flux" : [abs(r.flux) for r in reactions_list if str(compartment) in r.compartments],\
             "subSystem" : [r.subsystem for r in reactions_list if str(compartment) in r.compartments],\
-            "id" : [r.id for r in reactions_list if str(compartment) in r.compartments]
-        }
+            "id" : [r.id for r in reactions_list if str(compartment) in r.compartments],\
+            "name" : [r.name for r in reactions_list]
+        } 
     
     return (pd.DataFrame(compartments_reactions_dict["C_c"]), \
             pd.DataFrame(compartments_reactions_dict["C_r"]), \
