@@ -247,7 +247,7 @@ def build_reaction_df(optimized_model) :
             "flux" : [abs(r.flux) for r in reactions_list if str(compartment) in r.compartments],\
             "subSystem" : [r.subsystem for r in reactions_list if str(compartment) in r.compartments],\
             "id" : [r.id for r in reactions_list if str(compartment) in r.compartments],\
-            "name" : [r.name for r in reactions_list]
+            "name" : [r.name for r in reactions_list if str(compartment) in r.compartments]
         } 
     
     return (pd.DataFrame(compartments_reactions_dict["C_c"]), \

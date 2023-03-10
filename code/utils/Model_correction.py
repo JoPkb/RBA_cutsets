@@ -85,7 +85,7 @@ def get_subsystem(source_model, target_model) :
         if len(source_reaction.subsystem) != 0 :
             try :
                 print(f"\nGetting subsystem information from source model for reaction {source_reaction_id}")
-                target_model.reactions.get_by_id(source_reaction_id).subsystem = source_reaction.subsystem
+                target_model.reactions.get_by_id(source_reaction_id).notes["SUBSYSTEM"] = source_reaction.notes["SUBSYSTEM"]
             except KeyError :
                 print(f"\nKeyError for reaction {source_reaction_id} from source model.")
                 pass
@@ -105,10 +105,10 @@ def get_names_from_genes(target_model) :
                 reaction_name = "Null"
                 reaction.name = reaction_name
                 continue
-            
+
             response = requests.get(url+gene_id)
             try :
-                reaction_name = response.text.split("display_name")[1].split("\n")[0]
+                reaction_name = response.text.split("display_name: ")[1].split("\n")[0]
 
             except IndexError :
                 
