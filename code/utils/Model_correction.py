@@ -130,6 +130,28 @@ def get_names_from_genes(target_model) :
                 print("\nNo name")
 
 
+def get_exchanges_reactions(target_model) :
+    remove_from_boundary = []
+    add_to_boundary = []
+    for C_s_reaction in target_model.boundary :
+        if len(C_s_reaction.products) == 0 :
+            if len(C_s_reaction.reactants) == 1 :
+                x_metabolite_id = C_s_reaction.reactants[0].id[:-1] + "x" # Creating external metabolite ID
+                C_x_reaction = C_s_reaction.id = "EX_" + x_metabolite_id  # Copying C_s reaction to make it an EX_ reaction
+                C_s_reaction.products.append(C_s_reaction.reactants[0])   
+                C_s_reaction.products[0].id = x_metabolite_id
+
+                C_x_reaction.add_metabolites()
+                remove_from_boundary.append(C_s_reaction)
+                add_to_boundary.append(C_x_reaction)
+                
+        elif len(C_s_reaction.reactants) == 0 :
+            if len(C_s_reaction.products) == 1 :
+                x_metabolite_id = C_s_reaction.reactants[0].id[:-1] + "x"
+                C_s_reaction.reactants.append(C_s_reaction.products[0])
+                C_s_reaction.reactants[0].id = x_metabolite_id
+        else :
+            pass
 """
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :
