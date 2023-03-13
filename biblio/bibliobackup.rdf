@@ -2400,10 +2400,1002 @@ PMCID: PMC6830338</dc:description>
         <z:linkMode>3</z:linkMode>
         <link:type>text/html</link:type>
     </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1093/bioinformatics/bty656">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1367-4803"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Apaolaza</foaf:surname>
+                        <foaf:givenName>Iñigo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Valcarcel</foaf:surname>
+                        <foaf:givenName>Luis Vitores</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Planes</foaf:surname>
+                        <foaf:givenName>Francisco J</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_51"/>
+        <link:link rdf:resource="#item_52"/>
+        <dc:title>gMCS: fast computation of genetic minimal cut sets in large networks</dc:title>
+        <dcterms:abstract>The identification of minimal gene knockout strategies to engineer metabolic systems constitutes one of the most relevant applications of the COnstraint-Based Reconstruction and Analysis (COBRA) framework. In the last years, the minimal cut sets (MCSs) approach has emerged as a promising tool to carry out this task. However, MCSs define reaction knockout strategies, which are not necessarily transformed into feasible strategies at the gene level.We present a more general, easy-to-use and efficient computational implementation of a previously published algorithm to calculate MCSs to the gene level (gMCSs). Our tool was compared with existing methods in order to calculate essential genes and synthetic lethals in metabolic networks of different complexity, showing a significant reduction in model size and computation time.gMCS is publicly and freely available under GNU license in the COBRA toolbox (https://github.com/opencobra/cobratoolbox/tree/master/src/analysis/gMCS).Supplementary data are available at Bioinformatics online.</dcterms:abstract>
+        <dc:date>2019-02-01</dc:date>
+        <z:shortTitle>gMCS</z:shortTitle>
+        <z:libraryCatalog>Silverchair</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1093/bioinformatics/bty656</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-20 09:16:19</dcterms:dateSubmitted>
+        <bib:pages>535-537</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1367-4803">
+        <prism:volume>35</prism:volume>
+        <dc:title>Bioinformatics</dc:title>
+        <dc:identifier>DOI 10.1093/bioinformatics/bty656</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Bioinformatics</dcterms:alternative>
+        <dc:identifier>ISSN 1367-4803</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_51">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/bioinformatics/article-pdf/35/3/535/48965359/bioinformatics_35_3_535.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-20 09:16:26</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_52">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/bioinformatics/article/35/3/535/5056753?login=true</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-02-20 09:16:29</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_53">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2052-0034"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tenen</foaf:surname>
+                        <foaf:givenName>Daniel G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chai</foaf:surname>
+                        <foaf:givenName>Li</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tan</foaf:surname>
+                        <foaf:givenName>Justin L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_54"/>
+        <link:link rdf:resource="#item_55"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>hepatocellular carcinoma (HCC)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>metabolic vulnerability</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>metabolism</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>targeted therapy</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Metabolic alterations and vulnerabilities in hepatocellular carcinoma</dc:title>
+        <dcterms:abstract>Liver cancer is a serious disease. It is ranked as the cancer with the second highest number of cancer-related deaths worldwide. Hepatocellular carcinoma (HCC), which arises from transformed hepatocytes, is the major subtype of liver cancer. It accounts for 85% of total liver-cancer cases. An important aspect of HCC that has been actively studied is its metabolism. With the liver as the primary site of numerous metabolic processes in the body, it has been shown that the metabolism of HCC cells is highly dysregulated compared to that of normal hepatocytes. It is therefore crucial to understand the metabolic alterations caused by HCC and the underlying mechanisms for these alterations. This deeper understanding will allow diagnostic and therapeutic advancements in the treatment of HCC. In this review, we will summarize the current literature in HCC metabolic alterations, induced vulnerabilities, and potential therapeutic interventions.</dcterms:abstract>
+        <dc:date>2021-01</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 33747521
+PMCID: PMC7962738</dc:description>
+        <bib:pages>1-13</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2052-0034">
+        <prism:volume>9</prism:volume>
+        <dc:title>Gastroenterology Report</dc:title>
+        <dc:identifier>DOI 10.1093/gastro/goaa066</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Gastroenterol Rep (Oxf)</dcterms:alternative>
+        <dc:identifier>ISSN 2052-0034</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_54">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/33747521</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:30:12</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_55">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/gastro/article-pdf/9/1/1/36618291/goaa066.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:30:22</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://www.nature.com/articles/s41575-019-0217-8">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <dc:title>Metabolic rearrangements in primary liver cancers: cause and consequences | Nature Reviews Gastroenterology &amp; Hepatology</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41575-019-0217-8</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:30:53</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Document rdf:about="https://www.embopress.org/doi/full/10.15252/msb.20156487">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_58"/>
+        <dc:title>The gut microbiota modulates host amino acid and glutathione metabolism in mice | Molecular Systems Biology</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.embopress.org/doi/full/10.15252/msb.20156487</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:31:11</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_58">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>The gut microbiota modulates host amino acid and glutathione metabolism in mice | Molecular Systems Biology</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.embopress.org/doi/full/10.15252/msb.20156487</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:31:29</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_59">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>11</prism:volume>
+                <dc:title>Molecular Systems Biology</dc:title>
+                <dc:identifier>DOI 10.15252/msb.20156487</dc:identifier>
+                <prism:number>10</prism:number>
+                <dc:identifier>ISSN 1744-4292</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mardinoglu</foaf:surname>
+                        <foaf:givenName>Adil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shoaie</foaf:surname>
+                        <foaf:givenName>Saeed</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bergentall</foaf:surname>
+                        <foaf:givenName>Mattias</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ghaffari</foaf:surname>
+                        <foaf:givenName>Pouyan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Cheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Larsson</foaf:surname>
+                        <foaf:givenName>Erik</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bäckhed</foaf:surname>
+                        <foaf:givenName>Fredrik</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_60"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>genome-scale metabolic models</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>germ-free mice</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>glutathione metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>metabolomics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>transcriptomics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>The gut microbiota modulates host amino acid and glutathione metabolism in mice</dc:title>
+        <dcterms:abstract>Abstract The gut microbiota has been proposed as an environmental factor that promotes the progression of metabolic diseases. Here, we investigated how the gut microbiota modulates the global metabolic differences in duodenum, jejunum, ileum, colon, liver, and two white adipose tissue depots obtained from conventionally raised (CONV-R) and germ-free (GF) mice using gene expression data and tissue-specific genome-scale metabolic models (GEMs). We created a generic mouse metabolic reaction (MMR) GEM, reconstructed 28 tissue-specific GEMs based on proteomics data, and manually curated GEMs for small intestine, colon, liver, and adipose tissues. We used these functional models to determine the global metabolic differences between CONV-R and GF mice. Based on gene expression data, we found that the gut microbiota affects the host amino acid (AA) metabolism, which leads to modifications in glutathione metabolism. To validate our predictions, we measured the level of AAs and N-acetylated AAs in the hepatic portal vein of CONV-R and GF mice. Finally, we simulated the metabolic differences between the small intestine of the CONV-R and GF mice accounting for the content of the diet and relative gene expression differences. Our analyses revealed that the gut microbiota influences host amino acid and glutathione metabolism in mice.</dcterms:abstract>
+        <dc:date>2015-10</dc:date>
+        <z:libraryCatalog>embopress.org (Atypon)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.embopress.org/doi/full/10.15252/msb.20156487</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:31:35</dcterms:dateSubmitted>
+        <dc:description>Publisher: John Wiley &amp; Sons, Ltd</dc:description>
+        <bib:pages>834</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_60">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.embopress.org/doi/pdfdirect/10.15252/msb.20156487?download=true</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:31:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_61">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1553-7358"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Agren</foaf:surname>
+                        <foaf:givenName>Rasmus</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bordel</foaf:surname>
+                        <foaf:givenName>Sergio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mardinoglu</foaf:surname>
+                        <foaf:givenName>Adil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pornputtapong</foaf:surname>
+                        <foaf:givenName>Natapol</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nookaew</foaf:surname>
+                        <foaf:givenName>Intawat</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_62"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cancers and neoplasms</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Cell metabolism</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Drug metabolism</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Enzyme metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Genetic networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Metabolites</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Protein metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Reconstruction of Genome-Scale Active Metabolic Networks for 69 Human Cell Types and 16 Cancer Types Using INIT</dc:title>
+        <dcterms:abstract>Development of high throughput analytical methods has given physicians the potential access to extensive and patient-specific data sets, such as gene sequences, gene expression profiles or metabolite footprints. This opens for a new approach in health care, which is both personalized and based on system-level analysis. Genome-scale metabolic networks provide a mechanistic description of the relationships between different genes, which is valuable for the analysis and interpretation of large experimental data-sets. Here we describe the generation of genome-scale active metabolic networks for 69 different cell types and 16 cancer types using the INIT (Integrative Network Inference for Tissues) algorithm. The INIT algorithm uses cell type specific information about protein abundances contained in the Human Proteome Atlas as the main source of evidence. The generated models constitute the first step towards establishing a Human Metabolic Atlas, which will be a comprehensive description (accessible online) of the metabolism of different human cell types, and will allow for tissue-level and organism-level simulations in order to achieve a better understanding of complex diseases. A comparative analysis between the active metabolic networks of cancer types and healthy cell types allowed for identification of cancer-specific metabolic features that constitute generic potential drug targets for cancer treatment.</dcterms:abstract>
+        <dc:date>17 mai 2012</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>PLoS Journals</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002518</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:31:53</dcterms:dateSubmitted>
+        <dc:description>Publisher: Public Library of Science</dc:description>
+        <bib:pages>e1002518</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1553-7358">
+        <prism:volume>8</prism:volume>
+        <dc:title>PLOS Computational Biology</dc:title>
+        <dc:identifier>DOI 10.1371/journal.pcbi.1002518</dc:identifier>
+        <prism:number>5</prism:number>
+        <dcterms:alternative>PLOS Computational Biology</dcterms:alternative>
+        <dc:identifier>ISSN 1553-7358</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_62">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1002518&amp;type=printable</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:31:54</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_63">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1759-5053"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Satriano</foaf:surname>
+                        <foaf:givenName>Letizia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lewinska</foaf:surname>
+                        <foaf:givenName>Monika</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rodrigues</foaf:surname>
+                        <foaf:givenName>Pedro M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Banales</foaf:surname>
+                        <foaf:givenName>Jesus M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Andersen</foaf:surname>
+                        <foaf:givenName>Jesper B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cancer metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Bile duct cancer</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Hepatocellular carcinoma</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Liver cancer</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Metabolic rearrangements in primary liver cancers: cause and consequences</dc:title>
+        <dcterms:abstract>Primary liver cancer (PLC) is the fourth most frequent cause of cancer-related death. The high mortality rates arise from late diagnosis and the limited accuracy of diagnostic and prognostic biomarkers. The liver is a major regulator, orchestrating the clearance of toxins, balancing glucose, lipid and amino acid uptake, managing whole-body metabolism and maintaining metabolic homeostasis. Tumour onset and progression is frequently accompanied by rearrangements of metabolic pathways, leading to dysregulation of metabolism. The limitation of current therapies targeting PLCs, such as hepatocellular carcinoma and cholangiocarcinoma, points towards the importance of deciphering this metabolic complexity. In this Review, we discuss the role of metabolic liver disruptions and the implications of these processes in PLCs, emphasizing their clinical relevance and value in early diagnosis and prognosis and as putative therapeutic targets. We also describe system biology approaches able to reconstruct the metabolic complexity of liver diseases. We also discuss whether metabolic rearrangements are a cause or consequence of PLCs, emphasizing the opportunity to clinically exploit the rewired metabolism. In line with this idea, we discuss circulating metabolites as promising biomarkers for PLCs.</dcterms:abstract>
+        <dc:date>2019-12</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Metabolic rearrangements in primary liver cancers</z:shortTitle>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41575-019-0217-8</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:32:08</dcterms:dateSubmitted>
+        <dc:rights>2019 Springer Nature Limited</dc:rights>
+        <dc:description>Number: 12
+Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>748-766</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1759-5053">
+        <prism:volume>16</prism:volume>
+        <dc:title>Nature Reviews Gastroenterology &amp; Hepatology</dc:title>
+        <dc:identifier>DOI 10.1038/s41575-019-0217-8</dc:identifier>
+        <prism:number>12</prism:number>
+        <dcterms:alternative>Nat Rev Gastroenterol Hepatol</dcterms:alternative>
+        <dc:identifier>ISSN 1759-5053</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="#item_64">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>9</prism:volume>
+                <dc:title>Scientific Reports</dc:title>
+                <dc:identifier>DOI 10.1038/s41598-019-39109-1</dc:identifier>
+                <prism:number>1</prism:number>
+                <dcterms:alternative>Sci Rep</dcterms:alternative>
+                <dc:identifier>ISSN 2045-2322</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>da Veiga Moreira</foaf:surname>
+                        <foaf:givenName>Jorgelindo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hamraz</foaf:surname>
+                        <foaf:givenName>Minoo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Abolhassani</foaf:surname>
+                        <foaf:givenName>Mohammad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schwartz</foaf:surname>
+                        <foaf:givenName>Laurent</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jolicœur</foaf:surname>
+                        <foaf:givenName>Mario</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Peres</foaf:surname>
+                        <foaf:givenName>Sabine</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_65"/>
+        <link:link rdf:resource="#item_66"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Energy Metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Lactic Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cell Proliferation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Glucose</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Animals</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Antineoplastic Combined Chemotherapy Protocols</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Carbon</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Carcinogenesis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Carcinoma, Lewis Lung</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Cell Line, Tumor</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Citrates</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Diclofenac</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Heterografts</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Metformin</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Mice</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Thioctic Acid</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Metabolic therapies inhibit tumor growth in vivo and in silico</dc:title>
+        <dcterms:abstract>In the recent years, cancer research succeeded with sensitive detection methods, targeted drug delivery systems, and the identification of a large set of genes differently expressed. However, although most therapies are still based on antimitotic agents, which are causing wide secondary effects, there is an increasing interest for metabolic therapies that can minimize side effects. In the early 20th century, Otto Warburg revealed that cancer cells rely on the cytoplasmic fermentation of glucose to lactic acid for energy synthesis (called &quot;Warburg effect&quot;). Our investigations aim to reverse this effect in reprogramming cancer cells' metabolism. In this work, we present a metabolic therapy specifically targeting the activity of specific enzymes of central carbon metabolism, combining the METABLOC bi-therapeutic drugs combination (Alpha Lipoic Acid and Hydroxycitrate) to Metformin and Diclofenac, for treating tumors implanted in mice. Furthermore, a dynamic metabolic model describing central carbon metabolism as well as fluxes targeted by the drugs allowed to simulate tumors progression in both treated and non-treated mice, in addition to draw hypotheses on the effects of the drugs on tumor cells metabolism. Our model predicts metabolic therapies-induced reversed Warburg effect on tumor cells.</dcterms:abstract>
+        <dc:date>2019-02-28</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 30816152
+PMCID: PMC6395653</dc:description>
+        <bib:pages>3153</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_65">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/30816152</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:32:23</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_66">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41598-019-39109-1.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-01 15:32:24</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_67">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>6</prism:volume>
+                <dc:title>Frontiers in Physiology</dc:title>
+                <dc:identifier>DOI 10.3389/fphys.2015.00382</dc:identifier>
+                <dcterms:alternative>Frontiers in Physiology</dcterms:alternative>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ghaffari</foaf:surname>
+                        <foaf:givenName>Pouyan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mardinoglu</foaf:surname>
+                        <foaf:givenName>Adil</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nielsen</foaf:surname>
+                        <foaf:givenName>Jens</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_68"/>
+        <link:link rdf:resource="#item_69"/>
+        <dc:title>Cancer Metabolism: A Modeling Perspective</dc:title>
+        <dcterms:abstract>Tumor cells alter their metabolism to maintain unregulated cellular proliferation and survival, but this transformation leaves them reliant on constant supply of nutrients and energy. In addition to the widely studied dysregulated glucose metabolism to fuel tumor cell growth, accumulating evidences suggest that utilization of amino acids and lipids contributes significantly to cancer cell metabolism. Also recent progresses in our understanding of carcinogenesis have revealed that cancer is a complex disease and cannot be understood through simple investigation of genetic mutations of cancerous cells. Cancer cells present in complex tumor tissues communicate with the surrounding microenvironment and develop traits which promote their growth, survival, and metastasis. Decoding the full scope and targeting dysregulated metabolic pathways that support neoplastic transformations and their preservation requires both the advancement of experimental technologies for more comprehensive measurement of omics as well as the advancement of robust computational methods for accurate analysis of the generated data. Here, we review cancer-associated reprogramming of metabolism and highlight the capability of genome-scale metabolic modeling approaches in perceiving a system-level perspective of cancer metabolism and in detecting novel selective drug targets.</dcterms:abstract>
+        <dc:date>2016-12-16</dc:date>
+        <z:shortTitle>Cancer Metabolism</z:shortTitle>
+        <z:libraryCatalog>ResearchGate</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_68">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/profile/Pouyan-Ghaffari/publication/286932887_Cancer_Metabolism_A_Modeling_Perspective/links/5671231e08ae0d8b0cc2db12/Cancer-Metabolism-A-Modeling-Perspective.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-02 08:38:25</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_69">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>ResearchGate Link</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/publication/286932887_Cancer_Metabolism_A_Modeling_Perspective</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-02 08:38:26</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+    </z:Attachment>
+    <bib:Document rdf:about="https://reader.elsevier.com/reader/sd/pii/S2589004221010786?token=D858D5F2C19A16C8CED5D5B73E827D3057A69FFCA99D91013E824A910ABDD03122F9DE873523FC9BCBB65A7AE4B20A70&amp;originRegion=eu-west-1&amp;originCreation=20230302140238">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_71"/>
+        <dc:title>Importance of the biomass formulation for cancer metabolic modeling and drug prediction | Elsevier Enhanced Reader</dc:title>
+        <z:language>en</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://reader.elsevier.com/reader/sd/pii/S2589004221010786?token=D858D5F2C19A16C8CED5D5B73E827D3057A69FFCA99D91013E824A910ABDD03122F9DE873523FC9BCBB65A7AE4B20A70&amp;originRegion=eu-west-1&amp;originCreation=20230302140238</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-02 14:03:11</dcterms:dateSubmitted>
+        <dc:description>DOI: 10.1016/j.isci.2021.103110</dc:description>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_71">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S2589004221010786/pdfft?isDTMRedir=true&amp;download=true</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-02 14:03:13</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/s41598-022-15767-6">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>12</prism:volume>
+                <dc:title>Scientific Reports</dc:title>
+                <dc:identifier>DOI 10.1038/s41598-022-15767-6</dc:identifier>
+                <prism:number>1</prism:number>
+                <dcterms:alternative>Sci Rep</dcterms:alternative>
+                <dc:identifier>ISSN 2045-2322</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lapin</foaf:surname>
+                        <foaf:givenName>Alexey</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Perfahl</foaf:surname>
+                        <foaf:givenName>Holger</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jain</foaf:surname>
+                        <foaf:givenName>Harsh Vardhan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reuss</foaf:surname>
+                        <foaf:givenName>Matthias</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_73"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Systems biology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computational biology and bioinformatics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Mathematics and computing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Oncology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Integrating a dynamic central metabolism model of cancer cells with a hybrid 3D multiscale model for vascular hepatocellular carcinoma growth</dc:title>
+        <dcterms:abstract>We develop here a novel modelling approach with the aim of closing the conceptual gap between tumour-level metabolic processes and the metabolic processes occurring in individual cancer cells. In particular, the metabolism in hepatocellular carcinoma derived cell lines (HEPG2 cells) has been well characterized but implementations of multiscale models integrating this known metabolism have not been previously reported. We therefore extend a previously published multiscale model of vascular tumour growth, and integrate it with an experimentally verified network of central metabolism in HEPG2 cells. This resultant combined model links spatially heterogeneous vascular tumour growth with known metabolic networks within tumour cells and accounts for blood flow, angiogenesis, vascular remodelling and nutrient/growth factor transport within a growing tumour, as well as the movement of, and interactions between normal and cancer cells. Model simulations report for the first time, predictions of spatially resolved time courses of core metabolites in HEPG2 cells. These simulations can be performed at a sufficient scale to incorporate clinically relevant features of different tumour systems using reasonable computational resources. Our results predict larger than expected temporal and spatial heterogeneity in the intracellular concentrations of glucose, oxygen, lactate pyruvate, f16bp and Acetyl-CoA. The integrated multiscale model developed here provides an ideal quantitative framework in which to study the relationship between dosage, timing, and scheduling of anti-neoplastic agents and the physiological effects of tumour metabolism at the cellular level. Such models, therefore, have the potential to inform treatment decisions when drug response is dependent on the metabolic state of individual cancer cells.</dcterms:abstract>
+        <dc:date>2022-07-20</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41598-022-15767-6</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-03 09:39:34</dcterms:dateSubmitted>
+        <dc:rights>2022 The Author(s)</dc:rights>
+        <dc:description>Number: 1
+Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>12373</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_73">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41598-022-15767-6.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-03 09:39:35</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4395187/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1582-1838"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Valença</foaf:surname>
+                        <foaf:givenName>Isabel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pértega-Gomes</foaf:surname>
+                        <foaf:givenName>Nelma</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vizcaino</foaf:surname>
+                        <foaf:givenName>José Rámon</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Henrique</foaf:surname>
+                        <foaf:givenName>Rui M</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lopes</foaf:surname>
+                        <foaf:givenName>Carlos</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baltazar</foaf:surname>
+                        <foaf:givenName>Fátima</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ribeiro</foaf:surname>
+                        <foaf:givenName>Daniela</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_76"/>
+        <link:link rdf:resource="#item_75"/>
+        <dc:title>Localization of MCT2 at peroxisomes is associated with malignant transformation in prostate cancer</dc:title>
+        <dcterms:abstract>Previous studies on monocarboxylate transporters expression in prostate cancer (PCa) have shown that monocarboxylate transporter 2 (MCT2) was clearly overexpressed in prostate malignant glands, pointing it out as a putative biomarker for PCa. However, its localization and possible role in PCa cells remained unclear. In this study, we demonstrate that MCT2 localizes mainly at peroxisomes in PCa cells and is able to take advantage of the peroxisomal transport machinery by interacting with Pex19. We have also shown an increase in MCT2 expression from non-malignant to malignant cells that was directly correlated with its peroxisomal localization. Upon analysis of the expression of several peroxisomal β-oxidation proteins in PIN lesions and PCa cells from a large variety of human prostate samples, we suggest that MCT2 presence at peroxisomes is related to an increase in β -oxidation levels which may be crucial for malignant transformation. Our results present novel evidence that may not only contribute to the study of PCa development mechanisms but also pinpoint novel targets for cancer therapy.</dcterms:abstract>
+        <dc:date>2015-4</dc:date>
+        <z:libraryCatalog>PubMed Central</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4395187/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-03 13:24:31</dcterms:dateSubmitted>
+        <dc:description>PMID: 25639644
+PMCID: PMC4395187</dc:description>
+        <bib:pages>723-733</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1582-1838">
+        <prism:volume>19</prism:volume>
+        <dc:title>Journal of Cellular and Molecular Medicine</dc:title>
+        <dc:identifier>DOI 10.1111/jcmm.12481</dc:identifier>
+        <prism:number>4</prism:number>
+        <dcterms:alternative>J Cell Mol Med</dcterms:alternative>
+        <dc:identifier>ISSN 1582-1838</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_76">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed Central Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4395187/pdf/jcmm0019-0723.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-03 13:24:43</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_75">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed Central Link</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4395187/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-03 13:24:39</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.nature.com/articles/s41467-020-14751-w">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>11</prism:volume>
+                <dc:title>Nature Communications</dc:title>
+                <dc:identifier>DOI 10.1038/s41467-020-14751-w</dc:identifier>
+                <prism:number>1</prism:number>
+                <dcterms:alternative>Nat Commun</dcterms:alternative>
+                <dc:identifier>ISSN 2041-1723</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dourado</foaf:surname>
+                        <foaf:givenName>Hugo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lercher</foaf:surname>
+                        <foaf:givenName>Martin J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_78"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Biochemical networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Biochemical reaction networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computational models</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Metabolism</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>An analytical theory of balanced cellular growth</dc:title>
+        <dcterms:abstract>The biological fitness of microbes is largely determined by the rate with which they replicate their biomass composition. Mathematical models that maximize this balanced growth rate while accounting for mass conservation, reaction kinetics, and limits on dry mass per volume are inevitably non-linear. Here, we develop a general theory for such models, termed Growth Balance Analysis (GBA), which provides explicit expressions for protein concentrations, fluxes, and growth rates. These variables are functions of the concentrations of cellular components, for which we calculate marginal fitness costs and benefits that are related to metabolic control coefficients. At maximal growth rate, the net benefits of all concentrations are equal. Based solely on physicochemical constraints, GBA unveils fundamental quantitative principles of cellular resource allocation and growth; it accurately predicts the relationship between growth rates and ribosome concentrations in E. coli and yeast and between growth rate and dry mass density in E. coli.</dcterms:abstract>
+        <dc:date>2020-03-06</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.nature.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41467-020-14751-w</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-13 08:58:45</dcterms:dateSubmitted>
+        <dc:rights>2020 The Author(s)</dc:rights>
+        <dc:description>Number: 1
+Publisher: Nature Publishing Group</dc:description>
+        <bib:pages>1226</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_78">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.nature.com/articles/s41467-020-14751-w.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-13 08:58:46</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
     <z:Collection rdf:about="#collection_1">
         <dc:title>Stage_metabo</dc:title>
         <dcterms:hasPart rdf:resource="#item_1"/>
-        <dcterms:hasPart rdf:resource="https://pubmed.ncbi.nlm.nih.gov/30816152/"/>
         <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s42255-019-0108-x"/>
         <dcterms:hasPart rdf:resource="#item_5"/>
         <dcterms:hasPart rdf:resource="https://www.nature.com/articles/srep08183"/>
@@ -2414,7 +3406,6 @@ PMCID: PMC6830338</dc:description>
         <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S1096717619300710"/>
         <dcterms:hasPart rdf:resource="https://doi.org/10.1158/jcr.1925.148"/>
         <dcterms:hasPart rdf:resource="https://www.science.org/doi/10.1126/science.123.3191.309"/>
-        <dcterms:hasPart rdf:resource="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002518"/>
         <dcterms:hasPart rdf:resource="#item_29"/>
         <dcterms:hasPart rdf:resource="#item_32"/>
         <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S2452310017300380"/>
@@ -2424,5 +3415,16 @@ PMCID: PMC6830338</dc:description>
         <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S1096717615001317"/>
         <dcterms:hasPart rdf:resource="https://doi.org/10.1186/s12859-019-3329-9"/>
         <dcterms:hasPart rdf:resource="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6830338/"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1093/bioinformatics/bty656"/>
+        <dcterms:hasPart rdf:resource="#item_53"/>
+        <dcterms:hasPart rdf:resource="#item_59"/>
+        <dcterms:hasPart rdf:resource="#item_61"/>
+        <dcterms:hasPart rdf:resource="#item_63"/>
+        <dcterms:hasPart rdf:resource="#item_64"/>
+        <dcterms:hasPart rdf:resource="#item_67"/>
+        <dcterms:hasPart rdf:resource="https://reader.elsevier.com/reader/sd/pii/S2589004221010786?token=D858D5F2C19A16C8CED5D5B73E827D3057A69FFCA99D91013E824A910ABDD03122F9DE873523FC9BCBB65A7AE4B20A70&amp;originRegion=eu-west-1&amp;originCreation=20230302140238"/>
+        <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s41598-022-15767-6"/>
+        <dcterms:hasPart rdf:resource="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4395187/"/>
+        <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s41467-020-14751-w"/>
     </z:Collection>
 </rdf:RDF>
