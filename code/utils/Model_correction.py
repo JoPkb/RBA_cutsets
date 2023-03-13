@@ -131,50 +131,25 @@ def get_names_from_genes(target_model) :
 
 
 def get_exchanges_reactions(target_model) :
-    remove_from_boundary = []
-    add_to_boundary = []
-    for C_s_reaction in tqdm(target_model.boundary) :
-        if len(C_s_reaction.products) == 0 :
-            if len(C_s_reaction.reactants) == 1 :
-                
-                x_metabolite_id = C_s_reaction.reactants[0].id[:-1] + "x" # Creating external metabolite ID
-                x_metabolite = C_s_reaction.reactants[0].copy()
-                x_metabolite.id = x_metabolite_id
+    boundary_reactions = target_model.boundary
+    reactions_to_add = []
+    for b_r in boundary_reactions :
+        for metab, sto in b_r.metabolites.items() :
+            # Creating boundary metabolite
+            lb = b_r.lower_bound
+            ub = b_r.upper_bound
+            new_metab_x = cobra.core.metabolite.Metabolite(metab.id[:-1]+"x", name = metab.id[:-1]+"x", compartment = "C_x")
+            if sto > 0.0 :
+                b_r.add_metabolites({new_metab_x: -1.0}) # Intake
 
-                C_x_reaction_id = C_s_reaction.id = "EX_" + x_metabolite_id  # Copying C_s reaction to make it an EX_ reaction
-                C_x_reaction = C_s_reaction.copy()
-                C_x_reaction.id = C_x_reaction_id
+            else :
+                b_r.add_metabolites({new_metab_x : 1.0}) # Secretion
+            new_reaction_x = cobra.core.reaction.Reaction(id = "EX_" + new_metab_x.id, name = "EX_" + new_metab_x.id, subsystem= "Exchange reactions", lower_bound= lb, upper_bound = ub)
+            new_reaction_x.add_metabolites({new_metab_x : 1.0})
+            reactions_to_add.append(new_reaction_x)
+    target_model.add_reactions(reactions_to_add)
 
-                C_s_reaction.products.append(C_s_reaction.reactants[0])   
-                C_s_reaction.products[0].id = x_metabolite_id
 
-                C_x_reaction.add_metabolites({x_metabolite_id : 1.0, C_s_reaction.products[0].id : 0.0}, combine=False)
-                
-                remove_from_boundary.append(C_s_reaction)
-                add_to_boundary.append(C_x_reaction)
-                
-        elif len(C_s_reaction.reactants) == 0 :
-            if len(C_s_reaction.products) == 1 :
-                x_metabolite_id = C_s_reaction.products[0].id[:-1] + "x"
-                x_metabolite = C_s_reaction.products[0].copy()
-                x_metabolite.id = x_metabolite_id
-                
-                C_x_reaction_id = C_s_reaction.id = "EX_" + x_metabolite_id
-                C_x_reaction = C_s_reaction.copy()
-                C_x_reaction.id = C_x_reaction_id
-
-                C_s_reaction.reactants = C_s_reaction.reactants.append(C_s_reaction.products[0])
-                print(C_s_reaction.reactants)
-                C_s_reaction.reactants[0].id = x_metabolite_id
-
-                C_x_reaction.add_metabolites({x_metabolite_id : -1.0, C_s_reaction.reactants[0].id : 0.0}, combine=False)
-                
-                remove_from_boundary.append(C_s_reaction)
-                add_to_boundary.append(C_x_reaction)
-        else :
-            pass
-    
-    target_model.add_boundary(add_to_boundary)
 """
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :
