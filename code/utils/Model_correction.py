@@ -98,7 +98,7 @@ def get_names_from_genes(target_model) :
     url = "http://rest.ensembl.org/lookup/id/"
     archive_url = "http://rest.ensembl.org/archive/id/"
     for reaction in tqdm(target_model.reactions) :
-        if len(reaction.name) == 0 :
+        if len(reaction.name) >= 0 :
             try :
                 gene_id = list(reaction.genes)[0].id
             except IndexError :
@@ -108,7 +108,7 @@ def get_names_from_genes(target_model) :
 
             response = requests.get(url+gene_id)
             try :
-                reaction_name = response.text.split("display_name: ")[1].split("\n")[0]
+                reaction_name = response.text.split("description: ")[1].split(" [")[0]
 
             except IndexError :
                 
@@ -120,7 +120,7 @@ def get_names_from_genes(target_model) :
                     
                     new_response = requests.get(url+new_gene_id)
                 
-                    reaction_name = new_response.text.split("display_name")[1].split("\n")[0]
+                    reaction_name = new_response.text.split("description: ")[1].split(" [")[0]
                 except IndexError :
                     reaction_name = "Null"
             if len(reaction_name) != 0 :
