@@ -57,16 +57,16 @@ def print_reactions(reaction, flux = 0.0, v=True):
     string = ""
     string2 = ""
     if not "EX_" in reaction.id :
-        if flux >= float('0'):
+        if flux > 0.0 :
                 fleche = "-->"
-        elif flux <= float('0') :
+        elif flux < 0.0 :
                 fleche = "<--"
         else:
                 fleche = "<=>"
     else :
-        if flux >= float('0') :
+        if flux > 0.0 :
             fleche = "<--"
-        elif flux <= float('0') :
+        elif flux < 0.0 :
              fleche = "-->"
         else :
              fleche = "<=>"
