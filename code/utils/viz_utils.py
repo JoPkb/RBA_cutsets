@@ -125,7 +125,9 @@ def build_reaction_df(optimized_model, by_compartment = True) :
                 "id" : [r.id for r in reactions_list if str(compartment) in r.compartments],\
                 "name" : [r.name for r in reactions_list if str(compartment) in r.compartments],\
                 "compartment" : [compartment for r in reactions_list if str(compartment) in r.compartments],
-                "direction" : [str(r.flux)[0] for r in reactions_list if str(compartment) in r.compartments]
+                "direction" : [str(r.flux)[0] for r in reactions_list if str(compartment) in r.compartments],\
+                "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
             } 
         
         return (pd.DataFrame(compartments_reactions_dict["C_c"]), \
@@ -147,8 +149,10 @@ def build_reaction_df(optimized_model, by_compartment = True) :
                 "subSystem" : [r.subsystem for r in reactions_list if str(subsystem) in r.subsystem],\
                 "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
                 "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
-                "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],
-                "direction" : [str(r.flux)[0] for r in reactions_list if str(subsystem) in r.subsystem]
+                "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                "direction" : [str(r.flux)[0] for r in reactions_list if str(subsystem) in r.subsystem],\
+                "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
             }
 
         return subsystem_reactions_dict
@@ -213,7 +217,7 @@ def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, co
 
         df = df.loc[(df["subSystem"] != "Transport, mitochondrial")& (df["subSystem"] != "Transport, extracellular" ) & (df["subSystem"] != "Exchange reactions")& (df["subSystem"] != "Transport, peroxisomal" )]
         fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path, 
-                    values='flux', hover_name= "name" ,color='subSystem',hover_data = ["direction"], color_discrete_map=cmap)
+                    values='flux', hover_name= "name" ,color='subSystem',hover_data = ["direction", "reactants", "products"], color_discrete_map=cmap)
 
         fig.update_layout(title_text=title, font_size=12)
 
@@ -233,7 +237,7 @@ def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, co
 
         df = df.loc[(df["subSystem"] != "Transport, mitochondrial")& (df["subSystem"] != "Transport, extracellular" ) & (df["subSystem"] != "Exchange reactions")& (df["subSystem"] != "Transport, peroxisomal" )]
         fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path, 
-                    values='flux', hover_name= "name" ,color='compartment', hover_data = ["direction"], color_discrete_map=cmap)
+                    values='flux', hover_name= "name" ,color='compartment', hover_data = ["direction", "reactants", "products"], color_discrete_map=cmap)
     return fig 
 
 
