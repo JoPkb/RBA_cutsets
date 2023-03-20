@@ -196,8 +196,8 @@ def plot_treemap(df, model, title, flux_filter=0.0) :
     return fig 
 
 
-def print_barplots(model_1, model_2) :
-
+def compartment_fluxes_barplots(model_1, model_2) :
+    barplots = {}
     for compartments_iHep, compartments_G2 in zip(build_reaction_df(model_1), build_reaction_df(model_2)):
 
         color_Ekeley = 'salmon'
@@ -240,8 +240,11 @@ def print_barplots(model_1, model_2) :
             axes[1].set_xlabel("Fraction des comptages totaux")
             axes[0].invert_yaxis() # labels read top-to-bottom
             axes[0].invert_xaxis() # mirror data for both duildings
-            plt.xlim(xmin, xmax)
-            plt.show()
+            plt.xlim = (xmin, xmax)
+            plt.close()
+            barplots[compartment_G2] = (fig, axes)
+    return barplots
+
 
 
 
