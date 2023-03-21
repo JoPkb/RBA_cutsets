@@ -3358,12 +3358,12 @@ PMCID: PMC4395187</dc:description>
             </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
+           <z:AutomaticTag><rdf:value>Metabolism</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
             <z:AutomaticTag>
                <rdf:value>Computational models</rdf:value>
             </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Metabolism</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:title>An analytical theory of balanced cellular growth</dc:title>
         <dcterms:abstract>The biological fitness of microbes is largely determined by the rate with which they replicate their biomass composition. Mathematical models that maximize this balanced growth rate while accounting for mass conservation, reaction kinetics, and limits on dry mass per volume are inevitably non-linear. Here, we develop a general theory for such models, termed Growth Balance Analysis (GBA), which provides explicit expressions for protein concentrations, fluxes, and growth rates. These variables are functions of the concentrations of cellular components, for which we calculate marginal fitness costs and benefits that are related to metabolic control coefficients. At maximal growth rate, the net benefits of all concentrations are equal. Based solely on physicochemical constraints, GBA unveils fundamental quantitative principles of cellular resource allocation and growth; it accurately predicts the relationship between growth rates and ribosome concentrations in E. coli and yeast and between growth rate and dry mass density in E. coli.</dcterms:abstract>
@@ -3390,6 +3390,204 @@ Publisher: Nature Publishing Group</dc:description>
             </dcterms:URI>
         </dc:identifier>
         <dcterms:dateSubmitted>2023-03-13 08:58:46</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_79">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1420-9071"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Singh</foaf:surname>
+                        <foaf:givenName>Dipali</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lercher</foaf:surname>
+                        <foaf:givenName>Martin J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_80"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Animals</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Elementary flux modes</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Flux-balance analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Genome</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Genome-scale metabolic models</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Genotype</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic Networks and Pathways</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Network reduction methods</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Phenotype</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Network reduction methods for genome-scale metabolic models</dc:title>
+        <dcterms:abstract>Genome-scale metabolic models (GSMs) provide a comprehensive representation of cellular metabolism. GSMs provide a mechanistic link between cellular genotypes and metabolic phenotypes, and are thus widely used to analyze metabolism at the systems level. GSMs consist of hundreds or thousands of reactions. They have thus largely been analyzed with computationally efficient constraint-based methods such as flux-balance analysis, limiting their scope and phenotype prediction accuracy. Computationally more demanding but potentially more informative methods, such as kinetic and dynamic modeling, are currently limited to small or medium-sized models. Thus, it is desirable to achieve unbiased stoichiometric reductions of large-scale metabolic models to small, coarse-grained model representations that capture significant metabolic modules. Here, we review published automated and semiautomated methods used for large-scale metabolic model reduction. The top-down methods discussed provide minimal networks that retain a set of user-protected phenotypes, but may reduce the model's metabolic and phenotypic versatility. In contrast, the two bottom-up approaches reviewed retain a more unbiased set of phenotypes; at the same time, these methods require the partitioning of the GSM into metabolic subsystems by the user, and make strong assumptions on the subsystems' connections and their states, respectively.</dcterms:abstract>
+        <dc:date>2020-02</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 31748914</dc:description>
+        <bib:pages>481-488</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1420-9071">
+        <prism:volume>77</prism:volume>
+        <dc:title>Cellular and molecular life sciences: CMLS</dc:title>
+        <dc:identifier>DOI 10.1007/s00018-019-03383-z</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Cell Mol Life Sci</dcterms:alternative>
+        <dc:identifier>ISSN 1420-9071</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_80">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/31748914</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-21 17:12:26</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005444">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>13</prism:volume>
+                <dc:title>PLOS Computational Biology</dc:title>
+                <dc:identifier>DOI 10.1371/journal.pcbi.1005444</dc:identifier>
+                <prism:number>7</prism:number>
+                <dcterms:alternative>PLOS Computational Biology</dcterms:alternative>
+                <dc:identifier>ISSN 1553-7358</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ataman</foaf:surname>
+                        <foaf:givenName>Meric</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gardiol</foaf:surname>
+                        <foaf:givenName>Daniel F. Hernandez</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fengos</foaf:surname>
+                        <foaf:givenName>Georgios</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hatzimanikatis</foaf:surname>
+                        <foaf:givenName>Vassily</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_82"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Amino acid metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Cell metabolism</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Glucose</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic pathways</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Metabolites</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Purine metabolism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Pyruvate</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>redGEM: Systematic reduction and analysis of genome-scale metabolic reconstructions for development of consistent core metabolic models</dc:title>
+        <dcterms:abstract>Genome-scale metabolic reconstructions have proven to be valuable resources in enhancing our understanding of metabolic networks as they encapsulate all known metabolic capabilities of the organisms from genes to proteins to their functions. However the complexity of these large metabolic networks often hinders their utility in various practical applications. Although reduced models are commonly used for modeling and in integrating experimental data, they are often inconsistent across different studies and laboratories due to different criteria and detail, which can compromise transferability of the findings and also integration of experimental data from different groups. In this study, we have developed a systematic semi-automatic approach to reduce genome-scale models into core models in a consistent and logical manner focusing on the central metabolism or subsystems of interest. The method minimizes the loss of information using an approach that combines graph-based search and optimization methods. The resulting core models are shown to be able to capture key properties of the genome-scale models and preserve consistency in terms of biomass and by-product yields, flux and concentration variability and gene essentiality. The development of these “consistently-reduced” models will help to clarify and facilitate integration of different experimental data to draw new understanding that can be directly extendable to genome-scale models.</dcterms:abstract>
+        <dc:date>20 juil. 2017</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>redGEM</z:shortTitle>
+        <z:libraryCatalog>PLoS Journals</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005444</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-21 17:15:13</dcterms:dateSubmitted>
+        <dc:description>Publisher: Public Library of Science</dc:description>
+        <bib:pages>e1005444</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_82">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005444&amp;type=printable</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-21 17:15:15</dcterms:dateSubmitted>
         <z:linkMode>1</z:linkMode>
         <link:type>application/pdf</link:type>
     </z:Attachment>
@@ -3426,5 +3624,7 @@ Publisher: Nature Publishing Group</dc:description>
         <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s41598-022-15767-6"/>
         <dcterms:hasPart rdf:resource="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4395187/"/>
         <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s41467-020-14751-w"/>
+        <dcterms:hasPart rdf:resource="#item_79"/>
+        <dcterms:hasPart rdf:resource="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005444"/>
     </z:Collection>
 </rdf:RDF>
