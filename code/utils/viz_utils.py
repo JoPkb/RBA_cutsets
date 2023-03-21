@@ -1,10 +1,11 @@
 import pandas as pd
 from contextlib import redirect_stdout
-import tqdm
+from tqdm import tqdm
 import sys
 import plotly.express as px
 from itertools import cycle
 import matplotlib.pyplot as plt
+import cobra
 
 def parcours_test(reaction, flux_dict, v = False) :
     
@@ -101,7 +102,7 @@ def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
             
     return flux_dict
 
-def run_parcours(reaction, model, max_iterations=10000) :
+def run_parcours(reaction : cobra.core.reaction.Reaction, model : cobra.core.model.Model, max_iterations=10000) :
     flux_dict = {}
 
     f = parcours(reaction, flux_dict, max_iterations)
@@ -109,32 +110,46 @@ def run_parcours(reaction, model, max_iterations=10000) :
         print_reactions(model.reactions.get_by_id(reaction), flux)
         print(f"FLUX : {flux} --- ID : {model.reactions.get_by_id(reaction).id} --- compartment : {model.reactions.get_by_id(reaction).compartments} \n\n---\n\n")
 
-def build_reaction_df(optimized_model) :
+def build_reaction_df(optimized_model, by_compartment = True) :
 
     reactions_list = [r for r in optimized_model.reactions]
+    if by_compartment :
+        compartments_reactions_dict = {}
 
-    compartments_reactions_dict = {}
+        
+        
+        for compartment in optimized_model.compartments : 
+            compartments_reactions_dict[str(compartment)] = {
+                "flux" : [abs(r.flux) for r in reactions_list if str(compartment) in r.compartments],\
+                "subSystem" : [r.subsystem for r in reactions_list if str(compartment) in r.compartments],\
+                "id" : [r.id for r in reactions_list if str(compartment) in r.compartments],\
+                "name" : [r.name for r in reactions_list if str(compartment) in r.compartments],\
+                "compartment" : [compartment for r in reactions_list if str(compartment) in r.compartments]
+            } 
+        
+        return (pd.DataFrame(compartments_reactions_dict["C_c"]), \
+                pd.DataFrame(compartments_reactions_dict["C_r"]), \
+                pd.DataFrame(compartments_reactions_dict["C_s"]), \
+                pd.DataFrame(compartments_reactions_dict["C_m"]), \
+                pd.DataFrame(compartments_reactions_dict["C_p"]), \
+                pd.DataFrame(compartments_reactions_dict["C_x"]), \
+                pd.DataFrame(compartments_reactions_dict["C_l"]), \
+                pd.DataFrame(compartments_reactions_dict["C_g"]), \
+                pd.DataFrame(compartments_reactions_dict["C_n"]))
+    else :
 
-    
-       
-    for compartment in optimized_model.compartments : 
-        compartments_reactions_dict[str(compartment)] = {
-            "flux" : [abs(r.flux) for r in reactions_list if str(compartment) in r.compartments],\
-            "subSystem" : [r.subsystem for r in reactions_list if str(compartment) in r.compartments],\
-            "id" : [r.id for r in reactions_list if str(compartment) in r.compartments],\
-            "name" : [r.name for r in reactions_list if str(compartment) in r.compartments],\
-            "compartment" : [compartment for r in reactions_list if str(compartment) in r.compartments]
-        } 
-    
-    return (pd.DataFrame(compartments_reactions_dict["C_c"]), \
-            pd.DataFrame(compartments_reactions_dict["C_r"]), \
-            pd.DataFrame(compartments_reactions_dict["C_s"]), \
-            pd.DataFrame(compartments_reactions_dict["C_m"]), \
-            pd.DataFrame(compartments_reactions_dict["C_p"]), \
-            pd.DataFrame(compartments_reactions_dict["C_x"]), \
-            pd.DataFrame(compartments_reactions_dict["C_l"]), \
-            pd.DataFrame(compartments_reactions_dict["C_g"]), \
-            pd.DataFrame(compartments_reactions_dict["C_n"]))
+        subsystem_reactions_dict = {}
+        dataframes_to_return = []
+        for subsystem in optimized_model.groups :
+            subsystem_reactions_dict[str(subsystem)] = {
+                "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
+                "subSystem" : [r.subsystem for r in reactions_list if str(subsystem) in r.subsystem],\
+                "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
+                "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
+                "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem]
+            }
+
+        return subsystem_reactions_dict
     
 
 
@@ -169,30 +184,54 @@ def get_subsystem_fluxes(dfs, multiple = True) :
 
 ### DATA VISUALISATION ###
 
-def plot_treemap(df, model, title, flux_filter=0.0) :
-    
+def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, color_by = "subsystem") :
     ### Building colormap :
-    cols = ['#E48F72','#FC6955','#7E7DCD','#BC7196','#86CE00','#E3EE9E','#22FFA7','#FF0092','#C9FBE5','#B68E00','#00B5F7','#6E899C',
-            '#D626FF','#AF0038','#0D2A63','#6C4516','#DA60CA','#1616A7','#620042','#A777F1','#862A16','#778AAE','#6C7C32','#B2828D',
-            '#FC0080','#FB00D1','#00A08B','#511CFB','#EB663B','#750D86','#B68100','#222A2A','#DA16FF','#FB0D0D','#1CA71C','#E15F99',
-            '#2E91E5','#DC587D','#EEA6FB','#479B55','#FF9616','#F6F926','#0DF9FF','#FE00CE','#FED4C4','#6A76FC','#00FE35','#FD3216',
-            '#2E91E5','#E15F99','#1CA71C','#FB0D0D','#DA16FF','#222A2A','#B68100','#750D86','#EB663B','#511CFB','#00A08B','#FB00D1',
-            '#FC0080','#B2828D','#6C7C32','#778AAE','#862A16','#A777F1','#620042','#1616A7','#DA60CA','#6C4516','#0D2A63','#AF0038']
+
     
-    subsystems = set()
-    for r in model.reactions :
-        if len(r.subsystem) >0 and not "Transport" in r.subsystem and not "Exchange" in r.subsystem :
-            subsystems.add(r.subsystem)
+    if color_by == "subsystem" :
+        # cols = ['#E48F72','#FC6955','#7E7DCD','#BC7196','#86CE00','#E3EE9E','#22FFA7','#FF0092','#C9FBE5','#B68E00','#00B5F7','#6E899C',
+        # '#D626FF','#AF0038','#0D2A63','#6C4516','#DA60CA','#1616A7','#620042','#A777F1','#862A16','#778AAE','#6C7C32','#B2828D',
+        # '#FC0080','#00A08B','#511CFB','#EB663B','#750D86','#B68100','#222A2A','#FB0D0D','#1CA71C','#E15F99',
+        # '#2E91E5','#DC587D','#EEA6FB','#479B55','#FF9616','#F6F926','#0DF9FF','#FE00CE','#FED4C4','#6A76FC','#00FE35','#FD3216',
+        # '#2E91E5','#E15F99','#1CA71C','#FB0D0D','#222A2A','#B68100','#750D86','#EB663B','#511CFB','#00A08B','#FB00D1',
+        # '#FC0080','#B2828D','#6C7C32','#778AAE','#862A16','#A777F1','#620042','#1616A7','#DA60CA','#6C4516','#0D2A63','#AF0038']
+        cols = ["#4D455D", "#E96479", "#F5E9CF", "#7DB9B6", "#539165", "#820000", "#FFB100"]
+        # Used to plot fluxes compartment by compartment --> coloring by the next highest hierarchical category = subsystems.
+    
+        
+        subsystems = set()
+        for r in model.reactions :
+            if len(r.subsystem) >0 and not "Transport" in r.subsystem and not "Exchange" in r.subsystem :
+                subsystems.add(r.subsystem)
 
-    cmap = {}
-    for sub, col in zip(subsystems, cycle(set(cols))) :
-        cmap[sub] = col
-    ###
-    df = df.loc[(df["subSystem"] != "Transport, mitochondrial")& (df["subSystem"] != "Transport, extracellular" ) & (df["subSystem"] != "Exchange reactions")& (df["subSystem"] != "Transport, peroxisomal" )]
-    fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=['subSystem', 'id'], 
-                 values='flux', hover_name= "name" ,color='subSystem',color_discrete_map=cmap)
+        cmap = {}
+        for subsystem, color in zip(subsystems, cycle(set(cols))) :
+            cmap[subsystem] = color
+        ###
 
-    fig.update_layout(title_text=title, font_size=12)
+        df = df.loc[(df["subSystem"] != "Transport, mitochondrial")& (df["subSystem"] != "Transport, extracellular" ) & (df["subSystem"] != "Exchange reactions")& (df["subSystem"] != "Transport, peroxisomal" )]
+        fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path, 
+                    values='flux', hover_name= "name" ,color='subSystem',color_discrete_map=cmap)
+
+        fig.update_layout(title_text=title, font_size=12)
+
+    elif color_by == "compartment" :
+        cols = ["#4D455D", "#E96479", "#F5E9CF", "#7DB9B6", "#539165", "#820000", "#FFB100"]
+        # Used to plot fluxes subsystem by subsystem --> coloring by the next highest hierarchical category = compartments.
+
+        compartments = set()
+        for r in model.reactions :
+            if len(r.compartments) > 0 and not "C_r" in r.compartments and not "C_l" in r.compartments and not "C_g" in r.compartments :
+                for comp in r.compartments :
+                    compartments.add(comp)
+        cmap =  {}
+        for compartment, color in zip(compartments, cycle(set(cols))) :
+            cmap[compartment] = color
+        ###
+
+        df = df.loc[(df["subSystem"] != "Transport, mitochondrial")& (df["subSystem"] != "Transport, extracellular" ) & (df["subSystem"] != "Exchange reactions")& (df["subSystem"] != "Transport, peroxisomal" )]
+        fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path, 
+                    values='flux', hover_name= "name" ,color='compartment',color_discrete_map=cmap)
     return fig 
 
 
