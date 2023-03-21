@@ -119,12 +119,25 @@ def build_reaction_df(optimized_model, by_compartment = True) :
         
         
         for compartment in optimized_model.compartments : 
+            directions = []
+            for r in reactions_list :
+                if str(compartment) in r.compartments :
+                    flux = r.flux
+
+                    if flux > 0.0 :
+                        direction = "+"
+                    elif flux < 0.0 :
+                        direction = "-"
+                    else :
+                        direction = "0"
+                directions.append(direction)
             compartments_reactions_dict[str(compartment)] = {
                 "flux" : [abs(r.flux) for r in reactions_list if str(compartment) in r.compartments],\
                 "subSystem" : [r.subsystem for r in reactions_list if str(compartment) in r.compartments],\
                 "id" : [r.id for r in reactions_list if str(compartment) in r.compartments],\
                 "name" : [r.name for r in reactions_list if str(compartment) in r.compartments],\
-                "compartment" : [compartment for r in reactions_list if str(compartment) in r.compartments]
+                "compartment" : [compartment for r in reactions_list if str(compartment) in r.compartments],
+                "direction" : directions
             } 
         
         return (pd.DataFrame(compartments_reactions_dict["C_c"]), \
@@ -141,12 +154,25 @@ def build_reaction_df(optimized_model, by_compartment = True) :
         subsystem_reactions_dict = {}
         dataframes_to_return = []
         for subsystem in optimized_model.groups :
+            directions = []
+            for r in reactions_list :
+                if str(compartment) in r.compartments :
+                    flux = r.flux
+
+                    if flux > 0.0 :
+                        direction = "+"
+                    elif flux < 0.0 :
+                        direction = "-"
+                    else :
+                        direction = "0"
+                directions.append(direction)
             subsystem_reactions_dict[str(subsystem)] = {
                 "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
                 "subSystem" : [r.subsystem for r in reactions_list if str(subsystem) in r.subsystem],\
                 "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
                 "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
-                "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem]
+                "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],
+                "direction" : directions
             }
 
         return subsystem_reactions_dict
@@ -231,7 +257,7 @@ def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, co
 
         df = df.loc[(df["subSystem"] != "Transport, mitochondrial")& (df["subSystem"] != "Transport, extracellular" ) & (df["subSystem"] != "Exchange reactions")& (df["subSystem"] != "Transport, peroxisomal" )]
         fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path, 
-                    values='flux', hover_name= "name" ,color='compartment',color_discrete_map=cmap)
+                    values='flux', hover_name= "name" ,color='compartment', hover_data = ["directions"], color_discrete_map=cmap)
     return fig 
 
 
