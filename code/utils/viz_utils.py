@@ -55,9 +55,8 @@ def parcours_test(reaction, flux_dict, v = False) :
 
 
        
-def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
+def parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations = 10000, i=0,v = True, m_l = [], cofactors = set()) :
     #Metabolites list, used to determine which metabolites have already been visited.
-    m_l = []
     
     """
     if not v :
@@ -67,31 +66,32 @@ def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
     for m in reaction.metabolites :
         #print(f"\nChecking out metabolite {m.id}") 
         
-        if not m in m_l and not i >= max_iterations:
-            #print(f"\nNew metabolite, adding {m.id} to list of visited metabolites.")
-            m_l.append(m)
+        if not m in m_l and not i >= max_iterations: # If the metabolite has not already been visited, and if we haven't reached the maximum number of iterations.
+            m_l.append(m) # Adding the metabolite to the list of already visited metabolites.
+            if not m.name in metabolites_to_exclude :
+                for r in m.reactions :
+                    #print(f"\nChecking out reaction {r.id}")
 
-            for r in m.reactions :
-                #print(f"\nChecking out reaction {r.id}")
+                    if r.id not in flux_dict.keys() :
 
-                if r.id not in flux_dict.keys() :
-
-                    # This part checks if there is a flux for the given reaction, and if it is an exchange reaction.
-                    # If there is a flux and it is not an exchange reaction, it is added to the flux dict.
-                    # If there is a flux and it is an exchange reaction, it is only added to the flux dict and the recursion starts back at the next reaction.
-                    # If it was an exchange reaction involving C_x or C_s, it behaves normally.
-                    if r.flux != 0.0 :
-                        #print(f"\nNew reaction, adding {r.id} to flux dict.")
-                        flux_dict[r.id] = r.flux
-                        flux_dict = parcours(r, flux_dict, max_iterations, i=i)
-                        i +=1
+                        # This part checks if there is a flux for the given reaction, and if it is an exchange reaction.
+                        # If there is a flux and it is not an exchange reaction, it is added to the flux dict.
+                        # If there is a flux and it is an exchange reaction, it is only added to the flux dict and the recursion starts back at the next reaction.
+                        # If it was an exchange reaction involving C_x or C_s, it behaves normally.
+                        if r.flux != 0.0 :
+                            #print(f"\nNew reaction, adding {r.id} to flux dict.")
+                            flux_dict[r.id] = r.flux
+                            flux_dict = parcours(r, flux_dict, metabolites_to_exclude, max_iterations, i, v, m_l, cofactors )
+                            i +=1
+                        else :
+                            #print(f"\nERROR -- flux == 0 for {r.id}")
+                            pass
+                            
                     else :
-                        #print(f"\nERROR -- flux == 0 for {r.id}")
-                        pass
-                        
-                else :
-                    #print(f"\nERROR -- id in dict for {r.id}")
-                    continue
+                        #print(f"\nERROR -- id in dict for {r.id}")
+                        continue
+            else :
+                continue
         else :
             #print(f"\nERROR -- metabolite {m.id} already visited")
             continue
@@ -99,13 +99,12 @@ def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
     """if not v :
         f.close()
         sys.stdout = orig_stdout"""
-            
     return flux_dict
 
-def run_parcours(reaction : cobra.core.reaction.Reaction, model : cobra.core.model.Model, max_iterations=10000) :
+def run_parcours(reaction : cobra.core.reaction.Reaction(), model : cobra.core.model.Model(), metabolites_to_exclude:list, max_iterations=10000) :
     flux_dict = {}
     print(f"\n[{reaction.id}] : Getting all related reactions and fluxes...")
-    f = parcours(reaction, flux_dict, max_iterations)
+    f = parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations)
     for reaction, flux in f.items() :
         print_reactions(model.reactions.get_by_id(reaction), flux)
         print(f"FLUX : {flux} --- ID : {model.reactions.get_by_id(reaction).id} --- compartment : {model.reactions.get_by_id(reaction).compartments} \n\n---\n\n")
@@ -126,8 +125,8 @@ def build_reaction_df(optimized_model, by_compartment = True) :
                 "name" : [r.name for r in reactions_list if str(compartment) in r.compartments],\
                 "compartment" : [compartment for r in reactions_list if str(compartment) in r.compartments],
                 "direction" : [str(r.flux)[0] for r in reactions_list if str(compartment) in r.compartments],\
-                "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
-                "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
+                "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(compartment) in r.compartments],\
+                "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(compartment) in r.compartments]
             } 
         
         return (pd.DataFrame(compartments_reactions_dict["C_c"]), \

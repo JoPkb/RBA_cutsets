@@ -98,24 +98,25 @@ def get_names_from_genes(target_model) :
     url = "http://rest.ensembl.org/lookup/id/"
     archive_url = "http://rest.ensembl.org/archive/id/"
     for reaction in tqdm(target_model.reactions) :
-        if len(reaction.name) >= 0 :
-            try :
-                gene_id = list(reaction.genes)[0].id
-            except IndexError :
-                reaction_name = "Null"
-                reaction.name = reaction_name
-                continue
+        try :
+            gene_ids = [gene.id for gene in reaction.genes]
+        except :
+            reaction_name = "Null"
+            reaction.name = reaction_name
+            continue
 
-            response = requests.get(url+gene_id)
+        names = []
+        for gene_id in gene_ids :
+            response = requests.get(url+str(gene_id))
             try :
-                reaction_name = response.text.split("description: ")[1].split(" [")[0]
-
+                reaction_name = response.text.split("display_name: ")[1].split("\n")[0]
+                #print(f"{gene_id} : {reaction_name}")
             except IndexError :
                 
                 archive_response = requests.get(archive_url+gene_id)
                 try :
                     new_gene_id = archive_response.text.split("stable_id: ")[1].split("\n")[0]
-                    print(f"\nGot an error with gene id {gene_id}. retrying with updated gene_id : {new_gene_id}", flush=True)
+                    #print(f"\nGot an error with gene id {gene_id}. retrying with updated gene_id : {new_gene_id}", flush=True)
                 
                     
                     new_response = requests.get(url+new_gene_id)
@@ -124,10 +125,12 @@ def get_names_from_genes(target_model) :
                 except IndexError :
                     reaction_name = "Null"
             if len(reaction_name) != 0 :
-                #print(f"\nFound Enzyme name {reaction_name} for reaction {reaction.id}")
-                reaction.name = reaction_name
-            else :
-                print("\nNo name")
+                names.append(reaction_name)
+        if len(names) != 0 :
+            #print(f"\nFound Enzyme name {reaction_name} for reaction {reaction.id}")
+            reaction.name = " \ ".join(names)
+        else :
+            continue
 
 
 def get_exchanges_reactions(target_model) :
