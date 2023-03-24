@@ -7,7 +7,7 @@ import importlib
 import os
 
 importlib.reload(mc)
-def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True, add_exchanges = True, get_names = True) :
+def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True, add_exchanges = True, get_names = True, check_biom_reac = True) :
 
     print("\nLoading model to update...\n")
     target_model_file_name = target_model.split(".xml")[0]
@@ -105,6 +105,12 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
     if get_names :
         print(f"\nGetting reactions names from genes ID.")
         mc.get_names_from_genes(working_target_model)
+    else :
+        pass
+
+    if check_biom_reac :
+        print("\nChecking the presence of cofactors and vitamins in the biomass reaction of the target model.")
+        mc.check_biomass_metabolites(target_model)
     else :
         pass
     return working_target_model

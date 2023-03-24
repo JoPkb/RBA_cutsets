@@ -64,7 +64,7 @@ def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
         orig_stdout = sys.stdout
         f = open('out.txt', 'w')
         sys.stdout = f"""
-    for m in tqdm(reaction.metabolites) :
+    for m in reaction.metabolites :
         #print(f"\nChecking out metabolite {m.id}") 
         
         if not m in m_l and not i >= max_iterations:
@@ -104,7 +104,7 @@ def parcours(reaction, flux_dict, max_iterations = 10000, i=0,v = True) :
 
 def run_parcours(reaction : cobra.core.reaction.Reaction, model : cobra.core.model.Model, max_iterations=10000) :
     flux_dict = {}
-
+    print(f"\n[{reaction.id}] : Getting all related reactions and fluxes...")
     f = parcours(reaction, flux_dict, max_iterations)
     for reaction, flux in f.items() :
         print_reactions(model.reactions.get_by_id(reaction), flux)
@@ -293,7 +293,7 @@ def compartment_fluxes_barplots(model_1, model_2) :
 
 
 
-def print_exchanges(optimized_model, filter, ) : 
+def print_exchanges(optimized_model, filter ) : 
     intakes = []
     secretions = []
     neutrals = []

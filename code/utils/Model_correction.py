@@ -149,7 +149,20 @@ def get_exchanges_reactions(target_model) :
             reactions_to_add.append(new_reaction_x)
     target_model.add_reactions(reactions_to_add)
 
+def check_biomass_metabolites(target_model, metabolite_id = "_") :
+    print(f"\nChecking if the metabolite [cofactors and vitamins] is included in the biomass_components reaction of the model.")
 
+    biomass_reaction = target_model.reactions.biomass_components
+
+    for m in biomass_reaction.metabolites :
+        if "cofactors and vitamins" in m.name or m.id == metabolite_id:
+            id = m.id
+            biomass_reaction.add_metabolites({target_model.metabolites.get_by_id(id) : 0.0}, combine=False)
+            print(f"\nFound unwanted metabolite in biomass_components reactions : {id}. Removed it.")
+ 
+def get_medium(target_model, concentrations) :
+
+    pass
 """
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :
