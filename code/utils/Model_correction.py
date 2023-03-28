@@ -53,7 +53,7 @@ def get_ids(model, external_db, annotation_key) :
 
             except IndexError :
                     current_time = datetime.now().strftime("%H:%M:%S")
-                    error_messages.append(f"\n[{current_time}] ERROR - No ncbi gene id found for gene {gene_id}.")
+                    error_messages.append(f"\n[{current_time}] ERROR - No {annotation_key} gene id found for gene {gene_id}.")
                     
                     pass
         else :
@@ -121,7 +121,7 @@ def get_names_from_genes(target_model) :
                     
                     new_response = requests.get(url+new_gene_id)
                 
-                    reaction_name = new_response.text.split("description: ")[1].split(" [")[0]
+                    reaction_name = new_response.text.split("display_name: ")[1].split("\n")[0]
                 except IndexError :
                     reaction_name = "Null"
             if len(reaction_name) != 0 :
