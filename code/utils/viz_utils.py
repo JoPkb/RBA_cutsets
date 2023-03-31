@@ -110,7 +110,9 @@ def run_parcours(reaction : cobra.core.reaction.Reaction(), model : cobra.core.m
         print(f"FLUX : {flux} --- ID : {model.reactions.get_by_id(reaction).id} --- compartment : {model.reactions.get_by_id(reaction).compartments} \n\n---\n\n")
 
 def build_reaction_df(optimized_model, by_compartment = True) :
-
+    # Builds dataframes of fluxes associated to compartments or subsystems
+    # The dataframes are separated by compartment or subsystem.
+    #
     reactions_list = [r for r in optimized_model.reactions]
     if by_compartment :
         compartments_reactions_dict = {}
@@ -143,9 +145,9 @@ def build_reaction_df(optimized_model, by_compartment = True) :
         subsystem_reactions_dict = {}
         dataframes_to_return = []
         for subsystem in optimized_model.groups :
-            subsystem_reactions_dict[str(subsystem)] = {
+            subsystem_reactions_dict[str(subsystem).lower()] = {
                 "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
-                "subSystem" : [r.subsystem for r in reactions_list if str(subsystem) in r.subsystem],\
+                "subSystem" : [str(r.subsystem).lower() for r in reactions_list if str(subsystem) in r.subsystem],\
                 "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
                 "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
                 "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],\
@@ -242,10 +244,10 @@ def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, co
 
 def compartment_fluxes_barplots(model_1, model_2) :
     barplots = {}
-    for compartments_iHep, compartments_G2 in zip(build_reaction_df(model_1), build_reaction_df(model_2)):
+    for compartments_iHep, compartments_G2 in zip(build_reaction_df(model_1), build_reaction_df(model_2)): # -> Iterates over the different compartments fluxes dataframes.
 
-        color_Ekeley = 'salmon'
-        color_Porter = 'lightblue'
+        color_HepG2 = 'salmon'
+        color_iHep = 'lightblue'
         subS_HepG2 = get_subsystem_fluxes(compartments_G2, multiple=False)
         subS_iHep = get_subsystem_fluxes(compartments_iHep, multiple=False)
         df_both = pd.concat([subS_iHep, subS_HepG2],axis=1)
@@ -253,7 +255,7 @@ def compartment_fluxes_barplots(model_1, model_2) :
         sum_iHep = subS_iHep.sum(0)
         df_both.columns = ["iHep", "HepG2"]
 
-        df_both = df_both.loc[(df_both["iHep"] != 0.0)& (df_both["HepG2"] != 0.0)]
+        df_both = df_both.loc[(df_both["iHep"] != 0.0) & (df_both["HepG2"] != 0.0)]
         
         compartment_G2 = compartments_G2["compartment"][0]
         compartment_iHep = compartments_iHep["compartment"][0]
@@ -276,9 +278,9 @@ def compartment_fluxes_barplots(model_1, model_2) :
             fig.tight_layout()
 
 
-            axes[0].barh(labels, normalized_fluxes_iHep, align='center', color=color_Ekeley, zorder=10)
+            axes[0].barh(labels, normalized_fluxes_iHep, align='center', color=color_iHep, zorder=10)
             axes[0].set_title(f"iHep : {compartment_iHep}")
-            axes[1].barh(labels, normalized_fluxes_G2 , align='center', color=color_Porter, zorder=10)
+            axes[1].barh(labels, normalized_fluxes_G2 , align='center', color=color_HepG2, zorder=10)
             axes[1].set_title(f"Hep_G2 : {compartment_G2}")
             axes[0].set_xlabel("Fraction des comptages totaux")
             axes[1].set_xlabel("Fraction des comptages totaux")
@@ -288,6 +290,77 @@ def compartment_fluxes_barplots(model_1, model_2) :
             plt.close()
             barplots[compartment_G2] = (fig, axes)
     return barplots
+
+
+def subsystems_barplots(model_1, model_2, model_1_name, model_2_name) :
+    # Main model, used for labels is model_1 !
+    barplots = {}
+    unique_to_model_2 = []
+    fluxes_by_subsystem_dict_1 = build_reaction_df(model_1, by_compartment=False)
+    fluxes_by_subsystem_dict_2 = build_reaction_df(model_2, by_compartment=False)
+    color_1 = 'lightblue'
+    color_2 = 'salmon'
+
+    # getting a list of the biggest common subset of subsystems from both dictionaries. --> subsystems:list()
+    if len(fluxes_by_subsystem_dict_1) > len(fluxes_by_subsystem_dict_2) :
+        subsystems = [subs.lower() for subs in fluxes_by_subsystem_dict_2.keys()]
+    elif len(fluxes_by_subsystem_dict_1) <= len(fluxes_by_subsystem_dict_2) :
+        subsystems = [subs.lower() for subs in fluxes_by_subsystem_dict_1.keys()]
+
+    for subsystem in subsystems :
+
+        try : 
+            # Getting the fluxes associated with each protein of the subsystem into a dataframe.
+            # Some proteins might be present multiple times for each subsystem, due to the indirect boolean gene rules.
+            fluxes_dict_1 = {}
+            fluxes_dict_2 = {}
+            proteins_not_in_model_1 = {}
+            if len(fluxes_by_subsystem_dict_1[subsystem]["name"]) > len(fluxes_by_subsystem_dict_2[subsystem]["name"]) :
+                labels = fluxes_by_subsystem_dict_1[subsystem]["name"]
+            elif len(fluxes_by_subsystem_dict_1[subsystem]["name"]) < len(fluxes_by_subsystem_dict_2[subsystem]["name"]) :
+                labels = fluxes_by_subsystem_dict_2[subsystem]["name"]
+
+            for name, flux in zip(fluxes_by_subsystem_dict_1[subsystem]["name"], fluxes_by_subsystem_dict_1[subsystem]["flux"]) :
+                fluxes_dict_1[name] = fluxes_dict_1.get(name, 0.0) + flux
+            for name, flux in zip(fluxes_by_subsystem_dict_2[subsystem]["name"], fluxes_by_subsystem_dict_2[subsystem]["flux"]) :
+                if name in fluxes_dict_1.keys() :
+                    fluxes_dict_2[name] = fluxes_dict_2.get(name, 0.0) + flux
+                else :
+                    proteins_not_in_model_1[name] = proteins_not_in_model_1.get(name, 0.0) + flux
+
+            # Building the lists that will be used to plot the data :
+
+            fluxes_1 = [float(val) for val in fluxes_dict_1.values()]
+            fluxes_2 = [float(val) for val in fluxes_dict_2.values()]
+
+
+            labels = list(fluxes_dict_1.keys())
+            
+            
+
+            xmax = max(max(fluxes_1),max(fluxes_2))
+            xmin = min(min(fluxes_1), min(fluxes_2))
+
+            fig, axes = plt.subplots(figsize=(5,7), ncols=2, sharey=True)
+            fig.tight_layout()
+            fig.suptitle(f"{subsystem} protein fluxes.")
+            axes[0].barh(labels, fluxes_1, align='center', color=color_1, zorder=10)
+            axes[0].set_title(f"{model_1_name}")
+            axes[1].barh(labels, fluxes_2 , align='center', color=color_2, zorder=10)
+            axes[1].set_title(f"{model_2_name}")
+            axes[0].set_xlabel("Fraction des comptages totaux")
+            axes[1].set_xlabel("Fraction des comptages totaux")
+            axes[0].invert_yaxis() # labels read top-to-bottom
+            axes[0].invert_xaxis() # mirror data for both duildings
+            plt.xlim = (xmin, xmax)
+            plt.close()
+            barplots[subsystem] = (fig, axes)
+
+            unique_to_model_2.append(proteins_not_in_model_1)
+
+        except KeyError :
+            print(f"\nsubsystem < {subsystem} > is probably absent from one of the dictionaries.")
+    return barplots, unique_to_model_2
 
 
 
