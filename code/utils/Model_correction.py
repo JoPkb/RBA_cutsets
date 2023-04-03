@@ -26,7 +26,7 @@ def fix_formulas(model) :
 
 
 ### Gene id conversion :
-def get_ids(model, external_db, annotation_key) :
+def get_ids(model, external_db, annotation_key):
     url="http://rest.ensembl.org/xrefs/id/"
     #print("\nCreating working copy of the model...")
     #converted = model.copy()
@@ -128,7 +128,7 @@ def get_names_from_genes(target_model) :
                 names.append(reaction_name)
         if len(names) != 0 :
             #print(f"\nFound Enzyme name {reaction_name} for reaction {reaction.id}")
-            reaction.name = " \ ".join(names)
+            reaction.name = "/".join(names)
         else :
             continue
 
@@ -162,10 +162,19 @@ def check_biomass_metabolites(target_model, metabolite_id = "_") :
             id = m.id
             biomass_reaction.add_metabolites({target_model.metabolites.get_by_id(id) : 0.0}, combine=False)
             print(f"\nFound unwanted metabolite in biomass_components reactions : {id}. Removed it.")
- 
+
+
 def get_medium(target_model, concentrations) :
 
     pass
+
+
+def get_reac_id_from_genes(target_model, source_model):
+    
+    pass
+
+
+
 """
 ### Function to add biomass_reaction :
 def add_biomass_reaction(model, biomass_metabolites) :

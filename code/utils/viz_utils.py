@@ -7,22 +7,26 @@ from itertools import cycle
 import matplotlib.pyplot as plt
 import cobra
 
-def parcours_test(reaction, flux_dict, v = False) :
-    
+from cobra.core.model import Model
+from cobra.core.reaction import Reaction
+
+
+def parcours_test(reaction, flux_dict, v=False):
+
     #Metabolites list, used to determine which metabolites have already been visited.
     m_l = []
-    
-    for m in reaction.metabolites :
-        print(f"\nChecking out metabolite {m.id}") 
-        
-        if not m in m_l :
+
+    for m in reaction.metabolites:
+        print(f"\nChecking out metabolite {m.id}")
+
+        if not m in m_l:
             print(f"\nNew metabolite, adding {m.id} to list of visited metabolites.")
             m_l.append(m)
 
             for r in m.reactions :
                 print(f"\nChecking out reaction {r.id}")
 
-                if r.id not in flux_dict.keys() :
+                if r.id not in flux_dict.keys():
 
                     # This part checks if there is a flux for the given reaction, and if it is an exchange reaction.
                     # If there is a flux and it is not an exchange reaction, it is added to the flux dict.
@@ -33,39 +37,39 @@ def parcours_test(reaction, flux_dict, v = False) :
                         flux_dict[r.id] = r.flux
                         flux_dict = parcours(r, flux_dict)
 
-                    elif r.flux != 0.0 and len(r.compartments) >1 :
+                    elif r.flux != 0.0 and len(r.compartments) > 1:
                         print(f"\nNew exchange reaction, adding {r.id} : (exchange {r.compartments}) to flux dict.")
                         flux_dict[r.id] = r.flux
-                        if "C_x" in r.compartments or "C_s" in r.compartments :
-                            flux_dict = parcours(r, flux_dict) 
-                    else :
+                        if "C_x" in r.compartments or "C_s" in r.compartments:
+                            flux_dict = parcours(r, flux_dict)
+                    else:
                         print(f"\nERROR -- flux == 0 for {r.id}")
-                        
-                else :
+
+                else:
                     print(f"\nERROR -- id in dict for {r.id}")
                     continue
-        else :
+        else:
             print(f"\nERROR -- metabolite {m.id} already visited")
             break
-        
-            
+
+
     return flux_dict
 
 
 
 
-       
+
 def parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations = 10000, i=0,v = True, m_l = [], cofactors = set()) :
     #Metabolites list, used to determine which metabolites have already been visited.
-    
+
     """
     if not v :
         orig_stdout = sys.stdout
         f = open('out.txt', 'w')
         sys.stdout = f"""
     for m in reaction.metabolites :
-        #print(f"\nChecking out metabolite {m.id}") 
-        
+        #print(f"\nChecking out metabolite {m.id}")
+
         if not m in m_l and not i >= max_iterations: # If the metabolite has not already been visited, and if we haven't reached the maximum number of iterations.
             m_l.append(m) # Adding the metabolite to the list of already visited metabolites.
             if not m.name in metabolites_to_exclude :
@@ -86,7 +90,7 @@ def parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations = 10000
                         else :
                             #print(f"\nERROR -- flux == 0 for {r.id}")
                             pass
-                            
+
                     else :
                         #print(f"\nERROR -- id in dict for {r.id}")
                         continue
@@ -95,31 +99,31 @@ def parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations = 10000
         else :
             #print(f"\nERROR -- metabolite {m.id} already visited")
             continue
-    
+
     """if not v :
         f.close()
         sys.stdout = orig_stdout"""
     return flux_dict
 
-def run_parcours(reaction : cobra.core.reaction.Reaction(), model : cobra.core.model.Model(), metabolites_to_exclude:list, max_iterations=10000) :
+def run_parcours(reaction:Reaction, model:Model, metabolites_to_exclude=["PPi", "CoA", "O2", "H+", "ATP", "CO2", "NADP+", "FADH2", "ADP", "Na+", "NADH", "FAD", "NADPH", "NAD+", "Pi", "H2O"], max_iterations=10000):
     flux_dict = {}
     print(f"\n[{reaction.id}] : Getting all related reactions and fluxes...")
     f = parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations)
     for reaction, flux in f.items() :
         print_reactions(model.reactions.get_by_id(reaction), flux)
-        print(f"FLUX : {flux} --- ID : {model.reactions.get_by_id(reaction).id} --- compartment : {model.reactions.get_by_id(reaction).compartments} \n\n---\n\n")
+        print(f"FLUX : {flux} --- ID : {model.reactions.get_by_id(reaction).id} --- COMPARTMENT : {model.reactions.get_by_id(reaction).compartments}")
+        print(f"\nSUBSYSTEM : {model.reactions.get_by_id(reaction).subsystem} --- GENE NAME : {model.reactions.get_by_id(reaction).name}\n\n---\n\n")
 
-def build_reaction_df(optimized_model, by_compartment = True) :
+def build_reaction_df(optimized_model:Model, by_compartment = True) :
     # Builds dataframes of fluxes associated to compartments or subsystems
     # The dataframes are separated by compartment or subsystem.
-    #
     reactions_list = [r for r in optimized_model.reactions]
     if by_compartment :
         compartments_reactions_dict = {}
 
-        
-        
-        for compartment in optimized_model.compartments : 
+
+
+        for compartment in optimized_model.compartments :
             compartments_reactions_dict[str(compartment)] = {
                 "flux" : [abs(r.flux) for r in reactions_list if str(compartment) in r.compartments],\
                 "subSystem" : [r.subsystem for r in reactions_list if str(compartment) in r.compartments],\
@@ -129,8 +133,8 @@ def build_reaction_df(optimized_model, by_compartment = True) :
                 "direction" : [str(r.flux)[0] for r in reactions_list if str(compartment) in r.compartments],\
                 "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(compartment) in r.compartments],\
                 "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(compartment) in r.compartments]
-            } 
-        
+            }
+
         return (pd.DataFrame(compartments_reactions_dict["C_c"]), \
                 pd.DataFrame(compartments_reactions_dict["C_r"]), \
                 pd.DataFrame(compartments_reactions_dict["C_s"]), \
@@ -145,26 +149,40 @@ def build_reaction_df(optimized_model, by_compartment = True) :
         subsystem_reactions_dict = {}
         dataframes_to_return = []
         for subsystem in optimized_model.groups :
-            subsystem_reactions_dict[str(subsystem).lower()] = {
-                "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
-                "subSystem" : [str(r.subsystem).lower() for r in reactions_list if str(subsystem) in r.subsystem],\
-                "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
-                "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
-                "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],\
-                "direction" : [str(r.flux)[0] for r in reactions_list if str(subsystem) in r.subsystem],\
-                "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
-                "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
-            }
+            # Exception for beta-oxydation and Carnitine shuttle.
+            if "beta oxidation of" in str(subsystem).lower() or "carnitine shuttle" in str(subsystem).lower() :
+                subsystem_beta_carn = " ".join(str(subsystem).lower().split(" ")[:2])
+                subsystem_reactions_dict[str(subsystem_beta_carn).lower()] = {
+                    "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "subSystem" : [str(r.subsystem).lower() for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "direction" : [str(r.flux)[0] for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
+                }
+            else :
+                subsystem_reactions_dict[str(subsystem).lower()] = {
+                    "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "subSystem" : [str(r.subsystem).lower() for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "direction" : [str(r.flux)[0] for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                    "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
+                }
 
         return subsystem_reactions_dict
-    
+
 
 
 
 def get_subsystem_fluxes(dfs, multiple = True) :
     subsystem_fluxes = {}
 
-    if multiple : 
+    if multiple :
         for df in dfs :
             for line in df.iterrows() :
                 #print(line[1]["flux"])
@@ -185,16 +203,73 @@ def get_subsystem_fluxes(dfs, multiple = True) :
                     subsystem_fluxes[line[1]["subSystem"]] = abs(line[1]["flux"])
         df_bar = pd.DataFrame(subsystem_fluxes,index=["Fluxes"]).T
         return df_bar
+
+
+def reformat_dict(origin_dict, by, data, subsystem):
+    """
+    Reformats a dictionary to make it contain "data" relative to "by"
+    """
+    new_dict = {}
+
+    for prot_names, flux in zip(origin_dict[subsystem][by], origin_dict[subsystem][data]):
+        for name in prot_names.split('/'):
+            new_dict[name] = new_dict.get(name, 0.0) + flux  
     
+    return new_dict
 
 
+def combine_fluxes_by_gene(reaction_dict_1, reaction_dict_2):
+    """
+    Function taking as input two dictionaries containing fluxes associated with gene names.
+    Returns a dictionary of lists used to plot a comparison of flux attribution to proteins between two models.
+    The input dictionaries should follow the format :
+    {protein_id : flux}
+    """
+    common_index = [] #Building a list containing every gene mentionned at least once in either dictionaries.
 
+    for name_1 in reaction_dict_1.keys(): #Initializing the common_index list with all gene names of reaction_dict_1.
+        if name_1 in common_index:
+            continue
+        else:
+            common_index.append(name_1) #Adding the name to the index if does not already contain it.
+
+    for name_2 in reaction_dict_2.keys():
+            if name_2 in common_index:
+                continue
+            else:
+                common_index.append(name_2)
+    #At this point, the common_index list should be filled.
+
+    fluxes_list_1 = []
+    fluxes_list_2 = []
+    for protein_name in common_index:
+        try:
+            fluxes_list_1.append(float(reaction_dict_1[protein_name]))
+        except KeyError:
+            #print(f"\nProtein {protein_name} not found in dict_1")
+            fluxes_list_1.append(0.0)
+        
+        try:
+            fluxes_list_2.append(float(reaction_dict_2[protein_name]))
+        except KeyError:
+            #print(f"\nProtein {protein_name} not found in dict_1")
+            fluxes_list_2.append(0.0)
+    
+    #At this point, there should be 3 lists, one of protein ids and two of fluxes.
+    #This next part checks it :
+    print(f"\nlen(names) = {len(common_index)} \t--\t len(fluxes_1) = {len(fluxes_list_1)} \t--\t len(fluxes_2) = {len(fluxes_list_2)}.")
+    if len(common_index) == len(fluxes_list_1) and len(common_index) == len(fluxes_list_2) :
+        final_dict = {"names" : common_index, "fluxes_1" : fluxes_list_1, "fluxes_2" : fluxes_list_2}
+
+        return pd.DataFrame(final_dict)
+    else :
+        raise ValueError
 ### DATA VISUALISATION ###
 
 def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, color_by = "subsystem") :
     ### Building colormap :
 
-    
+
     if color_by == "subsystem" :
         # cols = ['#E48F72','#FC6955','#7E7DCD','#BC7196','#86CE00','#E3EE9E','#22FFA7','#FF0092','#C9FBE5','#B68E00','#00B5F7','#6E899C',
         # '#D626FF','#AF0038','#0D2A63','#6C4516','#DA60CA','#1616A7','#620042','#A777F1','#862A16','#778AAE','#6C7C32','#B2828D',
@@ -204,8 +279,8 @@ def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, co
         # '#FC0080','#B2828D','#6C7C32','#778AAE','#862A16','#A777F1','#620042','#1616A7','#DA60CA','#6C4516','#0D2A63','#AF0038']
         cols = ["#4D455D", "#E96479", "#F5E9CF", "#7DB9B6", "#539165", "#820000", "#FFB100"]
         # Used to plot fluxes compartment by compartment --> coloring by the next highest hierarchical category = subsystems.
-    
-        
+
+
         subsystems = set()
         for r in model.reactions :
             if len(r.subsystem) >0 and not "Transport" in r.subsystem and not "Exchange" in r.subsystem :
@@ -217,7 +292,7 @@ def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, co
         ###
 
         df = df.loc[(df["subSystem"] != "Transport, mitochondrial")& (df["subSystem"] != "Transport, extracellular" ) & (df["subSystem"] != "Exchange reactions")& (df["subSystem"] != "Transport, peroxisomal" )]
-        fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path, 
+        fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path,
                     values='flux', hover_name= "name" ,color='subSystem',hover_data = ["direction", "reactants", "products"], color_discrete_map=cmap)
 
         fig.update_layout(title_text=title, font_size=12)
@@ -237,9 +312,9 @@ def plot_treemap(df, model, title, path=['subSystem', 'id'], flux_filter=0.0, co
         ###
 
         df = df.loc[(df["subSystem"] != "Transport, mitochondrial")& (df["subSystem"] != "Transport, extracellular" ) & (df["subSystem"] != "Exchange reactions")& (df["subSystem"] != "Transport, peroxisomal" )]
-        fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path, 
+        fig = px.treemap(df.loc[(df["flux"] >= flux_filter) & (df["name"] != "Null")].to_dict() , path=path,
                     values='flux', hover_name= "name" ,color='compartment', hover_data = ["direction", "reactants", "products"], color_discrete_map=cmap)
-    return fig 
+    return fig
 
 
 def compartment_fluxes_barplots(model_1, model_2) :
@@ -256,11 +331,11 @@ def compartment_fluxes_barplots(model_1, model_2) :
         df_both.columns = ["iHep", "HepG2"]
 
         df_both = df_both.loc[(df_both["iHep"] != 0.0) & (df_both["HepG2"] != 0.0)]
-        
+
         compartment_G2 = compartments_G2["compartment"][0]
         compartment_iHep = compartments_iHep["compartment"][0]
 
-        
+
 
         if not compartment_iHep == compartment_G2 :
             print("Erreur compartements")
@@ -273,7 +348,7 @@ def compartment_fluxes_barplots(model_1, model_2) :
 
             xmax = max(max(normalized_fluxes_G2), max(normalized_fluxes_iHep))
             xmin = min(min(normalized_fluxes_G2), min(normalized_fluxes_iHep))
-            
+
             fig, axes = plt.subplots(figsize=(5,7), ncols=2, sharey=True)
             fig.tight_layout()
 
@@ -292,80 +367,79 @@ def compartment_fluxes_barplots(model_1, model_2) :
     return barplots
 
 
-def subsystems_barplots(model_1, model_2, model_1_name, model_2_name) :
+def subsystem_barplots(model_1:Model, model_2:Model, model_1_name:str, model_2_name:str, subsystems_dict:dict) :
     # Main model, used for labels is model_1 !
     barplots = {}
-    unique_to_model_2 = []
+    # Take all reaction-associated fluxes, and returns them as a dictionary. 
+    # by_compartment being False means that the dictionary's keys are subSystems.
     fluxes_by_subsystem_dict_1 = build_reaction_df(model_1, by_compartment=False)
     fluxes_by_subsystem_dict_2 = build_reaction_df(model_2, by_compartment=False)
-    color_1 = 'lightblue'
-    color_2 = 'salmon'
+    color_1 = "plum"
+    color_2 = "powderblue"
 
-    # getting a list of the biggest common subset of subsystems from both dictionaries. --> subsystems:list()
-    if len(fluxes_by_subsystem_dict_1) > len(fluxes_by_subsystem_dict_2) :
-        subsystems = [subs.lower() for subs in fluxes_by_subsystem_dict_2.keys()]
-    elif len(fluxes_by_subsystem_dict_1) <= len(fluxes_by_subsystem_dict_2) :
-        subsystems = [subs.lower() for subs in fluxes_by_subsystem_dict_1.keys()]
+    for subsystem in subsystems_dict.keys() :
+        # Take the fluxes_by_subsystems dictionaries and shrinks them, selecting only the fluxes and name 
+        # columns and only one subsystem.
+        flux_by_prot_dict_1 = reformat_dict(fluxes_by_subsystem_dict_1, "name", "flux", subsystem)
+        flux_by_prot_dict_2 = reformat_dict(fluxes_by_subsystem_dict_2, "name", "flux", subsystem)
 
-    for subsystem in subsystems :
+        # Combines the two dictionaries to make a final dataframe containing, for each gene,
+        # its associated flux, in each model.
+        df_flux = combine_fluxes_by_gene(flux_by_prot_dict_1, flux_by_prot_dict_2)
+        df_flux_nonull = df_flux.loc[(df_flux["fluxes_1"] > 0.0) | (df_flux["fluxes_2"] > 0.0)]
+        labels = list(df_flux_nonull["names"])
+        try :
 
-        try : 
-            # Getting the fluxes associated with each protein of the subsystem into a dataframe.
-            # Some proteins might be present multiple times for each subsystem, due to the indirect boolean gene rules.
-            fluxes_dict_1 = {}
-            fluxes_dict_2 = {}
-            proteins_not_in_model_1 = {}
-            if len(fluxes_by_subsystem_dict_1[subsystem]["name"]) > len(fluxes_by_subsystem_dict_2[subsystem]["name"]) :
-                labels = fluxes_by_subsystem_dict_1[subsystem]["name"]
-            elif len(fluxes_by_subsystem_dict_1[subsystem]["name"]) < len(fluxes_by_subsystem_dict_2[subsystem]["name"]) :
-                labels = fluxes_by_subsystem_dict_2[subsystem]["name"]
+            xmax = max(max(df_flux_nonull["fluxes_1"]),max(df_flux_nonull["fluxes_2"]))
+            xmin = min(min(df_flux_nonull["fluxes_1"]), min(df_flux_nonull["fluxes_2"]))
+        except ValueError:
+            print(f"\nNo fluxes associated with subsystem {subsystem} in either models.")
+            continue
+        edgecolors_1 = []
+        edgecolors_2 = []
+        for f1, f2 in zip(df_flux_nonull["fluxes_1"].tolist(), df_flux_nonull["fluxes_2"].tolist()):
+            if float(f1) > float(f2):
+                edgecolors_1.append("firebrick")
+                edgecolors_2.append("powderblue")
+            elif float(f1) < float(f2):
+                edgecolors_2.append("firebrick")
+                edgecolors_1.append("plum")
+            else :
+                edgecolors_1.append("plum")
+                edgecolors_2.append("powderblue")
+        fig, axes = plt.subplots(figsize=subsystems_dict[subsystem], ncols=2, sharey=True)
+        fig.tight_layout()
+        fig.suptitle(f"{subsystem} protein fluxes.")
+        axes[0].barh(labels, df_flux_nonull["fluxes_1"], align='center', color=color_1, edgecolor = edgecolors_1, linewidth=3,zorder=10)
+        axes[0].set_title(f"{model_1_name}")
+        axes[1].barh(labels, df_flux_nonull["fluxes_2"] , align='center', color=color_2, edgecolor = edgecolors_2, linewidth=3,zorder=10)
+        axes[1].set_title(f"{model_2_name}")
+        axes[0].set_xlabel("Fraction des comptages totaux")
+        axes[1].set_xlabel("Fraction des comptages totaux")
+        axes[0].invert_yaxis() # labels read top-to-bottom
+        axes[0].invert_xaxis() # mirror data for both duildings
 
-            for name, flux in zip(fluxes_by_subsystem_dict_1[subsystem]["name"], fluxes_by_subsystem_dict_1[subsystem]["flux"]) :
-                fluxes_dict_1[name] = fluxes_dict_1.get(name, 0.0) + flux
-            for name, flux in zip(fluxes_by_subsystem_dict_2[subsystem]["name"], fluxes_by_subsystem_dict_2[subsystem]["flux"]) :
-                if name in fluxes_dict_1.keys() :
-                    fluxes_dict_2[name] = fluxes_dict_2.get(name, 0.0) + flux
-                else :
-                    proteins_not_in_model_1[name] = proteins_not_in_model_1.get(name, 0.0) + flux
 
-            # Building the lists that will be used to plot the data :
-
-            fluxes_1 = [float(val) for val in fluxes_dict_1.values()]
-            fluxes_2 = [float(val) for val in fluxes_dict_2.values()]
-
-
-            labels = list(fluxes_dict_1.keys())
+        ticks_0 = axes[0].get_xticks()
+        ticks_1 = axes[1].get_xticks()
+        max_0 = max(ticks_0)
+        max_1 = max(ticks_1)
+        if max_0 > max_1 :
+            axes[1].set_xticks(ticks_0)
+        else :
+            axes[0].set_xticks(ticks_1)
             
-            
+        plt.xlim = (0.0, max(max_0, max_1))
+        plt.close()
+        barplots[subsystem] = (fig, axes)
 
-            xmax = max(max(fluxes_1),max(fluxes_2))
-            xmin = min(min(fluxes_1), min(fluxes_2))
 
-            fig, axes = plt.subplots(figsize=(5,7), ncols=2, sharey=True)
-            fig.tight_layout()
-            fig.suptitle(f"{subsystem} protein fluxes.")
-            axes[0].barh(labels, fluxes_1, align='center', color=color_1, zorder=10)
-            axes[0].set_title(f"{model_1_name}")
-            axes[1].barh(labels, fluxes_2 , align='center', color=color_2, zorder=10)
-            axes[1].set_title(f"{model_2_name}")
-            axes[0].set_xlabel("Fraction des comptages totaux")
-            axes[1].set_xlabel("Fraction des comptages totaux")
-            axes[0].invert_yaxis() # labels read top-to-bottom
-            axes[0].invert_xaxis() # mirror data for both duildings
-            plt.xlim = (xmin, xmax)
-            plt.close()
-            barplots[subsystem] = (fig, axes)
-
-            unique_to_model_2.append(proteins_not_in_model_1)
-
-        except KeyError :
-            print(f"\nsubsystem < {subsystem} > is probably absent from one of the dictionaries.")
-    return barplots, unique_to_model_2
+    return barplots
 
 
 
 
-def print_exchanges(optimized_model, filter ) : 
+def print_exchanges(optimized_model, filter ) :
     intakes = []
     secretions = []
     neutrals = []
@@ -375,9 +449,9 @@ def print_exchanges(optimized_model, filter ) :
         flux_comparison = 200000.0
     for reaction in optimized_model.boundary :
         if reaction.flux != flux_comparison :
-            
 
-            # Jolification 
+
+            # Jolification
             spaces = 12
             spaces_str = ""
             for i in str(round(reaction.flux)) :
@@ -389,14 +463,14 @@ def print_exchanges(optimized_model, filter ) :
             # Fin de la jolification
 
             ml = [metab for metab in reaction.metabolites]
-            m = [metab for metab in reaction.metabolites][0]    
+            m = [metab for metab in reaction.metabolites][0]
             if reaction.flux > 0.0 :
                 secretions.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
             elif reaction.flux < 0.0 :
                 intakes.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
             else :
                 neutrals.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
-                
+
     intakes.sort(key=lambda f : float(f.split(": ")[1].split("ub")[0]))
     secretions.sort(key=lambda f : float(f.split(": ")[1].split("ub")[0]), reverse=True)
     print("\n##########\nINTAKES :\n")
@@ -432,61 +506,60 @@ def print_reactions(reaction, flux = 0.0, v=True):
              fleche = "-->"
         else :
              fleche = "<=>"
-    
+
     for i in liste_reactif:
         if i != liste_reactif[-1]:
             string += str(float(abs(reaction.metabolites[i])))
             string += " "
             string += str(i.name)
             string += " + "
-            
+
             string2 += str(float(abs(reaction.metabolites[i])))
             string2 += " "
             string2 += str(i.id)
             string2 += " + "
-            
+
         else:
             string += str(float(abs(reaction.metabolites[i])))
             string += " "
             string += str(i.name)
             string += " "
-            
+
             string2 += str(float(abs(reaction.metabolites[i])))
             string2 += " "
             string2 += str(i.id)
             string2 += " "
-            
+
     string += fleche
     string += " "
-    
+
     string2 += fleche
     string2 += " "
-    
-    
+
+
     for i in liste_produit:
         if i != liste_produit[-1]:
             string += str(float(abs(reaction.metabolites[i])))
             string += " "
             string += str(i.name)
             string += " + "
-            
+
             string2 += str(float(abs(reaction.metabolites[i])))
             string2 += " "
             string2 += str(i.id)
             string2 += " + "
-            
+
         else:
             string += str(float(abs(reaction.metabolites[i])))
             string += " "
             string += str(i.name)
-            
+
             string2 += str(float(abs(reaction.metabolites[i])))
             string2 += " "
             string2 += str(i.id)
-    if v :    
+    if v :
         print(string)
         print("")
         print(string2)
     else :
         return(string, string2)
-    
