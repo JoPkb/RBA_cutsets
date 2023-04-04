@@ -147,7 +147,7 @@ def build_reaction_df(optimized_model:Model, by_compartment = True) :
     else :
 
         subsystem_reactions_dict = {}
-        dataframes_to_return = []
+        
         for subsystem in optimized_model.groups :
             # Exception for beta-oxydation and Carnitine shuttle.
             if "beta oxidation of" in str(subsystem).lower() or "carnitine shuttle" in str(subsystem).lower() :
@@ -257,7 +257,7 @@ def combine_fluxes_by_gene(reaction_dict_1, reaction_dict_2):
     
     #At this point, there should be 3 lists, one of protein ids and two of fluxes.
     #This next part checks it :
-    print(f"\nlen(names) = {len(common_index)} \t--\t len(fluxes_1) = {len(fluxes_list_1)} \t--\t len(fluxes_2) = {len(fluxes_list_2)}.")
+    #print(f"\nlen(names) = {len(common_index)} \t--\t len(fluxes_1) = {len(fluxes_list_1)} \t--\t len(fluxes_2) = {len(fluxes_list_2)}.")
     if len(common_index) == len(fluxes_list_1) and len(common_index) == len(fluxes_list_2) :
         final_dict = {"names" : common_index, "fluxes_1" : fluxes_list_1, "fluxes_2" : fluxes_list_2}
 
@@ -374,7 +374,7 @@ def subsystem_barplots(model_1:Model, model_2:Model, model_1_name:str, model_2_n
     # by_compartment being False means that the dictionary's keys are subSystems.
     fluxes_by_subsystem_dict_1 = build_reaction_df(model_1, by_compartment=False)
     fluxes_by_subsystem_dict_2 = build_reaction_df(model_2, by_compartment=False)
-    color_1 = "plum"
+    color_1 = "wheat"
     color_2 = "powderblue"
 
     for subsystem in subsystems_dict.keys() :
@@ -403,11 +403,11 @@ def subsystem_barplots(model_1:Model, model_2:Model, model_1_name:str, model_2_n
                 edgecolors_2.append("powderblue")
             elif float(f1) < float(f2):
                 edgecolors_2.append("firebrick")
-                edgecolors_1.append("plum")
+                edgecolors_1.append("wheat")
             else :
-                edgecolors_1.append("plum")
+                edgecolors_1.append("wheat")
                 edgecolors_2.append("powderblue")
-        fig, axes = plt.subplots(figsize=subsystems_dict[subsystem], ncols=2, sharey=True)
+        fig, axes = plt.subplots(figsize=subsystems_dict[subsystem], ncols=2, sharey=True, facecolor='w')
         fig.tight_layout()
         fig.suptitle(f"{subsystem} protein fluxes.")
         axes[0].barh(labels, df_flux_nonull["fluxes_1"], align='center', color=color_1, edgecolor = edgecolors_1, linewidth=3,zorder=10)
