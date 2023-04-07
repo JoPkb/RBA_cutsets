@@ -3414,7 +3414,25 @@ Publisher: Nature Publishing Group</dc:description>
         </bib:authors>
         <link:link rdf:resource="#item_80"/>
         <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
            <z:AutomaticTag><rdf:value>Animals</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Models, Biological</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic Networks and Pathways</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic networks</rdf:value>
+            </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -3436,24 +3454,6 @@ Publisher: Nature Publishing Group</dc:description>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>Genotype</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-            <z:AutomaticTag>
-               <rdf:value>Metabolic networks</rdf:value>
-            </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-            <z:AutomaticTag>
-               <rdf:value>Metabolic Networks and Pathways</rdf:value>
-            </z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-            <z:AutomaticTag>
-               <rdf:value>Models, Biological</rdf:value>
-            </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -3533,15 +3533,10 @@ Publisher: Nature Publishing Group</dc:description>
         </bib:authors>
         <link:link rdf:resource="#item_82"/>
         <dc:subject>
-            <z:AutomaticTag>
-               <rdf:value>Amino acid metabolism</rdf:value>
-            </z:AutomaticTag>
+           <z:AutomaticTag><rdf:value>Glucose</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
            <z:AutomaticTag><rdf:value>Cell metabolism</rdf:value></z:AutomaticTag>
-        </dc:subject>
-        <dc:subject>
-           <z:AutomaticTag><rdf:value>Glucose</rdf:value></z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -3549,12 +3544,17 @@ Publisher: Nature Publishing Group</dc:description>
             </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
+           <z:AutomaticTag><rdf:value>Metabolites</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
             <z:AutomaticTag>
-               <rdf:value>Metabolic pathways</rdf:value>
+               <rdf:value>Amino acid metabolism</rdf:value>
             </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
-           <z:AutomaticTag><rdf:value>Metabolites</rdf:value></z:AutomaticTag>
+            <z:AutomaticTag>
+               <rdf:value>Metabolic pathways</rdf:value>
+            </z:AutomaticTag>
         </dc:subject>
         <dc:subject>
             <z:AutomaticTag>
@@ -3588,6 +3588,211 @@ Publisher: Nature Publishing Group</dc:description>
             </dcterms:URI>
         </dc:identifier>
         <dcterms:dateSubmitted>2023-03-21 17:15:15</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8658661/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1422-0067"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Arzumanian</foaf:surname>
+                        <foaf:givenName>Viktoriia A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kiseleva</foaf:surname>
+                        <foaf:givenName>Olga I.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Poverennaya</foaf:surname>
+                        <foaf:givenName>Ekaterina V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_85"/>
+        <link:link rdf:resource="#item_84"/>
+        <dc:title>The Curious Case of the HepG2 Cell Line: 40 Years of Expertise</dc:title>
+        <dcterms:abstract>Liver cancer is the third leading cause of cancer death worldwide. Representing such a dramatic impact on our lives, liver cancer is a significant public health concern. Sustainable and reliable methods for preventing and treating liver cancer require fundamental research on its molecular mechanisms. Cell lines are treated as in vitro equivalents of tumor tissues, making them a must-have for basic research on the nature of cancer. According to recent discoveries, certified cell lines retain most genetic properties of the original tumor and mimic its microenvironment. On the other hand, modern technologies allowing the deepest level of detail in omics landscapes have shown significant differences even between samples of the same cell line due to cross- and mycoplasma infection. This and other observations suggest that, in some cases, cell cultures are not suitable as cancer models, with limited predictive value for the effectiveness of new treatments. HepG2 is a popular hepatic cell line. It is used in a wide range of studies, from the oncogenesis to the cytotoxicity of substances on the liver. In this regard, we set out to collect up-to-date information on the HepG2 cell line to assess whether the level of heterogeneity of the cell line allows in vitro biomedical studies as a model with guaranteed production and quality.</dcterms:abstract>
+        <dc:date>2021-12-04</dc:date>
+        <z:shortTitle>The Curious Case of the HepG2 Cell Line</z:shortTitle>
+        <z:libraryCatalog>PubMed Central</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8658661/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-24 10:44:39</dcterms:dateSubmitted>
+        <dc:description>PMID: 34884942
+PMCID: PMC8658661</dc:description>
+        <bib:pages>13135</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1422-0067">
+        <prism:volume>22</prism:volume>
+        <dc:title>International Journal of Molecular Sciences</dc:title>
+        <dc:identifier>DOI 10.3390/ijms222313135</dc:identifier>
+        <prism:number>23</prism:number>
+        <dcterms:alternative>Int J Mol Sci</dcterms:alternative>
+        <dc:identifier>ISSN 1422-0067</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_85">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed Central Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8658661/pdf/ijms-22-13135.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-24 10:44:41</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_84">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed Central Link</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8658661/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-24 10:44:39</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_86">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1876-7737"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wiśniewski</foaf:surname>
+                        <foaf:givenName>Jacek R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vildhede</foaf:surname>
+                        <foaf:givenName>Anna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Norén</foaf:surname>
+                        <foaf:givenName>Agneta</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Artursson</foaf:surname>
+                        <foaf:givenName>Per</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_87"/>
+        <link:link rdf:resource="#item_88"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Humans</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Metabolism</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Hep G2 Cells</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Carcinoma, Hepatocellular</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Liver Neoplasms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>‘Proteomic Ruler’</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>‘Total Protein Approach’</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>ADME proteins</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>FASP</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Hepatocytes</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Human hepatocyte</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Human hepatocyte proteome</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Neoplasm Proteins</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Quantitative proteomics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Transporter</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>In-depth quantitative analysis and comparison of the human hepatocyte and hepatoma cell line HepG2 proteomes</dc:title>
+        <dcterms:abstract>Hepatocytes play a pivotal role in human homeostasis. They are essential in regulation of glucose and lipid levels in blood and play a central role in metabolism of amino acids, lipids, drugs and xenobiotic-compounds. In addition, hepatocytes produce a major portion of proteins circulating in the blood. Hepatocytes were isolated from liver tissue obtained from surgical resections. Proteins were extracted and processed using filter aided sample preparation protocol and were analyzed by LC-MS/MS using high accuracy mass spectrometry. Proteins were quantified by the 'Total Protein Approach' and 'Proteomic Ruler'. We report a comprehensive proteomic analysis of purified human hepatocytes and the human hepatoma cell line HepG2. The complete dataset comprises 9400 proteins and provides a comprehensive and quantitative depiction of the proteomes of hepatocytes and HepG2 cells at the protein titer and copy number dimensions. We describe basic cell organization and in detail energy metabolism pathways and metabolite transport. We provide quantitative insights into protein synthesis and drug and xenobiotics catabolism. Our data delineate differences between the native human hepatocytes and HepG2 cells by providing for the first time quantitative data at protein concentrations and copy numbers.</dcterms:abstract>
+        <dc:date>2016-03-16</dc:date>
+        <z:language>eng</z:language>
+        <z:libraryCatalog>PubMed</z:libraryCatalog>
+        <dc:description>PMID: 26825538</dc:description>
+        <bib:pages>234-247</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1876-7737">
+        <prism:volume>136</prism:volume>
+        <dc:title>Journal of Proteomics</dc:title>
+        <dc:identifier>DOI 10.1016/j.jprot.2016.01.016</dc:identifier>
+        <dcterms:alternative>J Proteomics</dcterms:alternative>
+        <dc:identifier>ISSN 1876-7737</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_87">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed entry</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.ncbi.nlm.nih.gov/pubmed/26825538</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-24 10:45:01</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_88">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Texte intégral</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S1874391916300197/pdfft?md5=55c621dd3512ef046c40b55d0076971a&amp;pid=1-s2.0-S1874391916300197-main.pdf&amp;isDTMRedir=Y</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2023-03-24 10:45:04</dcterms:dateSubmitted>
         <z:linkMode>1</z:linkMode>
         <link:type>application/pdf</link:type>
     </z:Attachment>
@@ -3626,5 +3831,7 @@ Publisher: Nature Publishing Group</dc:description>
         <dcterms:hasPart rdf:resource="https://www.nature.com/articles/s41467-020-14751-w"/>
         <dcterms:hasPart rdf:resource="#item_79"/>
         <dcterms:hasPart rdf:resource="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005444"/>
+        <dcterms:hasPart rdf:resource="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8658661/"/>
+        <dcterms:hasPart rdf:resource="#item_86"/>
     </z:Collection>
 </rdf:RDF>
