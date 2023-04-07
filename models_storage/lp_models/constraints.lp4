@@ -1,0 +1,4 @@
+:- not support(rsub_2250).
+:- 6 {cutset(R) : reaction(R)}.
+:- support(rsub_38).
+:- support(rsub_25).
