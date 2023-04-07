@@ -11,81 +11,31 @@ from cobra.core.model import Model
 from cobra.core.reaction import Reaction
 
 
-def parcours_test(reaction, flux_dict, v=False):
-
-    #Metabolites list, used to determine which metabolites have already been visited.
-    m_l = []
-
-    for m in reaction.metabolites:
-        print(f"\nChecking out metabolite {m.id}")
-
-        if not m in m_l:
-            print(f"\nNew metabolite, adding {m.id} to list of visited metabolites.")
-            m_l.append(m)
-
-            for r in m.reactions :
-                print(f"\nChecking out reaction {r.id}")
-
-                if r.id not in flux_dict.keys():
-
-                    # This part checks if there is a flux for the given reaction, and if it is an exchange reaction.
-                    # If there is a flux and it is not an exchange reaction, it is added to the flux dict.
-                    # If there is a flux and it is an exchange reaction, it is only added to the flux dict and the recursion starts back at the next reaction.
-                    # If it was an exchange reaction involving C_x or C_s, it behaves normally.
-                    if r.flux != 0.0 and len(r.compartments) == 1:
-                        print(f"\nNew reaction, adding {r.id} to flux dict.")
-                        flux_dict[r.id] = r.flux
-                        flux_dict = parcours(r, flux_dict)
-
-                    elif r.flux != 0.0 and len(r.compartments) > 1:
-                        print(f"\nNew exchange reaction, adding {r.id} : (exchange {r.compartments}) to flux dict.")
-                        flux_dict[r.id] = r.flux
-                        if "C_x" in r.compartments or "C_s" in r.compartments:
-                            flux_dict = parcours(r, flux_dict)
-                    else:
-                        print(f"\nERROR -- flux == 0 for {r.id}")
-
-                else:
-                    print(f"\nERROR -- id in dict for {r.id}")
-                    continue
-        else:
-            print(f"\nERROR -- metabolite {m.id} already visited")
-            break
-
-
-    return flux_dict
-
-
-
-
-
-def parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations = 10000, i=0,v = True, m_l = [], cofactors = set()) :
-    #Metabolites list, used to determine which metabolites have already been visited.
-
+def parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations=10000, i=0,v=True, m_l=[], cofactors=set()) :
     """
     if not v :
         orig_stdout = sys.stdout
         f = open('out.txt', 'w')
         sys.stdout = f"""
-    for m in reaction.metabolites :
+    for m in reaction.metabolites:
         #print(f"\nChecking out metabolite {m.id}")
 
         if not m in m_l and not i >= max_iterations: # If the metabolite has not already been visited, and if we haven't reached the maximum number of iterations.
             m_l.append(m) # Adding the metabolite to the list of already visited metabolites.
-            if not m.name in metabolites_to_exclude :
-                for r in m.reactions :
+            if not m.name in metabolites_to_exclude:
+                for r in m.reactions:
                     #print(f"\nChecking out reaction {r.id}")
 
-                    if r.id not in flux_dict.keys() :
+                    if r.id not in flux_dict.keys():
 
                         # This part checks if there is a flux for the given reaction, and if it is an exchange reaction.
                         # If there is a flux and it is not an exchange reaction, it is added to the flux dict.
                         # If there is a flux and it is an exchange reaction, it is only added to the flux dict and the recursion starts back at the next reaction.
                         # If it was an exchange reaction involving C_x or C_s, it behaves normally.
-                        if r.flux != 0.0 :
+                        if r.flux != 0.0:
                             #print(f"\nNew reaction, adding {r.id} to flux dict.")
                             flux_dict[r.id] = r.flux
-                            flux_dict = parcours(r, flux_dict, metabolites_to_exclude, max_iterations, i, v, m_l, cofactors )
+                            flux_dict = parcours(r, flux_dict, metabolites_to_exclude, max_iterations, i, v, m_l, cofactors)
                             i +=1
                         else :
                             #print(f"\nERROR -- flux == 0 for {r.id}")
@@ -150,41 +100,43 @@ def build_reaction_df(optimized_model:Model, by_compartment = True) :
         
         for subsystem in optimized_model.groups :
             # Exception for beta-oxydation and Carnitine shuttle.
+            # As there is a lot of different beta oxydation and carnitine shuttle subsystems,
+            # they are grouped as one.
             if "beta oxidation of" in str(subsystem).lower() or "carnitine shuttle" in str(subsystem).lower() :
-                subsystem_beta_carn = " ".join(str(subsystem).lower().split(" ")[:2])
-                subsystem_reactions_dict[str(subsystem_beta_carn).lower()] = {
-                    "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "subSystem" : [str(r.subsystem).lower() for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "direction" : [str(r.flux)[0] for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
-                }
+                subsystem_key = " ".join(str(subsystem).lower().split(" ")[:2]).lower()
             else :
-                subsystem_reactions_dict[str(subsystem).lower()] = {
-                    "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "subSystem" : [str(r.subsystem).lower() for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "direction" : [str(r.flux)[0] for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
-                    "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
-                }
+                subsystem_key = str(subsystem).lower()
+
+            subsystem_reactions_dict[subsystem_key] = {
+                "flux" : [abs(r.flux) for r in reactions_list if str(subsystem) in r.subsystem],\
+                "subSystem" : [str(r.subsystem).lower() for r in reactions_list if str(subsystem) in r.subsystem],\
+                "id" : [r.id for r in reactions_list if str(subsystem) in r.subsystem],\
+                "name" : [r.name for r in reactions_list if str(subsystem) in r.subsystem],\
+                "compartment" : [str([comp for comp in r.compartments][0]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                "direction" : [str(r.flux)[0] for r in reactions_list if str(subsystem) in r.subsystem],\
+                "reactants" : [" + ".join([m.name for m in r.reactants]) for r in reactions_list if str(subsystem) in r.subsystem],\
+                "products" : [" + ".join([m.name for m in r.products]) for r in reactions_list if str(subsystem) in r.subsystem]
+            }
 
         return subsystem_reactions_dict
 
+def merge_dict_keys(dict_to_merge, key1, key2):
+    data_to_add = dict_to_merge.pop(key2)
+
+    if isinstance(dict_to_merge, dict):
+        for key, value in data_to_add.items():
+            if isinstance(value,list):
+                for v in value:
+                    dict_to_merge[key1][key].append(v)
+    return dict_to_merge
 
 
-
-def get_subsystem_fluxes(dfs, multiple = True) :
+def get_subsystem_fluxes(dfs, multiple=True):
     subsystem_fluxes = {}
 
     if multiple :
         for df in dfs :
-            for line in df.iterrows() :
+            for line in df.iterrows():
                 #print(line[1]["flux"])
                 if "Transport" not in line[1]["subSystem"] and "Exchange" not in line[1]["subSystem"] and len(line[1]["subSystem"]) > 1:
                     try :
@@ -194,7 +146,7 @@ def get_subsystem_fluxes(dfs, multiple = True) :
             df_bar = pd.DataFrame(subsystem_fluxes,index=["Fluxes"]).T
         return df_bar
     else :
-        for line in dfs.iterrows() :
+        for line in dfs.iterrows():
             #print(line[1]["flux"])
             if "Transport" not in line[1]["subSystem"] and "Exchange" not in line[1]["subSystem"] and len(line[1]["subSystem"]) > 1:
                 try :
