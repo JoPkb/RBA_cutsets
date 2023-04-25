@@ -1,0 +1,2 @@
+:- not support("mcs_rsub_2116_tgt").
+:- 6 {cutset(R) : reaction(R)}.
