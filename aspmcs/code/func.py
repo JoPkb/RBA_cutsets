@@ -39,3 +39,22 @@ def nm1_combinations(orig_lr, model, saves):
     orig = sol_after_ko(orig_lr, model)
     saves[frozenset(orig_lr)] = orig
     return orig, all_lr, None
+
+
+def parse_output(path):
+    with open("../results/output_subset_local_13.txt") as output_mcs_buffer:
+        output_mcs_data = output_mcs_buffer.readlines()
+
+    cutset_list = []
+    for line in output_mcs_data:
+        # if "Answer" in line:
+        #     print(line)
+        #     answer_line_found = True
+        # elif answer_line_found:
+        #     print(line)
+        #     answer_line_found = False
+        if "cutset" in line:
+            reacs = line.strip("\n").split("cutset(\"")[1:]
+
+            cutset_list.append([rid.split("\")")[0] for rid in reacs])
+    return cutset_list
