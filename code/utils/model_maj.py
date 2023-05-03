@@ -7,7 +7,7 @@ import importlib
 import os
 
 importlib.reload(mc)
-def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True, add_exchanges = True, get_names = True, check_biom_reac = True) :
+def maj(dir,source_model=None, target_model=None, bounds_check =True, genes_id_copy = True, alt_gene_ids = True, metab_id_check = True, bounds_value_check = True, subsystem_copy = True, add_exchanges = True, get_names = True, check_biom_reac = True) :
 
     print("\nLoading model to update...\n")
     target_model_file_name = target_model.split(".xml")[0]
@@ -34,7 +34,7 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
         print(errors["COBRA_ERROR"])
     
     if genes_id_copy or subsystem_copy:
-        print("\nLoading source model for genes copy : \n")
+        print("\nLoading source model for genes or subsystem copy : \n")
         source_model_cobra, errors_source = validate_sbml_model(dir+source_model)
     else :
         pass
@@ -45,12 +45,7 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
         working_target_model = mc.copy_genes(source_model_cobra, working_target_model)
     else :
         pass
-    
-    if "m01602c" in [m.id for m in working_target_model.reactions.biomass_components.metabolites] :
-        working_target_model.reactions.biomass_components.add_metabolites({"m01602c" : 0.0}, combine=False)
-    
-    else :
-        pass
+
     
     if alt_gene_ids :
         # TEST # if gene.annotation exists : (else : dont)
@@ -111,6 +106,10 @@ def maj(source_model, target_model, dir, bounds_check =True, genes_id_copy = Tru
     if check_biom_reac :
         print("\nChecking the presence of cofactors and vitamins in the biomass reaction of the target model.")
         mc.check_biomass_metabolites(target_model)
+        if "m01602c" in [m.id for m in working_target_model.reactions.biomass_components.metabolites] :
+            working_target_model.reactions.biomass_components.add_metabolites({"m01602c" : 0.0}, combine=False)
+        else:
+            pass
     else :
         pass
     return working_target_model

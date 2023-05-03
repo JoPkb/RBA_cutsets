@@ -143,7 +143,7 @@ def get_exchanges_reactions(target_model) :
             # Creating boundary metabolite
             lb = b_r.lower_bound
             ub = b_r.upper_bound
-            new_metab_x = cobra.core.metabolite.Metabolite(metab.id[:-1]+"x", name = metab.id[:-1]+"x", compartment = "C_x")
+            new_metab_x = cobra.core.metabolite.Metabolite(metab.id[:-1]+"x", name = metab.name, compartment = "C_x")
             if sto > 0.0 :
                 b_r.add_metabolites({new_metab_x: -1.0}) # Intake
 

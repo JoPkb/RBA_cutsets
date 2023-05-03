@@ -63,6 +63,7 @@ def run_parcours(reaction:Reaction, model:Model, metabolites_to_exclude=["PPi", 
         print_reactions(model.reactions.get_by_id(reaction), flux)
         print(f"FLUX : {flux} --- ID : {model.reactions.get_by_id(reaction).id} --- COMPARTMENT : {model.reactions.get_by_id(reaction).compartments}")
         print(f"\nSUBSYSTEM : {model.reactions.get_by_id(reaction).subsystem} --- GENE NAME : {model.reactions.get_by_id(reaction).name}\n\n---\n\n")
+    return f
 
 def build_reaction_df(optimized_model:Model, by_compartment = True) :
     # Builds dataframes of fluxes associated to compartments or subsystems
@@ -391,7 +392,7 @@ def subsystem_barplots(model_1:Model, model_2:Model, model_1_name:str, model_2_n
 
 
 
-def print_exchanges(optimized_model, filter ) :
+def print_exchanges(optimized_model, filter, print_intakes=True, print_secretions=True, print_neutrals=False) :
     intakes = []
     secretions = []
     neutrals = []
@@ -416,24 +417,33 @@ def print_exchanges(optimized_model, filter ) :
 
             ml = [metab for metab in reaction.metabolites]
             m = [metab for metab in reaction.metabolites][0]
-            if reaction.flux > 0.0 :
+            if len(reaction.reactants) > 0 and len(reaction.products) == 0:
+                reaction_flux = reaction.flux
+            elif len(reaction.products) > 0 and len(reaction.reactants) == 0:
+                reaction_flux = -(reaction.flux)
+            if reaction_flux > 0.0 :
                 secretions.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
-            elif reaction.flux < 0.0 :
+            elif reaction_flux < 0.0 :
                 intakes.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
             else :
                 neutrals.append(f"{reaction.id} : {round(reaction.flux)}{spaces_str}ub : {reaction.upper_bound}\t---\t\tmetabolites : \t id : {m.id} --- metabolite name : {m.name} ; id : {m.id}")
 
     intakes.sort(key=lambda f : float(f.split(": ")[1].split("ub")[0]))
     secretions.sort(key=lambda f : float(f.split(": ")[1].split("ub")[0]), reverse=True)
-    print("\n##########\nINTAKES :\n")
-    for i in intakes :
-        print(i)
-    print("\n##########\nSECRETIONS :\n")
-    for s in secretions :
-        print(s)
-    print("\n##########\nNEUTRALS : \n")
-    for n in neutrals :
-        print(n)
+    if print_intakes:
+        print("\n##########\nINTAKES :\n")
+        for i in intakes :
+            print(i)
+
+    if print_secretions:
+        print("\n##########\nSECRETIONS :\n")
+        for s in secretions :
+            print(s)
+
+    if print_neutrals:
+        print("\n##########\nNEUTRALS : \n")
+        for n in neutrals :
+            print(n)
 
 
 def print_reactions(reaction, flux = 0.0, v=True):
