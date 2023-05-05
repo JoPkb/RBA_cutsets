@@ -73,7 +73,7 @@ class Propagator(object):
                 self.times_print = self.times_print + '\n' + 'Calls init: ' + str(initcalls) + '      Time init:  ' + str(inittime) + '\n' + 'Calls propagate: ' + str(propcalls) + '      Time propagate:  ' + str(proptime) + '\n' + 'Calls undo: ' + str(undocalls) + '      Time undo:  ' + str(undotime) + '\n' + 'Calls add: ' + str(self.times[2]) + '      Time add:  ' + str(self.times[3]) + '\n' + 'Calls reset: ' + str(self.times[4]) + '      Time reset:  ' + str(self.times[5]) + '\n' + 'Calls check: ' + str(checkcalls) + '      Time check:  ' + str(checktime)
 
 
-
+        from pprint import pprint
         def print_assignment(self, show):
             print('')
             print('LP Solver output')
@@ -81,6 +81,7 @@ class Propagator(object):
                 print(self.stats) 
                 print('')
                 print('solution')
+                #pprint(self.current_assignment)
                 print(self.current_assignment, flush=True)
                 print('')
                 print(self.times_print)
