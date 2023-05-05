@@ -88,6 +88,7 @@ def get_subsystem(source_model, target_model) :
             try :
                 print(f"\nGetting subsystem information from source model for reaction {source_reaction_id}")
                 target_model.reactions.get_by_id(source_reaction_id).notes["SUBSYSTEM"] = source_reaction.notes["SUBSYSTEM"]
+                target_model.reactions.get_by_id(source_reaction_id).subsystem = source_reaction.notes["SUBSYSTEM"]
             except KeyError :
                 print(f"\nKeyError for reaction {source_reaction_id} from source model.")
                 pass

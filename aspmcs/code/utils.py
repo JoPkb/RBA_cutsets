@@ -1,5 +1,5 @@
 from itertools import combinations
-
+import warnings
 def knock_out(model, lr):
     model = model.copy()
     for r in lr:
@@ -19,10 +19,13 @@ def knock_out(model, lr):
             gr.upper_bound = 0
     return model
 
-def sol_after_ko(lr, model):
+def sol_after_ko(lr, model, obj, check_reaction=None):
     try:
         model_c = knock_out(model, lr)
+        model_c.objective = obj
         opt = model_c.optimize()
+        if check_reaction:
+            print(f"Reaction {check_reaction} : flux = {model_c.reactions.get_by_id(check_reaction).flux}")
         return opt.objective_value if opt.status != 'infeasible' else 0.0
     except KeyError as e:
         warnings.warn(str(e))
