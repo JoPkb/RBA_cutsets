@@ -19,7 +19,7 @@ def knock_out(model, lr):
             gr.upper_bound = 0
     return model
 
-def sol_after_ko(lr, model, obj, check_reaction=None):
+def sol_after_ko(lr, model, obj="biomass_components", check_reaction=None):
     try:
         model_c = knock_out(model, lr)
         model_c.objective = obj
@@ -28,7 +28,9 @@ def sol_after_ko(lr, model, obj, check_reaction=None):
             print(f"Reaction {check_reaction} : flux = {model_c.reactions.get_by_id(check_reaction).flux}")
         return opt.objective_value if opt.status != 'infeasible' else 0.0
     except KeyError as e:
-        warnings.warn(str(e))
+        #warnings.warn(str(e))
+        #return 0.0
+        print(f"reaction {str(e)} not found")
         return 0.0
 
 def nm1_combinations(orig_lr, model, saves):
@@ -76,10 +78,10 @@ def decompress_cutsets(subsets_file_path, comp_cutsets_list):
         cs_decomp = []
         cs_decomp_comb = []
         for reac in reac_list:
-            reac_id = reac[4:]
+            reac_id = reac[4:] # remove_mcs = lambda x: x|4:]
             original_reac_subset = reaction_subsets_dict[reac_id]["reacs"]
             cs_decomp.append(original_reac_subset)
-            cs_decomp_comb.append([c for c in combinations(cs_decomp,len(reac_list))])
-        decomp_cutsets_list.append(cs_decomp_comb)
+            #cs_decomp_comb.append([c for c in combinations(cs_decomp,len(reac_list))])
+        decomp_cutsets_list.append(cs_decomp)
             
     return decomp_cutsets_list

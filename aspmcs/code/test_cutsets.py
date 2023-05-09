@@ -6,7 +6,7 @@ from tqdm import tqdm
 import sys
 import pickle
 
-def itertools_product(listofcutsets, model):
+def itertools_product(listofcutsets, model, objective):
     i = 1
     good_cutsets = []
     for cutset_orID in tqdm(listofcutsets):
@@ -15,7 +15,7 @@ def itertools_product(listofcutsets, model):
         cuts_combinations = list(product(*cutset_orID))
         for comb in cuts_combinations:
             with model as m:
-                retval = sol_after_ko(comb, m)
+                retval = sol_after_ko(comb, m, obj=objective)
                 # for reac in cs:
                 #     m.reactions.get_by_id(reac.strip("_rev"))
                 #opt = m.optimize()
@@ -34,6 +34,7 @@ def itertools_product(listofcutsets, model):
         good_cutsets.apend(good_cutsets_subs)
         i+=1
     return good_cutsets
+
 if __name__ == "__main__":
     model_path = sys.argv[1]
     cutsets_path = sys.argv[2]
