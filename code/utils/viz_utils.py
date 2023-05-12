@@ -55,8 +55,9 @@ def parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations=10000, 
         sys.stdout = orig_stdout"""
     return flux_dict
 
-def run_parcours(reaction:Reaction, model:Model, metabolites_to_exclude=["PPi", "CoA", "O2", "H+", "ATP", "CO2", "NADP+", "FADH2", "ADP", "Na+", "NADH", "FAD", "NADPH", "NAD+", "Pi", "H2O"], max_iterations=10000):
+def run_parcours(reaction_id:str, model:Model, metabolites_to_exclude=["PPi", "CoA", "O2", "H+", "ATP", "CO2", "NADP+", "FADH2", "ADP", "Na+", "NADH", "FAD", "NADPH", "NAD+", "Pi", "H2O"], max_iterations=10000):
     flux_dict = {}
+    reaction = model.reactions.get_by_id(reaction_id)
     print(f"\n[{reaction.id}] : Getting all related reactions and fluxes...")
     f = parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations)
     for reaction, flux in f.items() :
@@ -454,20 +455,26 @@ def print_reactions(reaction, flux = 0.0, v=True):
     liste_produit = [i for i in reaction.products]
     string = ""
     string2 = ""
-    if not "EX_" in reaction.id :
-        if flux > 0.0 :
-                fleche = "-->"
-        elif flux < 0.0 :
-                fleche = "<--"
-        else:
-                fleche = "<=>"
-    else :
-        if flux > 0.0 :
+    # if not "EX_" in reaction.id :
+    #     if flux > 0.0 :
+    #             fleche = "-->"
+    #     elif flux < 0.0 :
+    #             fleche = "<--"
+    #     else:
+    #             fleche = "<=>"
+    # else :
+    #     if flux > 0.0 :
+    #         fleche = "<--"
+    #     elif flux < 0.0 :
+    #          fleche = "-->"
+    #     else :
+    #          fleche = "<=>"
+    if flux > 0.0 :
+            fleche = "-->"
+    elif flux < 0.0 :
             fleche = "<--"
-        elif flux < 0.0 :
-             fleche = "-->"
-        else :
-             fleche = "<=>"
+    else:
+            fleche = "<=>"
 
     for i in liste_reactif:
         if i != liste_reactif[-1]:
