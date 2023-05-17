@@ -59,7 +59,7 @@ def run_parcours(reaction_id:str, model:Model, metabolites_to_exclude=["PPi", "C
     flux_dict = {}
     reaction = model.reactions.get_by_id(reaction_id)
     print(f"\n[{reaction.id}] : Getting all related reactions and fluxes...")
-    f = parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations)
+    f = parcours(reaction, flux_dict, metabolites_to_exclude, max_iterations, i=0, v=True, m_l = [], cofactors=set())
     for reaction, flux in f.items() :
         print_reactions(model.reactions.get_by_id(reaction), flux)
         print(f"FLUX : {flux} --- ID : {model.reactions.get_by_id(reaction).id} --- COMPARTMENT : {model.reactions.get_by_id(reaction).compartments}")
