@@ -19,16 +19,6 @@ def test_cutsets_comb(decompressed_cs_list, model, objective, bounds_modificatio
                     for rid, bounds in bounds_modifications:
                         model_buffer.reactions.get_by_id(rid).bounds = bounds
 
-                    # Test that the target pathway works before cutset application:
-                    if j == 0:
-                        model_buffer.objective = objective
-                        sol = model_buffer.optimize()
-                        if sol.objective_value >= 1e-6:
-                            print(f"\n{objective} pathway is working.")
-                        else:
-                            print(
-                                f"\n{objective} pathway is not working with {bounds_modifications} modifications")
-                            break
 
                 # Cut reactions from MCS
                 for rid in cutset_combination:
@@ -51,7 +41,7 @@ def test_cutsets_comb(decompressed_cs_list, model, objective, bounds_modificatio
                     pass
                 else:
                     print(
-                        f"\nCutset {cutset_combination} prevents neoglucogenesis")
+                        f"\nCutset {cutset_combination} prevents {objective}")
                     invalid_cutsets_comb_index.append(
                         cutset_reaction_combinations.index(cutset_combination))
 
@@ -69,7 +59,7 @@ def test_cutsets_comb(decompressed_cs_list, model, objective, bounds_modificatio
         j += 1
 
     i += 1
-    print(not_in_healthy)
+    print(f"\nReactions in cancer model absent from healthy model : \n{set(not_in_healthy)}")
     return invalid_cutsets_comb_index, fluxes_per_cs
 
 

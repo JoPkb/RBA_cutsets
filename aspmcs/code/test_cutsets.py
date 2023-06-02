@@ -6,13 +6,13 @@ from tqdm import tqdm
 import sys
 import pickle
 
-def itertools_product(listofcutsets, model, objective):
+def itertools_product(listofcutsets, model):
     i = 1
     good_cutsets = []
     for cutset_orID in tqdm(listofcutsets):
         good_cutsets_subs = []
         #print(f"Cutset : {cutset_orID}\n")
-        cuts_combinations = list(product(*cutset_orID))
+        cuts_combinations = list(product(*cutset_orID)) # Décompression des réactions retrouvées dans les cutsets
         for comb in cuts_combinations:
             with model as m:
                 retval = sol_after_ko(comb, m, obj=objective)
