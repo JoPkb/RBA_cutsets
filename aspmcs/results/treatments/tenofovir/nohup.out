@@ -1,0 +1,29 @@
+run_cutsets.sh: line 1: clingo: command not found
+run_cutsets.sh: line 1: clingo: command not found
+run_cutsets.sh: line 1: clingo: command not found
+run_cutsets.sh: line 1: clingo: command not found
+./run_cutsets.sh: 1: clingo: not found
+./run_cutsets.sh: 1: clingo: not found
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): Traceback (most recent call last):
+  File "/home/debian/.conda/envs/clingo/lib/python3.8/site-packages/clingo/script.py", line 233, in _pyclingo_main
+    return _pyclingo_script_main(
+  File "/home/debian/.conda/envs/clingo/lib/python3.8/site-packages/clingo/script.py", line 196, in _pyclingo_script_main
+    script.main(Control(_ffi.cast("clingo_control_t*", ctl)))
+  File "/home/debian/.conda/envs/clingo/lib/python3.8/site-packages/clingo/script.py", line 151, in main
+    __main__.main(control)  # pylint: disable=c-extension-no-member
+  File "<string>", line 926, in main
+  File "/home/debian/.conda/envs/clingo/lib/python3.8/site-packages/clingo/control.py", line 805, in solve
+    ret = handle.get()
+  File "/home/debian/.conda/envs/clingo/lib/python3.8/site-packages/clingo/solving.py", line 527, in get
+    res = _c_call(
+  File "/home/debian/.conda/envs/clingo/lib/python3.8/site-packages/clingo/_internal.py", line 44, in _c_call
+    _handle_error(c_fun(*args, p_ret), handler)
+  File "/home/debian/.conda/envs/clingo/lib/python3.8/site-packages/clingo/_internal.py", line 75, in _handle_error
+    raise RuntimeError(msg)
+RuntimeError: solving stopped by signal
+
+*** Info : (clingo): Shutdown completed in 0.030 seconds
+./run_cutsets.sh: 1: clingo: not found
+./run_cutsets.sh: 1: clingo: not found
+./run_cutsets.sh: 1: clingo: not found

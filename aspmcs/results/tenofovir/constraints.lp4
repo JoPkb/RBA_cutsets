@@ -1,4 +1,0 @@
-:- not support("mcs_rsub_2116_tgt").
-:- 6 {cutset(R) : reaction(R)}.
-:- 3 {cutset(R) : transporter(R)}.
-:- not support("mcs_rsub_308").
