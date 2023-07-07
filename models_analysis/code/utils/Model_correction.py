@@ -9,6 +9,9 @@ from cobra.core.reaction import Reaction
 ### Function to copy-paste genes from one model to another :
 
 def copy_genes(origin_model, target_model) :
+    """
+    Function that copies GPR rules from an origin model to the target model.
+    """
     
     for target_reaction in target_model.reactions :
         try :
@@ -29,6 +32,9 @@ def fix_formulas(model) :
 
 ### Gene id conversion :
 def get_ids(model, external_db, annotation_key):
+    """
+    Function getting alternative IDs from the existing ENSEMBL gene IDs in a model.
+    """
     url="http://rest.ensembl.org/xrefs/id/"
     #print("\nCreating working copy of the model...")
     #converted = model.copy()
@@ -81,6 +87,10 @@ def get_ids(model, external_db, annotation_key):
 
 
 def get_subsystem(source_model, target_model) :
+    """
+    Functions that copies the source model's subsystem information to the target model.
+    Subsystem information is associated to each reaction's notes.
+    """
     for source_reaction in source_model.reactions :
         source_reaction_id = source_reaction.id
 
@@ -98,6 +108,10 @@ def get_subsystem(source_model, target_model) :
 
 
 def get_names_from_genes(target_model) :
+    """
+    Function getting the reaction names from the associated genes
+    Performs lookups to ENSEMBL's REST api. 
+    """
     url = "http://rest.ensembl.org/lookup/id/"
     archive_url = "http://rest.ensembl.org/archive/id/"
     for reaction in tqdm(target_model.reactions) :
