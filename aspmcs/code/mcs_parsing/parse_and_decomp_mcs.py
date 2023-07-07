@@ -39,6 +39,7 @@ if __name__ == "__main__":
     model_path = sys.argv[1]
     cutsets_path = sys.argv[2]
     reaction_subsets = sys.argv[3]
+    output_path = sys.argv[4]
     model = cobra.io.read_sbml_model(model_path)
     cutsets_list = parse_output(cutsets_path)
     with open(reaction_subsets, 'r') as buffer_subsets:
@@ -57,5 +58,5 @@ if __name__ == "__main__":
         listofcutsets_original_id.append(cutset_original_IDs)
     
     good_cutsets = itertools_product(listofcutsets_original_id, model)
-    with open("./good_cutsets_list.p", "wb") as out:
+    with open(output_path, "wb") as out:
         pickle.dump(good_cutsets,out)
