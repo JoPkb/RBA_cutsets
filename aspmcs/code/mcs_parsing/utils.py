@@ -66,22 +66,22 @@ def parse_output(path):
             cutset_list.append([rid.split("\")")[0] for rid in reacs])
     return cutset_list
 
+# Ne fonctionne pas. Utiliser la fonction itertools_products de parse_and_decomp_mcs.py
+# def decompress_cutsets(subsets_file_path, comp_cutsets_list):
+#     with open(subsets_file_path, 'r') as buffer_subsets:
+#         reaction_subsets_dict = eval(buffer_subsets.read())
 
-def decompress_cutsets(subsets_file_path, comp_cutsets_list):
-    with open(subsets_file_path, 'r') as buffer_subsets:
-        reaction_subsets_dict = eval(buffer_subsets.read())
+#     decomp_cutsets_list = []
+#     for reac_list in comp_cutsets_list:
+#         #Itère sur chaque cutset
 
-    decomp_cutsets_list = []
-    for reac_list in comp_cutsets_list:
-        #Itère sur chaque cutset
-
-        cs_decomp = []
-        cs_decomp_comb = []
-        for reac in reac_list:
-            reac_id = reac[4:] # remove_mcs = lambda x: x|4:]
-            original_reac_subset = reaction_subsets_dict[reac_id]["reacs"]
-            cs_decomp.append(original_reac_subset)
-            #cs_decomp_comb.append([c for c in combinations(cs_decomp,len(reac_list))])
-        decomp_cutsets_list.append(cs_decomp)
+#         cs_decomp = []
+#         cs_decomp_comb = []
+#         for reac in reac_list:
+#             reac_id = reac[4:] # remove_mcs = lambda x: x|4:]
+#             original_reac_subset = reaction_subsets_dict[reac_id]["reacs"]
+#             cs_decomp.append(original_reac_subset)
+#             #cs_decomp_comb.append([c for c in combinations(cs_decomp,len(reac_list))])
+#         decomp_cutsets_list.append(cs_decomp)
             
-    return decomp_cutsets_list
+#     return decomp_cutsets_list
