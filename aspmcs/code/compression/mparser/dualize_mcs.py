@@ -62,8 +62,12 @@ def dual_mcs(mnet, target_reactions=[], irr_reactions=False):
         reversibles = mnames + fwdrnames
     stoichiometry = []
     # Reactions of interest
-    mnet.interest = rnames
-    mnet.mirrev = sorted(list(mnet.irreversibles))
+    mnet.extras = {} # new extra field grouping -- name must be singular
+    mnet.extras['interest'] = rnames
+    mnet.extras['stoichreac'] = mnames
+    mnet.extras['mirrev'] = sorted(list(mnet.irreversibles))
+    if irr_reactions:
+        mnet.extras['parallel'] = irnames
     mnet.transporters = xnames
     # Additional dicts to help with direct association
     mnet.idx2imet = {i: m for i, m in enumerate(metabolites)} 

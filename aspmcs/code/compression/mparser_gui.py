@@ -34,16 +34,19 @@ in_name = values[1]
 out_format = OutputFormatType(values[2])
 out_name = values[3]
 to_dual_mcs = values[4]
+ballerstein = False
 target_reactions = []
 
 if to_dual_mcs:
     layout = [[sg.Text('Target reactions', size=(15, 1)), sg.InputText()],
-              [sg.Text('* reactions should be separated by commas (,)', size=(5Z, 1))],
+              [sg.Text('* reactions should be separated by commas (,)', size=(50, 1))],
+              [sg.Checkbox('Ballerstein dual formulation instead of von Kamp\'s', default=False)],
               [sg.OK(), sg.Cancel()]]
 
     window = sg.Window('Mparser', layout)
     event, values = window.read()
     window.close()
     target_reactions = values[0].split(',')
+    ballerstein = values[1]
     
-convert(in_format, in_name, out_format, out_name, to_dual_mcs, target_reactions)
+convert(in_format, in_name, out_format, out_name, to_dual_mcs, target_reactions, ballerstein)

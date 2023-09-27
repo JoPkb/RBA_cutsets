@@ -47,7 +47,7 @@ def knock_out(model, lr):
     return model
 
 def sol_after_ko(lr, model):
-    try:
+    try: # need to work on handling infeasibility better
         model_c = knock_out(model, lr)
         opt = model_c.optimize()
         return opt.objective_value if opt.status != 'infeasible' else 0.0

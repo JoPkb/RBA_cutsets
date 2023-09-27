@@ -9,6 +9,7 @@ Converts a metabolism network to MetaTool TXT format
 
 from .meta_network import MetaNetwork
 from .parsehelper import add_quotes
+import warnings
 
 def to_metatool(reactions, reversibles, metabolites, metint, metext, stoichiometry):
     """
@@ -39,6 +40,9 @@ def to_metatool(reactions, reversibles, metabolites, metint, metext, stoichiomet
         prods = [metatxt(x, z) for x, y, z in stoichiometry if y == reaction and z > 0]
         arrow = '=' if reversible else '=>'
         formula = ' + '.join(reacts) + ' ' + arrow + ' ' + ' + '.join(prods)
+        if (not reacts) or (not prods):
+            warnings.warn('Producing a file that is unreadable by MetaTool due to reactions with only production/consumption') 
+            warnings.warn('If this is the result of conversion of a Cobra model, please run conversion on a model with boundaries created by cobra_to_sbml.py instead') 
         fcontent += reaction + ' : '+ formula + '\n'
         
     return fcontent      

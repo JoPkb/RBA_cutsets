@@ -1,0 +1,1437 @@
+Adding exchange reaction EX_ext_1 with default bounds for boundary metabolite: ext_1.
+Adding exchange reaction EX_ext_10 with default bounds for boundary metabolite: ext_10.
+Adding exchange reaction EX_ext_11 with default bounds for boundary metabolite: ext_11.
+Adding exchange reaction EX_ext_12 with default bounds for boundary metabolite: ext_12.
+Adding exchange reaction EX_ext_13 with default bounds for boundary metabolite: ext_13.
+Adding exchange reaction EX_ext_14 with default bounds for boundary metabolite: ext_14.
+Adding exchange reaction EX_ext_15 with default bounds for boundary metabolite: ext_15.
+Adding exchange reaction EX_ext_16 with default bounds for boundary metabolite: ext_16.
+Adding exchange reaction EX_ext_17 with default bounds for boundary metabolite: ext_17.
+Adding exchange reaction EX_ext_18 with default bounds for boundary metabolite: ext_18.
+Adding exchange reaction EX_ext_19 with default bounds for boundary metabolite: ext_19.
+Adding exchange reaction EX_ext_2 with default bounds for boundary metabolite: ext_2.
+Adding exchange reaction EX_ext_20 with default bounds for boundary metabolite: ext_20.
+Adding exchange reaction EX_ext_21 with default bounds for boundary metabolite: ext_21.
+Adding exchange reaction EX_ext_22 with default bounds for boundary metabolite: ext_22.
+Adding exchange reaction EX_ext_23 with default bounds for boundary metabolite: ext_23.
+Adding exchange reaction EX_ext_24 with default bounds for boundary metabolite: ext_24.
+Adding exchange reaction EX_ext_25 with default bounds for boundary metabolite: ext_25.
+Adding exchange reaction EX_ext_26 with default bounds for boundary metabolite: ext_26.
+Adding exchange reaction EX_ext_27 with default bounds for boundary metabolite: ext_27.
+Adding exchange reaction EX_ext_28 with default bounds for boundary metabolite: ext_28.
+Adding exchange reaction EX_ext_29 with default bounds for boundary metabolite: ext_29.
+Adding exchange reaction EX_ext_3 with default bounds for boundary metabolite: ext_3.
+Adding exchange reaction EX_ext_30 with default bounds for boundary metabolite: ext_30.
+Adding exchange reaction EX_ext_31 with default bounds for boundary metabolite: ext_31.
+Adding exchange reaction EX_ext_32 with default bounds for boundary metabolite: ext_32.
+Adding exchange reaction EX_ext_33 with default bounds for boundary metabolite: ext_33.
+Adding exchange reaction EX_ext_34 with default bounds for boundary metabolite: ext_34.
+Adding exchange reaction EX_ext_35 with default bounds for boundary metabolite: ext_35.
+Adding exchange reaction EX_ext_36 with default bounds for boundary metabolite: ext_36.
+Adding exchange reaction EX_ext_37 with default bounds for boundary metabolite: ext_37.
+Adding exchange reaction EX_ext_38 with default bounds for boundary metabolite: ext_38.
+Adding exchange reaction EX_ext_39 with default bounds for boundary metabolite: ext_39.
+Adding exchange reaction EX_ext_4 with default bounds for boundary metabolite: ext_4.
+Adding exchange reaction EX_ext_40 with default bounds for boundary metabolite: ext_40.
+Adding exchange reaction EX_ext_41 with default bounds for boundary metabolite: ext_41.
+Adding exchange reaction EX_ext_42 with default bounds for boundary metabolite: ext_42.
+Adding exchange reaction EX_ext_43 with default bounds for boundary metabolite: ext_43.
+Adding exchange reaction EX_ext_44 with default bounds for boundary metabolite: ext_44.
+Adding exchange reaction EX_ext_45 with default bounds for boundary metabolite: ext_45.
+Adding exchange reaction EX_ext_46 with default bounds for boundary metabolite: ext_46.
+Adding exchange reaction EX_ext_47 with default bounds for boundary metabolite: ext_47.
+Adding exchange reaction EX_ext_48 with default bounds for boundary metabolite: ext_48.
+Adding exchange reaction EX_ext_49 with default bounds for boundary metabolite: ext_49.
+Adding exchange reaction EX_ext_5 with default bounds for boundary metabolite: ext_5.
+Adding exchange reaction EX_ext_50 with default bounds for boundary metabolite: ext_50.
+Adding exchange reaction EX_ext_51 with default bounds for boundary metabolite: ext_51.
+Adding exchange reaction EX_ext_52 with default bounds for boundary metabolite: ext_52.
+Adding exchange reaction EX_ext_53 with default bounds for boundary metabolite: ext_53.
+Adding exchange reaction EX_ext_54 with default bounds for boundary metabolite: ext_54.
+Adding exchange reaction EX_ext_55 with default bounds for boundary metabolite: ext_55.
+Adding exchange reaction EX_ext_56 with default bounds for boundary metabolite: ext_56.
+Adding exchange reaction EX_ext_57 with default bounds for boundary metabolite: ext_57.
+Adding exchange reaction EX_ext_58 with default bounds for boundary metabolite: ext_58.
+Adding exchange reaction EX_ext_59 with default bounds for boundary metabolite: ext_59.
+Adding exchange reaction EX_ext_6 with default bounds for boundary metabolite: ext_6.
+Adding exchange reaction EX_ext_60 with default bounds for boundary metabolite: ext_60.
+Adding exchange reaction EX_ext_61 with default bounds for boundary metabolite: ext_61.
+Adding exchange reaction EX_ext_62 with default bounds for boundary metabolite: ext_62.
+Adding exchange reaction EX_ext_63 with default bounds for boundary metabolite: ext_63.
+Adding exchange reaction EX_ext_64 with default bounds for boundary metabolite: ext_64.
+Adding exchange reaction EX_ext_65 with default bounds for boundary metabolite: ext_65.
+Adding exchange reaction EX_ext_66 with default bounds for boundary metabolite: ext_66.
+Adding exchange reaction EX_ext_67 with default bounds for boundary metabolite: ext_67.
+Adding exchange reaction EX_ext_68 with default bounds for boundary metabolite: ext_68.
+Adding exchange reaction EX_ext_69 with default bounds for boundary metabolite: ext_69.
+Adding exchange reaction EX_ext_7 with default bounds for boundary metabolite: ext_7.
+Adding exchange reaction EX_ext_70 with default bounds for boundary metabolite: ext_70.
+Adding exchange reaction EX_ext_71 with default bounds for boundary metabolite: ext_71.
+Adding exchange reaction EX_ext_72 with default bounds for boundary metabolite: ext_72.
+Adding exchange reaction EX_ext_73 with default bounds for boundary metabolite: ext_73.
+Adding exchange reaction EX_ext_74 with default bounds for boundary metabolite: ext_74.
+Adding exchange reaction EX_ext_75 with default bounds for boundary metabolite: ext_75.
+Adding exchange reaction EX_ext_76 with default bounds for boundary metabolite: ext_76.
+Adding exchange reaction EX_ext_77 with default bounds for boundary metabolite: ext_77.
+Adding exchange reaction EX_ext_78 with default bounds for boundary metabolite: ext_78.
+Adding exchange reaction EX_ext_79 with default bounds for boundary metabolite: ext_79.
+Adding exchange reaction EX_ext_8 with default bounds for boundary metabolite: ext_8.
+Adding exchange reaction EX_ext_80 with default bounds for boundary metabolite: ext_80.
+Adding exchange reaction EX_ext_81 with default bounds for boundary metabolite: ext_81.
+Adding exchange reaction EX_ext_82 with default bounds for boundary metabolite: ext_82.
+Adding exchange reaction EX_ext_83 with default bounds for boundary metabolite: ext_83.
+Adding exchange reaction EX_ext_84 with default bounds for boundary metabolite: ext_84.
+Adding exchange reaction EX_ext_85 with default bounds for boundary metabolite: ext_85.
+Adding exchange reaction EX_ext_86 with default bounds for boundary metabolite: ext_86.
+Adding exchange reaction EX_ext_87 with default bounds for boundary metabolite: ext_87.
+Adding exchange reaction EX_ext_88 with default bounds for boundary metabolite: ext_88.
+Adding exchange reaction EX_ext_89 with default bounds for boundary metabolite: ext_89.
+Adding exchange reaction EX_ext_9 with default bounds for boundary metabolite: ext_9.
+Adding exchange reaction EX_ext_90 with default bounds for boundary metabolite: ext_90.
+INFO:root:Preparing strain design computation.
+INFO:root:  Using cplex for solving LPs during preprocessing.
+WARNING:root:  Removing reaction bounds when larger than the cobra-threshold of 1000.
+INFO:root:  FVA to identify blocked reactions and irreversibilities.
+INFO:root:  FVA(s) to identify essential reactions.
+INFO:root:Compressing Network (2205 reactions).
+INFO:root:  Removing blocked reactions.
+INFO:root:  Translating stoichiometric coefficients to rationals.
+INFO:root:  Removing conservation relations.
+INFO:root:  Compression 1: Applying compression from EFM-tool module.
+INFO:root:  Reduced to 2115 reactions.
+INFO:root:  Compression 2: Lumping parallel reactions.
+INFO:root:  Last step could not reduce size further (2115 reactions).
+INFO:root:  Network compression completed. (1 compression iterations)
+INFO:root:  Translating stoichiometric coefficients back to float.
+INFO:root:  FVA(s) in compressed model to identify essential reactions.
+INFO:root:Finished preprocessing:
+INFO:root:  Model size: 2115 reactions, 695 metabolites
+INFO:root:  2115 targetable reactions
+WARNING:root:  Removing reaction bounds when larger than the cobra-threshold of 1000.
+INFO:root:Constructing strain design MILP for solver: cplex.
+INFO:root:  Bounding MILP.
+INFO:root:Finding (also non-optimal) strain designs ...
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 1 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_1078': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 1 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_918': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 1 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_93': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 2 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_801': -1, 'rsub_874': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 2.0: {'EX_ext_1*rsub_1': -1, 'EX_ext_10*rsub_14': -1}
+INFO:root:Strain design with cost 1.0: {'EX_ext_10*rsub_14': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 1 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_308': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'EX_ext_37*rsub_49': -1, 'rsub_2115': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_803': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_801': -1, 'rsub_802': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_800': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_801': -1, 'rsub_908': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_865': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_801': -1, 'rsub_919': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_867': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_799': -1, 'rsub_801': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_862': -1}
+INFO:root:Strain design with cost 1.0: {'rsub_1083': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_916': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2114': -1, 'rsub_915': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2106': -1, 'rsub_2114': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_59': -1, 'rsub_915': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2097': -1, 'rsub_2106': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2106': -1, 'rsub_59': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_863': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_2101': -1, 'rsub_908': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_870': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_798': -1, 'rsub_908': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_860': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_2101': -1, 'rsub_919': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 4 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2101': -1, 'rsub_799': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_866': -1, 'rsub_873': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2108': -1, 'rsub_915': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_923': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 4 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_905': -1}
+INFO:root:Strain design with cost 1.0: {'rsub_913': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_912': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_907': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 2.0: {'EX_ext_15*rsub_22': -1, 'rsub_917': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_549': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_1081': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 4 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_878': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_2102': -1, 'rsub_908': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 4 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_917': -1, 'rsub_926': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_461': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_460': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 4 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_3': -1, 'rsub_418': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_459': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2102': -1, 'rsub_919': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_2102': -1, 'rsub_874': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 4 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_566': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_2102': -1, 'rsub_799': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2101': -1, 'rsub_802': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_798': -1, 'rsub_919': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_798': -1, 'rsub_874': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 4 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2106': -1, 'rsub_2108': -1}
+INFO:root:Strain design with cost 2.0: {'rsub_798': -1, 'rsub_802': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_798': -1, 'rsub_799': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2102': -1, 'rsub_802': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 3 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_309': -1, 'rsub_310': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_655': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_552': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_550': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_194': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'EX_ext_50*rsub_65': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_1100': -1, 'rsub_1950': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_575': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_1102': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_823': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_822': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 5.0: {'rsub_1032': -1, 'rsub_656': -1, 'rsub_810': -1, 'rsub_818': -1, 'rsub_919': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_821': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_831': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_830': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'EX_ext_61*rsub_84': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_747': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_197': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_1182': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_652': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_642': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'EX_ext_55*rsub_72': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_2096': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_559': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_563': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_880': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_99': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_906': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_920': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_117': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_798': -1, 'rsub_804': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_564': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_815': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_2105': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_894': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_656': -1, 'rsub_947': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 2.0: {'rsub_2102': -1, 'rsub_797': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+INFO:root:Strain design with cost 1.0: {'rsub_2099': -1}
+INFO:root:Searching in full search space.
+INFO:root:Minimizing number of interventions in subspace with 5 possible targets.
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}
+WARNING:root:Invalid minimal solution found: {'rsub_810': -1}

@@ -5,7 +5,7 @@
 % Used to compute Minimal Cut Sets in metabolic networks
 
 % Domain upper bound for flux values
-#const nb=20000.
+#const nb=200000.
 
 % Tells clingo that it is okay if the input file does not contain these predicates
 reversible(do_not_use, do_not_use).
@@ -25,7 +25,7 @@ reversible(do_not_use, do_not_use).
 &sum{C*flux(R) : stoichiometry(M, R, C), reaction(R)} = 0 :- metabolite(M); not mirrev(M).
 
 % Compute support
-support(R) :- &sum{flux(R)} > 0; reaction(R).
+support(R) :- &sum{flux(R)} > 0; reaction(R); not stoichreac(R).
 
 % Atoms in which we are interested in
 cutset(R) :- support(R); interest(R).

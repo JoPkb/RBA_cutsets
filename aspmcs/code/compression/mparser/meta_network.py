@@ -64,7 +64,7 @@ class MetaNetwork:
         if not len(self.metext) == len(self._metext_l):
             raise ValueError('Duplicate found in external metabolites list')
         if not self.metext:
-            warnings.warn('No external metabolite', stacklevel=2)
+            warnings.warn('No external metabolite definition', stacklevel=2)
         if self.nb_nullreacs > 0:
             warnings.warn(f"{self.nb_nullreacs} incorrect reactions were excluded from the" +
                           " model with the current external metabolite definition", stacklevel=2)
@@ -193,11 +193,10 @@ class MetaNetwork:
         # Stoichiometry
         self.stoichiometry = stoichiometry
         self.fill_smatrix()
-        # Transporters and reactions of interest
-        self._transporters_s = set(self.transporters)
-        self.transporters = sorted(list(self._transporters_s))
-        self.interest = getattr(self, 'interest', [])
-        self.mirrev = getattr(self, 'mirrev', [])
+        # Transporters and extra fields
+        self.transporters = sorted(list(set(self.transporters)))
+        self.extras = getattr(self, 'extras', {})
+        self.extras['transporter'] = self.transporters
         # Data structures check
         self.compute_stats()
         self.structures_check()

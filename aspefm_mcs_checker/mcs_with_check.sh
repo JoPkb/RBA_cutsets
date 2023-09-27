@@ -23,18 +23,21 @@ params="${params[@]}"
 
 ### WRITE CONSTRAINTS
 
-echo ":- 4 {transporter(R) : cutset(R)}." > $tspLimit # nb tsp max: 3
+#echo ":- 4 {transporter(R) : cutset(R)}." > $tspLimit # nb tsp max: 3
 echo ":- 6 {cutset(R) : reaction(R)}." > $cstr # taille max: 5
 echo ':- not support("mcs_rsub_93_tgt").' > $target
-echo ':- not support("mcs_rsub_844").' > $treatment
-echo 'target("mcs_rsub_844").' >> $treatment # specify reaction as wanted for mcs_checker
+#echo ':- not support("mcs_rsub_844").' > $treatment
+#echo 'target("mcs_rsub_844").' >> $treatment # specify reaction as wanted for mcs_checker
 
 ### RUN CODE
 
-$aspmcs $mcschecker $lp4Dual $params $tspLimit $treatment $target $cstr -n 0 -c nb=100000 -c mcscheckfile=\"$xml\"  > output_mcs_statin.txt  
+$aspmcs $mcschecker $lp4Dual $params $target $cstr -c nb=100000 -n 0 -c mcscheckfile=\"$xml\"  > output_mcs.txt  
 
-# --time-limit=129600
-# (sortie err) 2> output_errors.mcs.txt
+#$aspmcs $mcschecker $lp4Dual $params $tspLimit $treatment $target $cstr -n 0 -c mcscheckfile=\"$xml\"  > output_mcs_statin.txt  
+
+# --time-limit=129600 # 1 jour et demi
+
+# (sortie err) 2> output_errors.mcs.txt # inutile à moins que tu cherches à débugger avec -c trace=1 (déconseillé)
 
 
 

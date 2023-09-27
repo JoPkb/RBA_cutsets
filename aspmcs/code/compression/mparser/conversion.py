@@ -110,7 +110,7 @@ def format_pickle(network:MetaNetwork, out_name):
     
 def convert(in_format:InputFormatType, in_name, 
             out_format:OutputFormatType, out_name, 
-            to_dual_mcs, target_reactions):
+            to_dual_mcs, target_reactions, ballerstein):
     """ 
     
     Converts the metabolic network in the input file from a format to another
@@ -122,10 +122,11 @@ def convert(in_format:InputFormatType, in_name,
         out_format: OutputFormatType instance
         out_name: output file name
         to_dual_mcs: converts to a dual network for computing Minimal Cut Sets
+        ballerstein: Boolean indicating if Ballerstein formulation for MCSs
     """
     meta_network = read_network(in_name, in_format)
     if to_dual_mcs:
-        meta_network = dual_mcs(meta_network, target_reactions=target_reactions)
+        meta_network = dual_mcs(meta_network, target_reactions=target_reactions, irr_reactions=ballerstein)
     if out_format == OutputFormatType.ASP:
         format_asp(meta_network, out_name)
     elif out_format == OutputFormatType.SBML:

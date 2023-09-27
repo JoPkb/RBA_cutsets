@@ -126,6 +126,7 @@ def to_sbml(reactions, reversibles, metabolites, metext, metint, stoichiometry, 
 
     model.setName(name)
     model.setId(sbml_id(name))
+    model.setMetaId(sbml_id(name))
 
     # Set objective
     if fbc_plugin:

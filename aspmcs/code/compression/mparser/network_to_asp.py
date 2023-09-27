@@ -10,7 +10,9 @@ Converts a metabolism network to ASP rules
 from .meta_network import MetaNetwork
 from .parsehelper import add_quotes as aq
 
-def to_asp(reactions, reversibles, metabolites, metext, transporters, mirrev, interest, stoichiometry, reverse_stoichiometry):
+capitalize_plural = lambda x: x[0].upper() + x[1:] + 's'
+
+def to_asp(reactions, reversibles, metabolites, metext, extras, stoichiometry, reverse_stoichiometry):
     """
     Converts every list created from parsing the network to ASP rules
     
@@ -19,9 +21,7 @@ def to_asp(reactions, reversibles, metabolites, metext, transporters, mirrev, in
         reversibles: reversible reactions set
         metabolites: metabolites list
         metext: set of external metabolites
-        transporters: transport reactions list
-        mirrev: irreversible reactions metabolites list
-        interest: reactions of interest
+        extras: extra fields dict of lists
         stoichiometry: string containing stoichiometry ASP constraints
         reverse_stoichiometry:  string containing stoichiometry ASP constraints
                                 from reversible reactions
@@ -44,13 +44,6 @@ def to_asp(reactions, reversibles, metabolites, metext, transporters, mirrev, in
         if metabolite not in metext:
             asp += aq(metabolite) + ";"
     asp = asp[:-1] + ").\n" 
-
-    if mirrev:
-        asp += "% Irreversible reaction metabolites \n"
-        asp += "mirrev("
-        for metabolite in mirrev:
-            asp += aq(metabolite) + ";"
-        asp = asp[:-1] + ").\n" 
     
     if reversibles:    
         asp += "% Reversible reactions \n"
@@ -62,42 +55,23 @@ def to_asp(reactions, reversibles, metabolites, metext, transporters, mirrev, in
         
     asp += "% All reactions \n"
     asp += "reaction("
-    parallel = "parallel("
     for reaction in reactions:
         asp += aq(reaction) + ";"
         if reaction in reversibles:
             reaction_rev = reaction + "_rev"
             asp += aq(reaction_rev) + ";"
-        if reaction.endswith('_irr'):
-            reaction_rev = reaction[:-4] + "_rev"
-            parallel += aq(reaction) + "," + aq(reaction_rev) + ";"
     asp = asp[:-1] + ").\n"
 
-    if parallel != "parallel(":
-        asp += "% Parallel reactions \n"
-        asp += parallel[:-1] + ").\n"        
-
-
-    if transporters:
-        asp += "% Transporters \n"
-        asp += "transporter("
-        for reaction in transporters:
-            asp += aq(reaction) + ";"
-            if reaction in reversibles:
-                reaction_rev = reaction + "_rev"
-                asp += aq(reaction_rev) + ";"
-        asp = asp[:-1] + ").\n"
-
-
-    if interest:
-        asp += "% Reactions of interest \n"
-        asp += "interest("
-        for reaction in interest:
-            asp += aq(reaction) + ";"
-            if reaction in reversibles:
-                reaction_rev = reaction + "_rev"
-                asp += aq(reaction_rev) + ";"
-        asp = asp[:-1] + ").\n"  
+    for extra, field in extras.items():
+        if field:
+            asp += f"% {capitalize_plural(extra)} \n"
+            asp += f"{extra}("
+            for element in field:
+                asp += aq(element) + ";"
+                if (element in reactions) and (element in reversibles):
+                    reaction_rev = element + "_rev"
+                    asp += aq(reaction_rev) + ";"
+            asp = asp[:-1] + ").\n" 
             
     asp += "% Stoichiometry \n"
     asp += stoichiometry  
@@ -122,12 +96,12 @@ def make_stoichiometry(metabo, reaction, coeff, inv=False):
     Returns:
         asp: ASP code string
     """    
+    if not isinstance(coeff, float):
+        coeff = float(coeff)
+
     if inv:
         reaction += "_rev"
         coeff = -coeff
-
-    if not isinstance(coeff, float):
-        coeff = float(coeff)
 
     if isinstance(coeff, float):
         coeff = aq(str(coeff))
@@ -150,7 +124,7 @@ def make_asp(network):
         if stuple[1] in network.reversibles:
             reverse_stoichiometry += make_stoichiometry(stuple[0], stuple[1], stuple[2], inv=True)
     return to_asp(network.reactions, network.reversibles, network.metabolites, network.metext,
-                  network.transporters, network.mirrev, network.interest, stoichiometry, reverse_stoichiometry)
+                  network.extras, stoichiometry, reverse_stoichiometry)
     
 
 def format_asp(network:MetaNetwork, out_fname):
