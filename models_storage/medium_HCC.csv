@@ -1,0 +1,253 @@
+EX_m4082;(+)-alpha-pinene;;
+EX_m4083;(R)-3-hydroxybutanoate;;
+EX_m4084;1,1-dichloroethylene;;
+EX_m4085;1,2-dibromoethane;;
+EX_m4086;10-formyl-THF-glu(7);;
+EX_m4087;1-nitronaphthalene;;
+EX_m4088;25-hydroxyvitamin D2;;
+EX_m4089;2-acetyl-1-alkyl-sn-glycero-3-phosphocholine;;
+EX_m4090;2-hydroxybutyrate;;
+EX_m4091;4-(n-nitrosomethylamino)-1-(3-pyridyl)-1-butanone;;
+EX_m4092;4-nitrophenyl-phosphate;;
+EX_m4093;5-alpha-dihydrotestosterone;;
+EX_m4094;5-formyl-THF;;
+EX_m4095;7,12-dimethylbenz[a]anthracene;;
+EX_m4096;acetone;;
+EX_m4097;acetylcholine;;
+EX_m4098;ADP-glucose;;
+EX_m4099;ADP-mannose;;
+EX_m4100;aflatoxin B1;;
+EX_m4101;albumin;;
+EX_m4102;alpha-tocopherol;;
+EX_m4103;alpha-tocotrienol;;
+EX_m4104;aquacob(III)alamin;;
+EX_m4105;arginine;1;-1.5
+EX_m4106;aspartate;1;-1.5
+EX_m4107;benzo[a]pyrene;;
+EX_m4108;beta-carotene;;
+EX_m4109;betaine;;
+EX_m4110;bilirubin;;
+EX_m4111;biotin;;
+EX_m4112;bromobenzene;;
+EX_m4113;chitin-component;;
+EX_m4114;cholate;;
+EX_m4115;chondroitin sulfate B - dermatan sulfate (IdoA2S-GalNAc4S) proteoglycan;;
+EX_m4116;chondroitin sulfate C (GalNAc6S-GlcA) proteoglycan;;
+EX_m4117;chondroitin sulfate D (GlcNAc6S-GlcA2S) proteoglycan;;
+EX_m4118;chondroitin sulfate E (GalNAc4,6diS-GlcA) proteoglycan;;
+EX_m4119;chylomicron;;
+EX_m4120;citrate;;
+EX_m4121;cortisol;;
+EX_m4122;coumarin;;
+EX_m4123;creatinine;;
+EX_m4124;D-arginine;;
+EX_m4125;D-aspartate;;
+EX_m4126;debrisoquin;;
+EX_m4127;dehydroepiandrosterone sulfate;;
+EX_m4128;dITP;;
+EX_m4129;D-lactate;;
+EX_m4130;dopamine;;
+EX_m4131;D-ornithine;;
+EX_m4132;D-proline;;
+EX_m4133;D-ribulose;;
+EX_m4134;D-tagatose;;
+EX_m4135;estriol;;
+EX_m4136;estrone 3-sulfate;;
+EX_m4137;ethanol;;
+EX_m4138;Fe2+;;
+EX_m4139;galactosylglycerol;;
+EX_m4140;gamma-tocopherol;;
+EX_m4141;gamma-tocotrienol;;
+EX_m4142;glucosamine;;
+EX_m4143;glycophosphatidylinositol-(GPI)-anchored-protein-precursor;;
+EX_m4144;GSH;;
+EX_m4145;GT1a;;
+EX_m4146;GTP;;
+EX_m4147;guanosine;;
+EX_m4148;H2O;1;-25
+EX_m4149;HDL remnant;;
+EX_m4150;heparan sulfate proteoglycan;;
+EX_m4151;heptaglutamyl-folate(DHF);;
+EX_m4152;heptaglutamyl-folate(THF);;
+EX_m4153;homoserine;;
+EX_m4154;hyaluronate;;
+EX_m4155;hydrogen-cyanide;;
+EX_m4156;ITP;;
+EX_m4157;keratan sulfate I;;
+EX_m4158;keratan sulfate II (core 2-linked);;
+EX_m4159;keratan sulfate II (core 4-linked);;
+EX_m4160;lactose;;
+EX_m4161;L-arabinose;;
+EX_m4162;leukotriene C4;;
+EX_m4163;limonene;;
+EX_m4164;lysine;1;-1.5
+EX_m4165;mannose;;
+EX_m4166;methanol;;
+EX_m4167;n2m2nmasn;;
+EX_m4168;naphthalene;;
+EX_m4169;NEFA blood pool in;;
+EX_m4170;nifedipine;;
+EX_m4171;O2;1;28
+EX_m4172;O2-;;
+EX_m4173;omeprazole;;
+EX_m4174;ornithine;;
+EX_m4175;PA6;;
+EX_m4176;paclitaxel;;
+EX_m4177;pantothenate;1;-0.1
+EX_m4178;phytanic acid;;
+EX_m4179;progesterone;;
+EX_m4180;prostaglandin F2alpha;;
+EX_m4181;pyridoxamine;1;-0.1
+EX_m4182;riboflavin;1;-0.1
+EX_m4183;selenate;;
+EX_m4184;serine;1;-1.5
+EX_m4185;serotonin;;
+EX_m4186;starch structure 2;;
+EX_m4187;succinate;;
+EX_m4188;sucrose;;
+EX_m4189;thiamin;1;-0.1
+EX_m4190;tolbutamide;;
+EX_m4191;trehalose;;
+EX_m4192;trichloroethene;;
+EX_m4193;triiodothyronine;;
+EX_m4194;UTP;;
+EX_m4195;valine;1;-1.5
+EX_m4196;VLDL;;
+EX_m4197;xanthurenate;;
+EX_m4198;XTP;;
+EX_m4199;biomass;;
+EX_m4205;(5-L-glutamyl)-L-amino acid;;
+EX_m4206;10-formyl-THF;;
+EX_m4207;10-formyl-THF-glu(5);;
+EX_m4208;10-formyl-THF-glu(6);;
+EX_m4209;1-alkyl-2-lysoglycerol-3-phosphocholine;;
+EX_m4210;1-methylnicotinamide;;
+EX_m4211;1-organyl-2-lyso-sn-glycero-3-phosphocholine;;
+EX_m4212;4-aminobutyrate;;
+EX_m4213;5-hydroxy-L-tryptophan;;
+EX_m4214;5-L-gamma-glutamyl;;
+EX_m4215;6-deoxy-L-galactose;;
+EX_m4216;acetate;;
+EX_m4217;acetoacetate;;
+EX_m4218;adenine;;
+EX_m4219;adenosine;;
+EX_m4220;ADP;;
+EX_m4221;adrenaline;;
+EX_m4222;AKG;;
+EX_m4223;alanine;1;-1.5
+EX_m4224;AMP;;
+EX_m4225;asparagine;1;-1.5
+EX_m4226;beta-alanine;;
+EX_m4227;bilirubin-bisglucuronoside;;
+EX_m4228;bilirubin-monoglucuronoside;;
+EX_m4229;butyrate;;
+EX_m4230;cAMP;;
+EX_m4231;cGMP;;
+EX_m4232;chloride;;
+EX_m4233;cholesterol;;
+EX_m4234;choline;1;-0.1
+EX_m4235;chondroitin sulfate A (GalNAc4S-GlcA) proteoglycan;;
+EX_m4236;chylomicron remnant;;
+EX_m4237;citrulline;;
+EX_m4238;CMP;;
+EX_m4239;CO2;1;-21
+EX_m4240;cys-gly;;
+EX_m4241;cysteine;1;-1.5
+EX_m4242;cytidine;;
+EX_m4243;cytosine;;
+EX_m4244;D-alanine;;
+EX_m4245;decanoic acid;;
+EX_m4246;de-Fuc form of PA6;;
+EX_m4247;deoxyadenosine;;
+EX_m4248;deoxycytidine;;
+EX_m4249;deoxyguanosine;;
+EX_m4250;deoxyinosine;;
+EX_m4251;deoxyuridine;;
+EX_m4252;D-glucitol;;
+EX_m4253;dihydrofolate;;
+EX_m4254;D-serine;;
+EX_m4255;estradiol-17beta 3-glucuronide;;
+EX_m4256;estrone-glucuronide;;
+EX_m4257;ethanolamine;;
+EX_m4258;Fe3+;;
+EX_m4259;formate;;
+EX_m4260;fructose;;
+EX_m4261;galactose;;
+EX_m4262;GDP;;
+EX_m4263;glucose;1;-2
+EX_m4264;glutamate;1;-1
+EX_m4265;glutamine;1;0
+EX_m4266;glycerol;;
+EX_m4267;glycine;1;-1.5
+EX_m4268;glycochenodeoxycholate;;
+EX_m4269;glycocholate;;
+EX_m4270;GMP;;
+EX_m4271;GSSG;;
+EX_m4272;guanine;;
+EX_m4273;H+;1;-10
+EX_m4274;H2O2;;
+EX_m4275;HCO3-;1;-0.1
+EX_m4276;heptylic acid;;
+EX_m4277;hexaglutamyl-folate(DHF);;
+EX_m4278;hexaglutamyl-folate(THF);;
+EX_m4279;hexanoic acid;;
+EX_m4280;histidine;1;-1.5
+EX_m4281;hydroxide;;
+EX_m4282;hypoxanthine;;
+EX_m4283;IDP;;
+EX_m4284;IMP;;
+EX_m4285;inosine;;
+EX_m4286;inositol;1;-0.1
+EX_m4287;iodide;;
+EX_m4288;isoleucine;1;-1.5
+EX_m4289;K+;1;-0.1
+EX_m4290;keratan sulfate I, degradation product 1;;
+EX_m4291;L-carnitine;;
+EX_m4292;leucine;1;-1.5
+EX_m4293;leukotriene E4;;
+EX_m4294;linoleate;;
+EX_m4295;linolenate;;
+EX_m4296;L-lactate;;
+EX_m4297;LTD4;;
+EX_m4298;maltose;;
+EX_m4299;methionine;1;-1.5
+EX_m4300;Na+;1;-0.1
+EX_m4301;NH3;;
+EX_m4302;nonanoic acid;;
+EX_m4303;noradrenaline;;
+EX_m4304;octanoic acid;;
+EX_m4305;oxalate;;
+EX_m4306;pentaglutamyl-folate(DHF);;
+EX_m4307;pentaglutamyl-folate(THF);;
+EX_m4308;phenylalanine;1;-1.5
+EX_m4309;Pi;1;-10
+EX_m4310;PNP;;
+EX_m4311;proline;1;-1.5
+EX_m4312;propanoate;;
+EX_m4313;prostaglandin E1;;
+EX_m4314;prostaglandin E2;;
+EX_m4315;pyruvate;1;-1
+EX_m4316;retinoate;;
+EX_m4317;spermine dialdehyde;;
+EX_m4318;spermine;;
+EX_m4319;sulfate;;
+EX_m4320;taurochenodeoxycholate;;
+EX_m4321;taurocholate;;
+EX_m4322;THF;;
+EX_m4323;threonine;1;-1.5
+EX_m4324;thymidine;;
+EX_m4325;thymine;;
+EX_m4326;thyroxine;;
+EX_m4327;tryptophan;1;-1.5
+EX_m4328;tyrosine;1;-1.5
+EX_m4329;UDP;;
+EX_m4330;UMP;;
+EX_m4331;undecylic acid;;
+EX_m4332;uracil;;
+EX_m4333;urate;;
+EX_m4334;urea;;
+EX_m4335;uridine;;
+EX_m4336;valeric acid;;
+EX_m4337;VLDL remnant;;
+EX_m4338;zinc;;
+EX_m4339;cholesterol-ester pool;;

@@ -1,0 +1,2 @@
+:- not support("rsub_1373_rev").
+target("rsub_1373_rev").

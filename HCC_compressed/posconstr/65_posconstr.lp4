@@ -1,0 +1,2 @@
+:- not support("rsub_1333").
+target("rsub_1333").

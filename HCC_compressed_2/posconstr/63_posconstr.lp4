@@ -1,0 +1,2 @@
+:- not support("mcs_rsub_1282").
+target("mcs_rsub_1282").
