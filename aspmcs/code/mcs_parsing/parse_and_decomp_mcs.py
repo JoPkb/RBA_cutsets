@@ -1,4 +1,4 @@
-from utils import parse_output, decompress_cutsets, sol_after_ko
+from utils import parse_output, sol_after_ko
 import cobra
 import pandas as pd
 from itertools import combinations, combinations_with_replacement, permutations, chain, product
@@ -6,7 +6,7 @@ from tqdm import tqdm
 import sys
 import pickle
 
-def itertools_product(listofcutsets, model):
+def itertools_product(listofcutsets, model, objective="biomass_components"):
     i = 1
     good_cutsets = []
     for cutset_orID in tqdm(listofcutsets):
@@ -31,12 +31,12 @@ def itertools_product(listofcutsets, model):
                     if retval < 1e-6:
                         print('[N-1]',"Objective value = ", retval,"For n-1 subset\
                            of cutset >>>", nm1, 'not MIN cutset')
-        good_cutsets.apend(good_cutsets_subs)
+        good_cutsets.append(good_cutsets_subs)
         i+=1
     return good_cutsets
 
 if __name__ == "__main__":
-    model_path = sys.argv[1]
+    model_path = sys.argv[1] 
     cutsets_path = sys.argv[2]
     reaction_subsets = sys.argv[3]
     output_path = sys.argv[4]
