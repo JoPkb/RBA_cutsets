@@ -76,29 +76,20 @@ class ListOfExtensions(object):
     """ Adding every extension, actions are order sensitive so order is to be considered """
 
     def add_extensions(self, prg):
-        self.add_debug_extension()
-        self.add_bdd_extension(prg)
+        self.add_debug_extension(prg)
         self.add_efm_checker(prg)
         self.add_mcs_checker(prg)
-        self.add_aa_cost_extension(prg)
         self.add_cplex_debug(prg)
+        self.add_lp_caller(prg)
         self.add_profiler(prg)
 
     """ Initializing every extension that was found using CLI parameters """
 
-    def add_debug_extension(self):
+    def add_debug_extension(self, prg):
         try:
             type(DebugExtension)
-            debug_ext = DebugExtension()
+            debug_ext = DebugExtension.from_prg(prg)
             self.listOfExtensions.append(debug_ext)
-        except NameError:
-            pass
-
-    def add_bdd_extension(self, prg):
-        try:
-            type(BDDExtension)
-            bdd_ext = BDDExtension.from_prg(prg)
-            self.listOfExtensions.append(bdd_ext)
         except NameError:
             pass
         
@@ -107,14 +98,6 @@ class ListOfExtensions(object):
             type(EFMCheckerExtension)
             efm_checker = EFMCheckerExtension.from_prg(prg)
             self.listOfExtensions.append(efm_checker)
-        except NameError:
-            pass
-
-    def add_aa_cost_extension(self, prg):
-        try:
-            type(AACostExtension)
-            aa_cost_ext = AACostExtension.from_prg(prg)
-            self.listOfExtensions.append(aa_cost_ext)
         except NameError:
             pass
 
@@ -134,10 +117,18 @@ class ListOfExtensions(object):
         except NameError:
             pass
 
+    def add_lp_caller(self, prg):
+        try:
+            type(LPCallExtension)
+            lp_caller = LPCallExtension.from_prg(prg)
+            self.listOfExtensions.append(lp_caller)
+        except NameError:
+            pass
+
     def add_profiler(self, prg):
         try:
             type(ProfilerExtension)
-            prf_ext = ProfilerExtension()
+            prf_ext = ProfilerExtension.from_prg(prg)
             self.listOfExtensions.append(prf_ext)
         except NameError:
             pass
