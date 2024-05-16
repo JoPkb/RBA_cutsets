@@ -1,4 +1,4 @@
-
+#!/bin/bash
 aspmcs=(clingo clingoLP.py mcs\[LP\].lp4) # clingoLP.py with extensions enabled
 aspmcs="${aspmcs[@]}"
 

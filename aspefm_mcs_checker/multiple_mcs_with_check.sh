@@ -6,8 +6,8 @@ mcschecker=mcs_checker.py
 
 #### MODEL DATA
 
-lp4Dual=../HCC_compressed_2/new_reduced_mcs.lp4
-xml=../HCC_compressed_2/new_reduced.xml
+lp4Dual=data/new_reduced_mcs.lp4
+xml=data/new_reduced.xml
 
 #### ACTUAL CONSTRS
 treatments_folder=$1
@@ -23,21 +23,20 @@ params="${params[@]}"
 
 ### WRITE CONSTRAINTS
 
-echo ":- 4 {transporter(R) : cutset(R)}." > $tspLimit # nb tsp max: 3
-echo ":- 6 {cutset(R) : reaction(R)}." > $cstr # taille max: 5
-echo ':- not support("mcs_rsub_36").' > $target
+#echo ":- 4 {transporter(R) : cutset(R)}." > $tspLimit # nb tsp max: 3
+echo ":- 6 {cutset(R) : reaction(R)}. 1 {cutset(R) : reaction(R)} 5." > $cstr # taille max: 5
+echo ':- not support("mcs_rsub_36_tgt").' > $target
 #echo ':- not support("mcs_rsub_844").' > $treatment
 #echo 'target("mcs_rsub_844").' >> $treatment # specify reaction as wanted for mcs_checker
 
 ### RUN CODE
-i=0
+i=1 
 for treatment_file in $(ls $treatments_folder)
 do
     i=$((i+1))
     treatment="$treatments_folder"/"$treatment_file"
-    echo $i
-    $aspmcs $mcschecker $lp4Dual $params $target $cstr $treatment -c nb=100000 -n 0 -c mcscheckfile=\"$xml\" --time-limit=43200  > res/output_${i}.txt &  
-
+    $aspmcs $lp4Dual $mcschecker $params $target $cstr $treatment -n 0 -c nb=100000 --sat-prepro=3 --trans-ext=integ --eq=4 -c mcscheckfile=\"$xml\" --time-limit=43200  > res/output_${i}.txt &  
+    #echo $(less $treatment_file) >> res/output_${i}.txt
 done
 
 # IFS="_"
