@@ -72,7 +72,7 @@ class Propagator(object):
                     times = self.lp.get_time()
                     self.times = (self.times[0] + times[0], self.times[1] + times[1], self.times[2] + times[2], self.times[3] + times[3], self.times[4] + times[4], self.times[5] + times[5])
                 self.times_print = 'LP solver calls: ' + str(self.times[0]) + '   Time cplex :  ' + str(self.times[1]) + '\n'
-            if debug > 0:
+            if debug > 1:
                 self.times_print = self.times_print + '\n' + 'Calls init: ' + str(initcalls) + '      Time init:  ' + str(inittime) + '\n' + 'Calls propagate: ' + str(propcalls) + '      Time propagate:  ' + str(proptime) + '\n' + 'Calls undo: ' + str(undocalls) + '      Time undo:  ' + str(undotime) + '\n' + 'Calls add: ' + str(self.times[2]) + '      Time add:  ' + str(self.times[3]) + '\n' + 'Calls reset: ' + str(self.times[4]) + '      Time reset:  ' + str(self.times[5]) + '\n' + 'Calls check: ' + str(checkcalls) + '      Time check:  ' + str(checktime)
 
         def print_assignment(self, show):
@@ -214,8 +214,6 @@ class Propagator(object):
         self.__initcalls += 1
         self.__time = self.__time + end-start
 
-
-
     def print_assignment(self, thread_id):
         state = self.__state(thread_id)
         state.print_assignment(self.__show)
@@ -271,8 +269,6 @@ class Propagator(object):
         self.__constr[n] = (lit, (dict(weights),rel,self.__calc_bound(rhs)))
         self.__var_ta.setdefault(var,[]).append(n)
         self.__lit_ta.setdefault(lit,[]).append(n)
-
-
 
     # resolves structure of objective-statements and saves it
     def __lp_objective(self, atom, init):
@@ -1041,10 +1037,10 @@ def main(prg):
     global prop
     global extensions
     prop = Propagator(prg.get_const("show"), prg.get_const("accuracy"), prg.get_const("nstrict"), prg.get_const("epsilon"), prg.get_const("solver"), prg.get_const("trace"), prg.get_const("core_confl"), prg.get_const("prop_heur"), prg.get_const("debug"), prg.get_const("ilp"))
+    prg.ground([("base", [])])
     extensions = ListOfExtensions(prg, globals())
     prg.register_propagator(prop)
     extensions.before_prg_solve_action(prg)
-    prg.ground([("base", [])])
     prg.solve(on_model = print_assignment)
     extensions.after_prg_solve_action()
 

@@ -1,6 +1,5 @@
 #const mcscheckfile=nofile.
 #const mcssavefile=nofile.
-#const uncompressed=0.
 
 #script (python)
 
@@ -10,22 +9,16 @@ import random
 import re
 import sys
 import warnings
-from clingoLP_extension import clingoLPExtension
-import mparser.parsehelper as ph
 import numpy as np
 import cobra
 
+from clingoLP_extension import clingoLPExtension
 from support_propagator import SupportPropagator
+import mparser.parsehelper as ph
 
-DEFAULT_DEBUG_VALUE = True # False # debug for printing literals
+DEFAULT_DEBUG_VALUE = False # False # debug for printing literals
 SHOW_SUPERSETS = True # debug for printing false supersets
 WANTED_REACTIONS_SIGNATURE = "target" # asp atom signature for wanted reactions
-
-def filter_support_compressed(support):
-    return [r for r in support if (r.startswith('mcs_rsub')) and (not r.endswith('tgt')) and (not r.endswith('irr'))]
-        
-def filter_support_bigg(support):
-    return [r for r in support if (not r.startswith('mcs_M')) and (not r.endswith('tgt')) and (not r.endswith('irr'))]
 
 def knock_out(model, lr):
     model = model.copy()
@@ -47,12 +40,12 @@ def knock_out(model, lr):
     return model
 
 def sol_after_ko(lr, model):
-    try: # need to work on handling infeasibility better
+    try:
         model_c = knock_out(model, lr)
         opt = model_c.optimize()
         return opt.objective_value if opt.status != 'infeasible' else 0.0
     except KeyError as e:
-        warnings.warn(str(e))
+        warnings.warn("Reaction name not found in SBML; MCSChecker likely not invoked with correct SBML file.")
         return 0.0
 
 def nm1_combinations(orig_lr, model, saves):
@@ -85,17 +78,14 @@ def get_reaction_name(word):
     
 class MCSChecker(clingoLPExtension):
 
-    def __init__(self, mcs_checker_file, compressed=True, save_file=None):
-        print(mcs_checker_file)
+    def __init__(self, mcs_checker_file, stoichreacs, compressed=True, save_file=None):
         self.model = cobra.io.read_sbml_model(mcs_checker_file)
         
         self.total_solutions = self.mcs_tested_solutions = 0
         self.sup_mcs_solutions = self.sub_mcs_solutions = 0
         
-        if compressed:
-            self.filter_support = filter_support_compressed
-        else:
-            self.filter_support = filter_support_bigg
+        self.stoichreacs = stoichreacs
+        assert(self.stoichreacs)
 
         self.full_last_support = []
         self.last_support = []
@@ -106,6 +96,9 @@ class MCSChecker(clingoLPExtension):
     
         self.save_file = save_file
         self.load_state()
+
+    def filter_support(self, support):
+        return [r for r in support if (not r in self.stoichreacs) and (not r.endswith('tgt')) and (not r.endswith('irr'))]
         
     def load_state(self):
         if self.save_file is not None:
@@ -227,20 +220,13 @@ class MCSChecker(clingoLPExtension):
 
 class MCSCheckerExtension(MCSChecker, clingoLPExtension):
 
-    def __init__(self, mcs_checker_file, uncompressed, save_file):
-        MCSChecker.__init__(self, mcs_checker_file, uncompressed, save_file)
+    def __init__(self, mcs_checker_file, stoichreacs, wanted, save_file):
+        MCSChecker.__init__(self, mcs_checker_file, stoichreacs, wanted, save_file)
         self.debug = DEFAULT_DEBUG_VALUE
-        self.wanted = []
-        
-    def parse_wanted_reactions(self, init):
-        self.wanted = []
-        for atom in init.symbolic_atoms.by_signature(WANTED_REACTIONS_SIGNATURE, 1):
-            varname = ph.smart_remove_quotes(str(atom.symbol.arguments[0]))
-            self.wanted.append(varname)
+        self.wanted = wanted
         print(self.wanted, flush=True)
         
     def init_action(self, init):
-        self.parse_wanted_reactions(init)
         tmp_prop = SupportPropagator()
         tmp_prop.init(init)
         self.literals = tmp_prop.literals()
@@ -249,20 +235,20 @@ class MCSCheckerExtension(MCSChecker, clingoLPExtension):
             tmp_prop.dump_literals()
 
     def check_consistency_action(self, control, state):
+        """ TODO: Implement addition of minimal nogoods wrt constraints instead of non-minimal nogoods """
         if state.current_lit_percentage >= 100:
             if not self.is_a_mcs(state.current_assignment):
                 self.sup_mcs_solutions += 1
                 assert(self.there_are_invalid_supports()) # if fail here, check filtering method
                 active_lits, inactive_lits = self.get_invalid_support(with_inactive=True)
                 if SHOW_SUPERSETS:
-                    print('Solution filtered', self.show_support(active_lits))
+                    print('Superset filtered', self.show_support(active_lits))
                 if not control.add_nogood(active_lits) or not control.propagate():
                     return False
-                if not control.add_nogood(inactive_lits) or not control.propagate():
+                if not control.add_clause(inactive_lits) or not control.propagate():
                     return False
-                warnings.warn("Abnormal behaviour: unable to add nogoods")
+                warnings.warn("Unable to add nogoods: previously added nogoods were non-minimal wrt constraints")
                 return False
-                #assert(False)
             return True
         elif self.wanted and state.current_lit_percentage >= 99:
             if not self.partial_mcs(state.current_assignment, self.wanted):
@@ -270,10 +256,13 @@ class MCSCheckerExtension(MCSChecker, clingoLPExtension):
                 assert(self.there_are_invalid_supports())
                 active_lits, inactive_lits = self.get_invalid_support(with_inactive=True)
                 if SHOW_SUPERSETS:
-                    print('Partial superset of mcs filtered', self.show_support(active_lits))
-                if not control.add_nogood(active_lits) or not control.add_nogood(inactive_lits) or not control.propagate():
-                    return False        
-                assert(False)
+                    print('Partial superset filtered', self.show_support(active_lits))
+                if not control.add_nogood(active_lits) or not control.propagate():
+                    return False
+                if not control.add_clause(inactive_lits) or not control.propagate():
+                    return False      
+                warnings.warn("Unable to add nogoods: previously added nogoods were non-minimal wrt constraints")
+                return False
         return True
 
     def on_model_action(self, thread_id):
@@ -284,14 +273,16 @@ class MCSCheckerExtension(MCSChecker, clingoLPExtension):
 
     @classmethod
     def from_prg(cls, prg):
-        uncompressed = str(prg.get_const('uncompressed')) 
-        compressed = bool(uncompressed == '0') 
         mcs_checker_file_name = str(prg.get_const('mcscheckfile')) 
         if mcs_checker_file_name == 'nofile':
             raise ValueError('MCS Checker invoked without File Name parameter')
         mcs_checker_file = ph.smart_remove_quotes(mcs_checker_file_name)
         cutsets_file_name = str(prg.get_const('mcssavefile')) 
         cutsets_file = ph.smart_remove_quotes(cutsets_file_name) if cutsets_file_name != 'nofile' else None
-        return cls(mcs_checker_file, compressed, cutsets_file)
+        stoichreacs = [str(atom.symbol.arguments[0].string) for atom in prg.symbolic_atoms.by_signature("stoichreac", 1)]
+        wanted = [str(atom.symbol.arguments[0].string) for atom in prg.symbolic_atoms.by_signature(WANTED_REACTIONS_SIGNATURE, 1)]
+        stoichreacs = list(map(ph.smart_remove_quotes, stoichreacs))
+        wanted = list(map(ph.smart_remove_quotes, wanted))
+        return cls(mcs_checker_file, stoichreacs, wanted, cutsets_file)
 
 #end.
