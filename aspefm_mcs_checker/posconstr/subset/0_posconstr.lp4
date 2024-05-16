@@ -1,2 +1,0 @@
-:- not support("mcs_rsub_138").
-target("mcs_rsub_138").
