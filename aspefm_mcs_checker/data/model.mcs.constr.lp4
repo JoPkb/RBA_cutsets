@@ -1,1 +1,1 @@
-:- 6 {cutset(R) : reaction(R)}.
+:- 6 {cutset(R) : reaction(R)}. 1 {cutset(R) : reaction(R)} 5.
