@@ -6,3 +6,6 @@ Welcome to My Project’s Documentation
    :caption: Contents:
 
    /docs/notebooks/example.ipynb
+   Home <self>
+   usage
+   api
