@@ -5,4 +5,4 @@ Welcome to My Project’s Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   ../notebooks/example.ipynb
+   ../notebooks/example
