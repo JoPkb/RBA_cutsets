@@ -9,3 +9,4 @@ Welcome to My Project’s Documentation
    Home <self>
    usage
    api
+   readme
