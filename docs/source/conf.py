@@ -18,7 +18,7 @@ extensions = ['myst_nb']
 
 templates_path = ['_templates']
 exclude_patterns = []
-
+jupyter_execute_notebooks = "off"
 
 
 # -- Options for HTML output -------------------------------------------------
