@@ -5,8 +5,8 @@ Welcome to My Project’s Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   /docs/notebooks/example.ipynb
+   /home/docs/checkouts/readthedocs.org/user_builds/rba-cutsets/checkouts/latest/docs/notebooks/example.ipynb
    Home <self>
    usage
    api
-   readme
+   /home/docs/checkouts/readthedocs.org/user_builds/rba-cutsets/checkouts/latest/docs/readme.md
